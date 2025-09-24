@@ -1,0 +1,73 @@
+@{
+    var title = ViewData["Title"] as string ?? "Tasmim – Webbyrå";
+    var desc = ViewData["MetaDescription"] as string ?? "Snabba, tydliga och säljande webbplatser & webbutiker.";
+}
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@title</title>
+    <meta name="description" content="@desc" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+
+
+    @RenderSection("Head", required: false)
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" asp-controller="Home" asp-action="Index">
+                <img src="~/img/logo.png" alt="Tasmim" asp-append-version="true" />
+            </a>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Öppna meny">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav id="mainNav" class="nav-links" aria-label="Huvudmeny">
+                <a class="nav-link" asp-controller="Home" asp-action="Index">Hem</a>
+                <a class="nav-link" asp-controller="Services" asp-action="Index">Tjänster</a>
+                <a class="nav-link" asp-controller="Home" asp-action="References">Case</a>
+                <a class="nav-link" asp-controller="Pricing" asp-action="Index">Priser</a>
+                <a class="btn btn-primary nav-cta" asp-controller="Pricing" asp-action="Index">Kontakta oss</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="site-main" tabindex="-1">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="footer-col">
+                    <h4>Tasmim</h4>
+                    <p>Vi kombinerar kreativitet, teknik och affärsnytta för webb och e-handel som levererar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontakta oss</h4>
+                    <p>info@tasmim.se</p>
+                </div>
+
+            <div class="footer-bottom">
+                <span>© @DateTime.Now.Year Tasmim</span>
+                <nav class="footer-links">
+                    <a asp-controller="Home" asp-action="About">Om oss</a>
+                    <a asp-controller="Home" asp-action="Privacy">Integritet</a>
+                    <a asp-controller="Home" asp-action="Contact">Kontakt</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

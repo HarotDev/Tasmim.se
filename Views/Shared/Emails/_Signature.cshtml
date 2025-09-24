@@ -1,0 +1,23 @@
+﻿
+@model string
+@{
+    var logoSrc = string.IsNullOrWhiteSpace(Model)
+        ? "https://tasmim.se/img/logo.png"
+        : Model;
+}
+<table role="presentation" cellspacing="0" cellpadding="0" border="0" style="font-family:Inter,Arial,sans-serif">
+  <tr>
+    <td style="padding:0 0 10px">
+      <a href="https://tasmim.se" style="text-decoration:none">
+        <img src="@logoSrc" alt="Tasmim" width="140" style="display:block;border:0;outline:0;">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td style="font-size:14px;color:#0f1220">
+      <strong>Tasmim</strong><br>
+      <a href="mailto:hello@tasmim.se" style="color:#0f1220;text-decoration:none">hello@tasmim.se</a><br>
+      <span style="color:#5e6676">tasmim.se</span>
+    </td>
+  </tr>
+</table>

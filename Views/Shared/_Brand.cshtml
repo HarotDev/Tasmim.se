@@ -1,0 +1,13 @@
+﻿@* Views/Shared/_Brand.cshtml *@
+@{
+    // Byt filnamn om dina heter något annat
+    var light = Url.Content("~/img/logo.png");
+    var dark = Url.Content("~/img/logo-white.png"); // använd samma som light om du inte har vit variant
+}
+<a class="brand" asp-controller="Home" asp-action="Index" aria-label="Tasmim" style="display:inline-flex;align-items:center;text-decoration:none">
+    <picture>
+        <source srcset="@dark" media="(prefers-color-scheme: dark)">
+        <img src="@light" alt="Tasmim" style="height:28px;display:block">
+    </picture>
+    <span class="sr-only">Tasmim</span>
+</a>

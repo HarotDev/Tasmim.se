@@ -1,0 +1,130 @@
+﻿@{
+    ViewData["Title"] = "Tjänster – Tasmim";
+    Layout = "_Layout";
+}
+
+<section class="hero" style="--overlay:.55;">
+    <div class="hero__bg">
+        <video class="hero__video"
+               autoplay
+               muted
+               loop
+               playsinline
+               preload="auto"
+               poster="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop">
+            <source src="~/videos/serviceindexvideo.mp4" type="video/mp4" />
+            Din webbläsare stöder inte video-taggen.
+        </video>
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+        <h1 class="hero-title">Webbutveckling, e-handel och design.</h1>
+        <p class="hero-sub">Vi bygger snabba sidor och butiker, och tar fram en design som är enkel att förstå och jobba med.</p>
+
+        <div class="hero__actions">
+            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se priser</a>
+            <a class="btn btn-outline" href="mailto:hello@tasmim.se">Kontakta oss</a>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal">
+    <div class="container">
+            <h2>Våra tjänster</h2>
+            <p class="muted">Tydliga erbjudanden, samma fokus: fart, enkelhet och resultat.</p>
+
+        <div class="svc-carousel" style="position:relative">
+            <button class="snap-btn snap-prev" aria-label="Föregående"></button>
+            <button class="snap-btn snap-next" aria-label="Nästa"></button>
+
+            <div class="svc-grid" data-snap>
+                <article class="svc-card" style="--tone:#28b57b">
+                    <div class="svc-ico" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+                    </div>
+                    <h3 class="svc-title">Webbutveckling & e-handel</h3>
+                    <p class="svc-text">Sidor och butiker som laddar snabbt och är lätta att uppdatera.</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Web" aria-label="Läs mer om Webbutveckling & e-handel">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l8 7-8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                </article>
+
+                <article class="svc-card" style="--tone:#7d5cff">
+                    <div class="svc-ico" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 4v16M9 12h6M12 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+                    </div>
+                    <h3 class="svc-title">Design & UX</h3>
+                    <p class="svc-text">Tydlig form och smarta gränssnitt. Vi tar fram ett UI som håller.</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Design" aria-label="Läs mer om Design & UX">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5l8 7-8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                </article>
+
+                <article class="svc-card">
+                    <div class="svc-ico" style="--tone:#ef4444" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></div>
+                    <h3 class="svc-title">Digital marknadsföring</h3>
+                    <p class="svc-text">SEO, SEM och innehåll som höjer kvaliteten på trafiken och lyfter konverteringen.</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Marketing" aria-label="Till marknadsföring">
+                        <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--soft reveal">
+    <div class="container">
+            <h2>Varför Tasmim?</h2>
+            <p class="muted">Vi kombinerar enkelhet i förvaltning med mätbar prestanda.</p>
+
+        <div class="cards grid grid-3">
+            <article class="card">
+                <h3>Snabb laddning</h3>
+                <p class="muted">Optimerade bilder, caching och modern bundling.</p>
+            </article>
+            <article class="card">
+                <h3>Tillgänglig</h3>
+                <p class="muted">WCAG-tänk från början: kontrast, fokus och tangentbord.</p>
+            </article>
+            <article class="card">
+                <h3>Enkelt att äga</h3>
+                <p class="muted">Modulär struktur och kort introduktion vid överlämning.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section feature-split reveal">
+    <div class="container grid-2 grid feature">
+        <div class="feature-copy">
+            <h2>Bygg rätt från början</h2>
+            <p class="muted">Vi tar fram en tydlig plan: mål, KPI:er och scope. Sedan bygger vi snabbt och testar löpande.</p>
+            <div class="hero__actions">
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
+                <a class="btn btn-outline" href="mailto:hello@tasmim.se">Kontakta oss</a>
+            </div>
+        </div>
+        <div class="feature-media">
+            <div class="square">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop" alt="Team som planerar projekt">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <div class="grid grid-2">
+            <div>
+                <h2>Redo att starta?</h2>
+                <p>Skriv några rader så återkommer vi med upplägg och fast pris.</p>
+            </div>
+            <div class="hero__actions">
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
+                <a class="btn btn-outline" href="mailto:hello@tasmim.se">Maila oss</a>
+            </div>
+        </div>
+    </div>
+</section>

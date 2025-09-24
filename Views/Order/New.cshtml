@@ -1,0 +1,124 @@
+@model RaqmiWeb.Models.OrderRequest
+@{
+    ViewData["Title"] = $"Beställ – {Model.Category} {Model.Plan}";
+    Layout = "_Layout";
+}
+
+<section class="section order-section">
+    <div class="container">
+
+        <!-- Header -->
+        <header class="section-head text-center reveal">
+            <h1>Beställ @Model.Category – @Model.Plan</h1>
+            <p class="muted">Fyll i dina uppgifter så återkommer vi snabbt och bekräftar.</p>
+
+            <!-- Mobil “order-pill” som visar vald plan/pris -->
+            <div class="order-pill small-only">
+                <strong>@Model.Category • @Model.Plan</strong>
+                <span>@Model.Price</span>
+            </div>
+        </header>
+
+        <!-- Layout: Form + Sammanfattning -->
+        <div class="order-shell reveal">
+
+            <!-- FORM -->
+            <form asp-action="Submit" method="post"
+                  class="contact-form order-form card"
+                  novalidate>
+                @Html.AntiForgeryToken()
+
+                <!-- bevara valet från pricing -->
+                <input type="hidden" asp-for="Category" />
+                <input type="hidden" asp-for="Plan" />
+                <input type="hidden" asp-for="Price" />
+
+                <div class="order-grid" role="group" aria-labelledby="order-form-title">
+                    <h2 id="order-form-title" class="sr-only">Dina uppgifter</h2>
+
+                    <!-- Namn -->
+                    <div class="field">
+                        <label asp-for="Name">Namn <span class="req">*</span></label>
+                        <input asp-for="Name" class="input" autocomplete="name" required aria-required="true" />
+                        <span asp-validation-for="Name" class="error"></span>
+                    </div>
+
+                    <!-- E-post -->
+                    <div class="field">
+                        <label asp-for="Email">E-post <span class="req">*</span></label>
+                        <input asp-for="Email" class="input" type="email" autocomplete="email" inputmode="email" required aria-required="true" />
+                        <span asp-validation-for="Email" class="error"></span>
+                    </div>
+
+                    <!-- Mobil -->
+                    <div class="field">
+                        <label asp-for="Phone">Mobil</label>
+                        <input asp-for="Phone" class="input" type="tel" autocomplete="tel" inputmode="tel" placeholder="+46 7X XXX XX XX" />
+                    </div>
+
+                    <!-- Domän -->
+                    <div class="field">
+                        <label asp-for="Domain">Domän (om du har)</label>
+                        <input asp-for="Domain" class="input" placeholder="t.ex. dittföretag.se" inputmode="url" autocomplete="url" />
+                        <div class="hint">Skriv utan http(s) om du vill – vi fixar resten.</div>
+                    </div>
+
+                    <!-- Kundtyp -->
+                    <div class="field">
+                        <label asp-for="CustomerType">Kundtyp</label>
+                        <select asp-for="CustomerType" class="select" autocomplete="organization-title">
+                            <option>Företag</option>
+                            <option>Privat</option>
+                        </select>
+                    </div>
+
+                    <!-- Övrigt -->
+                    <div class="field field--full">
+                        <label asp-for="Notes">Övrigt</label>
+                        <textarea asp-for="Notes" rows="6" class="textarea" placeholder="Berätta kort om företaget och vad du vill göra."></textarea>
+                        <div class="hint">Ex: antal sidor, funktioner, exempel du gillar.</div>
+                    </div>
+                </div>
+
+                <!-- Samtycke + valideringssummering -->
+                <div class="agree-row">
+                    <label class="agree">
+                        <input type="checkbox" required aria-required="true" />
+                        Jag godkänner att ni kontaktar mig om min förfrågan.
+                    </label>
+                    <div asp-validation-summary="ModelOnly" class="alert" role="alert"></div>
+                </div>
+
+                <!-- Actions -->
+                <div class="form-actions">
+                    <button class="btn btn-primary" type="submit" data-loading="Skickar…">Skicka beställning</button>
+                    <span class="small muted">Du får en bekräftelse till <strong>@Model.Email</strong> (om angiven).</span>
+                </div>
+            </form>
+
+            <!-- SIDOPANEL / SAMMANFATTNING -->
+            <aside class="order-summary card">
+                <header class="summary-head">
+                    <p class="eyebrow">Din beställning</p>
+                    <h3>@Model.Category</h3>
+                    <div class="summary-plan">
+                        <strong>@Model.Plan</strong>
+                        <span class="price">@Model.Price</span>
+                    </div>
+                </header>
+
+                <ul class="summary-features">
+                    <li>Mobilanpassad & snabb</li>
+                    <li>Grundläggande SEO</li>
+                    <li>Personlig kontakt</li>
+                    <li>Support vid start</li>
+                </ul>
+
+                <div class="summary-note">
+                    <small class="muted">Leveransplan och eventuella tillval bestämmer vi tillsammans.</small>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</section>

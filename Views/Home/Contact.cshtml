@@ -1,0 +1,110 @@
+﻿@model RaqmiWeb.Models.ContactVM
+@{
+    ViewData["Title"] = "Kontakt";
+    Layout = "_Layout";
+}
+
+<section class="section contact-section " aria-labelledby="contact-title">
+    <div class="container">
+        <header class="text-center">
+            <h1 id="contact-title">Välkommen att höra av dig</h1>
+            <p class="muted">Fyll i formuläret – vi återkommer inom 24 timmar.</p>
+        </header>
+
+        @if (TempData["ContactOk"] as bool? == true)
+        {
+            <div class="alert success reveal in" role="status">
+                <strong>Tack!</strong> Ditt meddelande är skickat.
+            </div>
+        }
+
+        <div class="contact-grid reveal">
+            <form asp-action="Contact" method="post" class="contact-form card-white reveal" novalidate>
+                @Html.AntiForgeryToken()
+
+                <div class="field">
+                    <label for="Name">Namn *</label>
+                    <input asp-for="Name" class="input" />
+                    <span asp-validation-for="Name" class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="Company">Företag</label>
+                    <input asp-for="Company" class="input" />
+                    <span asp-validation-for="Company" class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="Phone">Telefon</label>
+                    <input asp-for="Phone" class="input" />
+                    <span asp-validation-for="Phone" class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="Email">E-post *</label>
+                    <input asp-for="Email" class="input" />
+                    <span asp-validation-for="Email" class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="Website">Nuvarande webbplats</label>
+                    <input asp-for="Website" class="input" />
+                    <span asp-validation-for="Website" class="error"></span>
+                </div>
+
+                <div class="field">
+                    <label for="Interest">Vad gäller det? *</label>
+                    <select asp-for="Interest" class="select">
+                        <option value="" disabled selected>Välj…</option>
+                        <option>Ny hemsida</option>
+                        <option>Webbutik / e-handel</option>
+                        <option>Design / UX</option>
+                        <option>SEO/SEM</option>
+                        <option>Support / annat</option>
+                    </select>
+                    <span asp-validation-for="Interest" class="error"></span>
+                </div>
+
+                <div class="field field--full">
+                    <label for="Message">Meddelande</label>
+                    <textarea asp-for="Message" class="textarea" rows="5" placeholder="Berätta kort vad du behöver hjälp med"></textarea>
+                    <div class="hint"><span id="msg-count">0</span> tecken</div>
+                    <span asp-validation-for="Message" class="error"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn btn-primary" id="sendBtn" type="submit">Skicka meddelande →</button>
+                    <p class="muted small">Genom att skicka godkänner du att vi kontaktar dig.</p>
+                </div>
+            </form>
+
+            <aside class="contact-aside card-dark reveal">
+                <ul class="ticks">
+                    <li><span class="tick"></span>Alla sidor är anpassade för SEO</li>
+                    <li><span class="tick"></span>Fasta priser & tydliga paket</li>
+                    <li><span class="tick"></span>Mobilanpassat och snabbt</li>
+                    <li><span class="tick"></span>Hjälp med texter & bilder</li>
+                    <li><span class="tick"></span>Trygg process från idé till lansering</li>
+                </ul>
+
+                <hr class="soft" />
+
+                <div class="contact-ways">
+                    <div class="way">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 5l8 4 10-4-10 14L3 5z" fill="currentColor" opacity=".2" /><path d="M3 5l8 4 10-4" fill="none" stroke="currentColor" stroke-width="1.6" /></svg>
+                        <a href="mailto:hej@tasmim.se">hej@tasmim.se</a>
+                    </div>
+                    <div class="way">
+                        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3 6.18 2 2 0 0 1 5 4h2.09a1 1 0 0 1 1 .75l.57 2.3a1 1 0 0 1-.27 1L7.1 9.12a16 16 0 0 0 7.78 7.78l1.07-1.29a1 1 0 0 1 1-.27l2.3.57a1 1 0 0 1 .75 1z" fill="currentColor" /></svg>
+                        <a href="tel:0105508100">010 – 550 81 00</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+}
