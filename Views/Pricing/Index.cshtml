@@ -1,213 +1,142 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+@model RaqmiWeb.Models.PricingVM
+
 @{
-    ViewData["Title"] = "Priser – Tasmim";
+    ViewData["Title"] = T["Priser – Tasmim"];
     Layout = "_Layout";
 }
 
-<!-- ============ Section 1: PRICING (tabs + cards) ============ -->
 <section class="section pricing-shell pricing-xl" id="pricing">
     <div class="container">
-
         <header class="section-head ta-center">
-            <h1>Paket & priser</h1>
-            <p class="muted">Välj Hemsida eller Webbutik – tre tydliga paket. Alltid mobilanpassat, snabbt och SEO-vänligt.</p>
+            <h1>@T["Paket & priser"]</h1>
+            <p>@T["Från idé till affär: bli hittad, ladda snabbt, konvertera fler."]</p>
         </header>
 
-        <!-- Tabs -->
-        <div class="p-tabs reveal" role="tablist" aria-label="Pakettyp ">
+        <div class="p-tabs reveal" role="tablist" aria-label='@T["Pakettyp"]'>
             <button class="p-tab is-active" role="tab" aria-selected="true"
                     aria-controls="panel-hemsida" id="tab-hemsida" data-tab="hemsida">
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" /></svg>
-                Hemsida
+                @T["Hemsida"]
             </button>
             <button class="p-tab" role="tab" aria-selected="false"
                     aria-controls="panel-webbutik" id="tab-webbutik" data-tab="webbutik">
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16l-1.5 9.5A2 2 0 0 1 16.5 18h-9A2 2 0 0 1 5 16.5L4 7zm2-4h12v2H6z" /></svg>
-                Webbutik
+                @T["Webbutik"]
             </button>
         </div>
 
-        <!-- Panel: Hemsida -->
         <div class="p-panel is-active reveal" id="panel-hemsida" role="tabpanel" aria-labelledby="tab-hemsida">
             <div class="p-grid">
-                <!-- Liten -->
-                <article class="p-card" data-tone="soft">
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Hemsida Liten</h3>
-                        <div class="p-price"><strong>5 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>Cirka 1–3 undersidor</li>
-                        <li>Responsiv & tillgänglig design</li>
-                        <li>Kontaktformulär + karta</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Anpassning efter era önskemål</li>
-                        <li>Alla ändringar efter överenskommelse</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Hemsida" asp-route-plan="Liten" asp-route-price="5000">Beställ</a>
-                    </footer>
-                </article>
-
-                <!-- Mellan (featured) -->
-                <article class="p-card is-featured" data-tone="brand">
-                    <div class="p-ribbon">Populär</div>
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Hemsida Mellan</h3>
-                        <div class="p-price"><strong>7 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>Cirka 1–7 undersidor</li>
-                        <li>Snabb laddtid & Core Web Vitals</li>
-                        <li>Kontaktformulär + karta</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Design efter varumärkesprofil</li>
-                        <li>Alla ändringar efter överenskommelse</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Hemsida" asp-route-plan="Mellan" asp-route-price="7000">Beställ</a>
-                    </footer>
-                </article>
-
-                <!-- Stor -->
-                <article class="p-card" data-tone="deep">
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Hemsida Stor</h3>
-                        <div class="p-price"><strong>10 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>Cirka 1–15 undersidor</li>
-                        <li>Utökad funktionalitet & integrationer</li>
-                        <li>Kontaktformulär + karta</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Anpassad design efter behov</li>
-                        <li>Alla ändringar efter överenskommelse</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Hemsida" asp-route-plan="Stor" asp-route-price="10000">Beställ</a>
-                    </footer>
-                </article>
+                @foreach (var package in Model.WebsitePackages)
+                {
+                    <article class="p-card @(package.IsFeatured ? "is-featured" : "")" data-tone="@package.Tone">
+                        @if (package.IsFeatured)
+                        {
+                            <div class="p-ribbon">@T["Populär"]</div>
+                        }
+                        <header class="p-head">
+                            <p class="p-eyebrow">@T["Komplett paket"]</p>
+                            <h3>@T[package.Category] @T[package.Plan]</h3>
+                            <div class="p-price"><strong>@package.FormattedPrice</strong><span>@T["engångskostnad"]</span></div>
+                        </header>
+                        <ul class="p-list">
+                            @if (package.Plan == "Liten")
+                            {
+                                <li>@T["Cirka 1–3 undersidor"]</li>
+                                <li>@T["Responsiv & tillgänglig design"]</li>
+                            }
+                            @if (package.Plan == "Mellan")
+                            {
+                                <li>@T["Cirka 1–7 undersidor"]</li>
+                                <li>@T["Snabb laddtid & Core Web Vitals"]</li>
+                                <li>@T["Design efter varumärkesprofil"]</li>
+                            }
+                            @if (package.Plan == "Stor")
+                            {
+                                <li>@T["Cirka 1–15 undersidor"]</li>
+                                <li>@T["Utökad funktionalitet & integrationer"]</li>
+                                <li>@T["Anpassad design efter behov"]</li>
+                            }
+                            <li>@T["Kontaktformulär + karta"]</li>
+                            <li>@T["AI-stött sökmotoroptimering"]</li>
+                            <li>@T["Alla ändringar efter överenskommelse"]</li>
+                            <li>@T["Bild- och texthjälp"]</li>
+                            <li>@T["Koppling till sociala medier"]</li>
+                            <li>@T["Blogg/nyheter"]</li>
+                            <li>@T["Personlig kontakt"]</li>
+                        </ul>
+                        <footer class="p-cta">
+                            <a class="p-btn p-btn-primary p-is-full"
+                               asp-controller="Order" asp-action="New"
+                               asp-route-category="@package.Category" asp-route-plan="@package.Plan" asp-route-price="@package.Price">@T["Beställ"]</a>
+                        </footer>
+                    </article>
+                }
             </div>
         </div>
 
-        <!-- Panel: Webbutik -->
         <div class="p-panel reveal" id="panel-webbutik" role="tabpanel" aria-labelledby="tab-webbutik">
             <div class="p-grid">
-                <!-- Liten -->
-                <article class="p-card" data-tone="amber">
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Webbutik Liten</h3>
-                        <div class="p-price"><strong>12 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>1–6 undersidor</li>
-                        <li>Upp till ~20 produkter</li>
-                        <li>Betalningsflöde & kassa</li>
-                        <li>Plattform väljs efter vad som känns enklast för er</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                        <li><em>Tidsplan bestäms utifrån projektets omfattning</em></li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Webbutik" asp-route-plan="Liten butik" asp-route-price="12000">Beställ</a>
-                    </footer>
-                </article>
-
-                <!-- Mellan -->
-                <article class="p-card is-featured" data-tone="green">
-                    <div class="p-ribbon">Bäst värde</div>
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Webbutik Mellan</h3>
-                        <div class="p-price"><strong>17 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>1–6 undersidor</li>
-                        <li>Upp till ~50 produkter</li>
-                        <li>Kategorier & filtrering</li>
-                        <li>Plattform väljs efter vad som känns enklast för er</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                        <li><em>Tidsplan bestäms utifrån projektets omfattning</em></li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Webbutik" asp-route-plan="Mellan" asp-route-price="17000">Beställ</a>
-                    </footer>
-                </article>
-
-                <!-- Stor -->
-                <article class="p-card" data-tone="violet">
-                    <header class="p-head">
-                        <p class="p-eyebrow">Komplett paket</p>
-                        <h3>Webbutik Stor</h3>
-                        <div class="p-price"><strong>22 000:-</strong><span>engångskostnad</span></div>
-                    </header>
-                    <ul class="p-list">
-                        <li>1–6 undersidor</li>
-                        <li>Upp till ~100 produkter</li>
-                        <li>Utökade funktioner & integrationer</li>
-                        <li>Plattform väljs efter vad som känns enklast för er</li>
-                        <li>AI-stött sökmotoroptimering</li>
-                        <li>Bild- och texthjälp</li>
-                        <li>Koppling till sociala medier</li>
-                        <li>Blogg/nyheter</li>
-                        <li>Personlig kontakt</li>
-                        <li><em>Tidsplan bestäms utifrån projektets omfattning</em></li>
-                    </ul>
-                    <footer class="p-cta">
-                        <a class="p-btn p-btn-primary p-is-full"
-                           asp-controller="Order" asp-action="New"
-                           asp-route-category="Webbutik" asp-route-plan="Stor" asp-route-price="22000">Beställ</a>
-                    </footer>
-                </article>
+                @foreach (var package in Model.ECommercePackages)
+                {
+                    <article class="p-card @(package.IsFeatured ? "is-featured" : "")" data-tone="@package.Tone">
+                        @if (package.IsFeatured)
+                        {
+                            <div class="p-ribbon">@T["Bäst värde"]</div>
+                        }
+                        <header class="p-head">
+                            <p class="p-eyebrow">@T["Komplett paket"]</p>
+                            <h3>@T[package.Category] @T[package.Plan]</h3>
+                            <div class="p-price"><strong>@package.FormattedPrice</strong><span>@T["engångskostnad"]</span></div>
+                        </header>
+                        <ul class="p-list">
+                            <li>@T["1–6 undersidor"]</li>
+                            @if (package.Plan == "Liten butik")
+                            {
+                                <li>@T["Upp till ~20 produkter"]</li>
+                                <li>@T["Betalningsflöde & kassa"]</li>
+                            }
+                            @if (package.Plan == "Mellan")
+                            {
+                                <li>@T["Upp till ~50 produkter"]</li>
+                                <li>@T["Kategorier & filtrering"]</li>
+                            }
+                            @if (package.Plan == "Stor")
+                            {
+                                <li>@T["Upp till ~100 produkter"]</li>
+                                <li>@T["Utökade funktioner & integrationer"]</li>
+                            }
+                            <li>@T["Plattform väljs efter vad som känns enklast för er"]</li>
+                            <li>@T["AI-stött sökmotoroptimering"]</li>
+                            <li>@T["Bild- och texthjälp"]</li>
+                            <li>@T["Koppling till sociala medier"]</li>
+                            <li>@T["Blogg/nyheter"]</li>
+                            <li>@T["Personlig kontakt"]</li>
+                            <li><em>@T["Tidsplan bestäms utifrån projektets omfattning"]</em></li>
+                        </ul>
+                        <footer class="p-cta">
+                            <a class="p-btn p-btn-primary p-is-full"
+                               asp-controller="Order" asp-action="New"
+                               asp-route-category="@package.Category" asp-route-plan="@package.Plan" asp-route-price="@package.Price">@T["Beställ"]</a>
+                        </footer>
+                    </article>
+                }
             </div>
         </div>
-
     </div>
 </section>
 
 <section class="section pricing-tail-cta" aria-labelledby="cta-tail-title">
     <div class="container">
         <div class="cta-tail">
-            <h2 id="cta-tail-title">Hittar du inget som passar?</h2>
-            <p class="muted">
-                Inga problem – hör av dig så tar vi fram en lösning som passar dig och ditt projekt bäst.
+            <h2 id="cta-tail-title">@T["Hittar du inget som passar?"]</h2>
+            <p>
+                @T["Inga problem – hör av dig så tar vi fram en lösning som passar dig och ditt projekt bäst."]
             </p>
-
             <div class="cta-actions">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
-                <a class="btn btn-outline" href="mailto:info@tasmim.se">Mejla oss</a>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
         </div>
     </div>

@@ -19,14 +19,15 @@ namespace RaqmiWeb.Models
         public string? Domain { get; set; }
 
         [Required, Display(Name = "Kundtyp")]
-        public string CustomerType { get; set; } = "Företag"; // "Privat" eller "Företag"
+        public string CustomerType { get; set; } = "Företag";
 
         [Display(Name = "Övrig information")]
         public string? Notes { get; set; }
 
-        // Hidden metadata about selected package
         public PackageCategory Category { get; set; }
         public string Plan { get; set; } = string.Empty;
         public string Price { get; set; } = string.Empty;
+
+        public string? FormattedPrice { get; set; }
     }
 }

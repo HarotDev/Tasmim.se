@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Net;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
@@ -14,10 +16,19 @@ namespace RaqmiWeb.Services
         private readonly EmailOptions _cfg;
         public SmtpEmailSender(IOptions<EmailOptions> cfg) => _cfg = cfg.Value;
 
+        private static string ToPlainText(string html)
+        {
+            if (string.IsNullOrWhiteSpace(html)) return "";
+            var text = Regex.Replace(html, "<br ?/?>", "\n", RegexOptions.IgnoreCase);
+            text = Regex.Replace(text, "</p>", "\n\n", RegexOptions.IgnoreCase);
+            text = Regex.Replace(text, "<.*?>", string.Empty, RegexOptions.Singleline);
+            return WebUtility.HtmlDecode(text).Trim();
+        }
+
         public async Task SendAsync(string subject, string htmlBody,
-                                    string? toOverride = null,
-                                    string? replyTo = null,
-                                    CancellationToken ct = default)
+                                     string? toOverride = null,
+                                     string? replyTo = null,
+                                     CancellationToken ct = default)
         {
             if (string.IsNullOrWhiteSpace(_cfg.Host)) throw new InvalidOperationException("Email.Host saknas.");
             if (_cfg.Port <= 0) throw new InvalidOperationException("Email.Port ogiltig.");
@@ -40,15 +51,15 @@ namespace RaqmiWeb.Services
             var builder = new BodyBuilder
             {
                 HtmlBody = htmlBody ?? "",
-                TextBody = EmailTemplates.ToPlainText(htmlBody ?? "")
+                TextBody = ToPlainText(htmlBody ?? "")
             };
             msg.Body = builder.ToMessageBody();
 
             var secure = (_cfg.Secure ?? "StartTls").Trim().ToLowerInvariant();
             var options = secure switch
             {
-                "sslonconnect" => SecureSocketOptions.SslOnConnect, // 465
-                "starttls" => SecureSocketOptions.StartTls,     // 587
+                "sslonconnect" => SecureSocketOptions.SslOnConnect,
+                "starttls" => SecureSocketOptions.StartTls,
                 "auto" => SecureSocketOptions.Auto,
                 _ => SecureSocketOptions.StartTls
             };

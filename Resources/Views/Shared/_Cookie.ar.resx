@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Cookies på Tasmim" xml:space="preserve">
+	<value>ملفات تعريف الارتباط على تصميم</value>
+  </data>
+	<data name="Vi använder cookies för nödvändiga funktioner samt för analys och marknadsföring. Du kan acceptera alla, avvisa alla eller välja dina preferenser." xml:space="preserve">
+	<value>نحن نستخدم ملفات تعريف الارتباط للوظائف الضرورية وكذلك للتحليل والتسويق. يمكنك قبول الكل أو رفض الكل أو اختيار تفضيلاتك.</value>
+  </data>
+	<data name="Läs mer" xml:space="preserve">
+	<value>اقرأ المزيد</value>
+  </data>
+	<data name="Acceptera alla" xml:space="preserve">
+	<value>قبول الكل</value>
+  </data>
+	<data name="Avvisa alla" xml:space="preserve">
+	<value>رفض الكل</value>
+  </data>
+	<data name="Inställningar" xml:space="preserve">
+	<value>الإعدادات</value>
+  </data>
+	<data name="Nödvändiga" xml:space="preserve">
+	<value>الضرورية</value>
+  </data>
+	<data name="Behövs för att webbplatsen ska fungera och kan inte stängas av." xml:space="preserve">
+	<value>ضرورية لعمل الموقع ولا يمكن إيقافها.</value>
+  </data>
+	<data name="Analys" xml:space="preserve">
+	<value>التحليل</value>
+  </data>
+	<data name="Hjälper oss att förbättra prestanda och innehåll." xml:space="preserve">
+	<value>تساعدنا على تحسين الأداء والمحتوى.</value>
+  </data>
+	<data name="Marknadsföring" xml:space="preserve">
+	<value>التسويق</value>
+  </data>
+	<data name="Används för personaliserad annonsering." xml:space="preserve">
+	<value>تستخدم للإعلانات المخصصة.</value>
+  </data>
+	<data name="Spara val" xml:space="preserve">
+	<value>حفظ الاختيارات</value>
+  </data>
+	<data name="Avbryt" xml:space="preserve">
+	<value>إلغاء</value>
+  </data>
+</root>

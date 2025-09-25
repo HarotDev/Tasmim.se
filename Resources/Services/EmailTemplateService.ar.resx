@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AllRightsReserved" xml:space="preserve">
+	<value>جميع الحقوق محفوظة.</value>
+  </data>
+	<data name="ContactUsMessage" xml:space="preserve">
+	<value>إذا كان لديك أي أسئلة أو ترغب في تعديل شيء ما، يمكنك الرد على هذا البريد الإلكتروني مباشرة.</value>
+  </data>
+	<data name="HelloCustomer" xml:space="preserve">
+	<value>مرحباً {0}،</value>
+  </data>
+	<data name="OrderConfirmationTitle" xml:space="preserve">
+	<value>شكراً لك! تم استلام طلبك.</value>
+  </data>
+	<data name="OrderNumber" xml:space="preserve">
+	<value>رقم الطلب</value>
+  </data>
+	<data name="OrderReceivedMessage" xml:space="preserve">
+	<value>لقد استلمنا طلبك بنجاح. سنقوم بمراجعته والتواصل معك قريباً لتأكيد التفاصيل والخطوات التالية.</value>
+  </data>
+	<data name="OrderSummary" xml:space="preserve">
+	<value>ملخص الطلب</value>
+  </data>
+	<data name="Package" xml:space="preserve">
+	<value>الباقة</value>
+  </data>
+	<data name="Price" xml:space="preserve">
+	<value>السعر</value>
+  </data>
+	<data name="VisitWebsite" xml:space="preserve">
+	<value>زيارة موقعنا الإلكتروني</value>
+  </data>
+</root>
+

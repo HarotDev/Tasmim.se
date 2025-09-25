@@ -1,0 +1,103 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
+@{
+    ViewData["Title"] = T["Integritetspolicy"];
+    Layout = "_Layout";
+    var updated = (ViewData["PolicyUpdatedAt"] as DateTime?)?.ToLocalTime() ?? DateTime.Now;
+}
+
+<section class="hero" style="--overlay:.50;">
+    <div class="hero__bg">
+        <img class="hero__media"
+             src="~/img/content/policy.jpg"
+             alt="@T["Abstrakt bakgrundsbild för integritetspolicy"]"
+             decoding="async"
+             fetchpriority="high" />
+    </div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+        <h1 class="hero-title">@T["Integritetspolicy"]</h1>
+        <p class="hero-sub">
+            @T["Så här samlar, använder och skyddar Tasmim personuppgifter på tasmim.se. Tydligt, lagligt och med respekt för din integritet."]
+        </p>
+        <div class="hero__actions">
+            <a class="btn btn-primary" href="#innehall">@T["Läs policyn"]</a>
+            <a class="btn btn-outline" href="#kontaktinfo">@T["Kontakt"]</a>
+        </div>
+    </div>
+</section>
+
+<section class="section policy" id="innehall">
+    <div class="container container--narrow">
+        <p class="policy__meta">@T["Senast uppdaterad:"] @updated.ToString("yyyy-MM-dd HH:mm")</p>
+
+        <h2>@T["Om den här policyn"]</h2>
+        <p>
+            @T["Denna sekretess- och cookiespolicy beskriver hur vi behandlar personuppgifter som lämnas till oss eller som vi samlar in online (bl.a. via cookies). Policyn gäller för <strong>tasmim.se</strong> (”Webbplatsen”). Vi följer GDPR och hanterar uppgifter säkert och konfidentiellt. Utlämning till tredje part sker inte utan rättslig grund eller ditt samtycke, om inte annat framgår här."]
+        </p>
+
+        <h2>@T["Vilka uppgifter vi kan behandla"]</h2>
+        <ul class="case-feats">
+            <li>@T["Namn, företag, e-post och telefonnummer vid förfrågningar eller avtal med Tasmim."]</li>
+            <li>@T["Kontaktuppgifter när du kontaktar oss som företrädare för din arbetsgivare/uppdragsgivare."]</li>
+            <li>@T["Korrespondens/kommentarer i ärenden för att ge bättre service vid senare kontakt."]</li>
+        </ul>
+
+        <h2>@T["Laglighet i behandlingen"]</h2>
+        <p>@T["Tasmim kommer att:"]</p>
+        <ul class="case-feats">
+            <li>@T["Behandla uppgifter lagligt, korrekt och öppet."]</li>
+            <li>@T["Använda uppgifter för tydliga, berättigade ändamål och inte oförenligt med dessa."]</li>
+            <li>@T["Begränsa insamling till vad som är adekvat, relevant och nödvändigt."]</li>
+            <li>@T["Spara uppgifter endast så länge det behövs för syftet."]</li>
+            <li>@T["Skydda uppgifter med lämpliga tekniska och organisatoriska åtgärder."]</li>
+        </ul>
+
+        <h2>@T["Rättslig grund och ändamål"]</h2>
+        <p>
+            @T["Vi behandlar uppgifter för att besvara förfrågningar (<em>berättigat intresse</em>, GDPR art. 6.1 f). Leder förfrågan till avtal behandlas uppgifter för att förbereda/uppfylla avtalet (GDPR art. 6.1 b). Vi behandlar även uppgifter när lag eller myndighetsbeslut kräver det (GDPR art. 6.1 c)."]
+        </p>
+        <p>
+            @T["Ibland kan vi använda e-post/telefon för att skicka information och marknadsföring om våra tjänster baserat på intresseavvägning (GDPR art. 6.1 f). Du kan alltid invända mot direktmarknadsföring."]
+        </p>
+
+        <h2>@T["Personuppgiftsbiträden"]</h2>
+        <p>
+            @T["Vi använder betrodda leverantörer för drift, lagring och e-post. De behandlar uppgifter endast enligt våra instruktioner. Lagring sker inom EU/EES eller med giltiga skyddsmekanismer enligt GDPR."]
+        </p>
+
+        <h2>@T["Cookies"]</h2>
+        <p>
+            @T["Webbplatsen använder cookies för nödvändiga funktioner och förbättrad upplevelse. Tredjepartscookies (t.ex. analys) kan förekomma. Du kan i din webbläsare begränsa eller välja bort cookies samt, där det stöds, anonymisera IP-adress."]
+        </p>
+
+        <h2>@T["Säkerhet"]</h2>
+        <p>
+            @T["Vi begränsar åtkomst till personuppgifter till behöriga personer hos Tasmim och våra biträden, och använder tekniska/organisatoriska skyddsåtgärder för att förhindra obehörig åtkomst, förlust eller skada."]
+        </p>
+
+        <h2>@T["Dina rättigheter"]</h2>
+        <ul class="case-feats">
+            <li>@T["Tillgång till och bekräftelse på om vi behandlar dina uppgifter."]</li>
+            <li>@T["Rättelse och, när skäl finns, radering."]</li>
+            <li>@T["Begränsning eller invändning mot viss behandling."]</li>
+            <li>@T["Dataportabilitet (strukturerat, allmänt använt och maskinläsbart format)."]</li>
+            <li>@T["Klagomål till Integritetsskyddsmyndigheten: "]<a href="https://www.imy.se" rel="noopener">imy.se</a>.</li>
+        </ul>
+        <p class="muted">@T["Vid begäran kan identitetskontroll krävas."]</p>
+
+        <h2>@T["Ändringar i denna policy"]</h2>
+        <p>
+            @T["Policyn kan uppdateras vid behov, t.ex. vid ändrad lagstiftning. Senaste versionen publiceras alltid här."]
+        </p>
+
+        <h2 id="kontaktinfo">@T["Kontaktinformation"]</h2>
+        <address>
+            <strong>Tasmim</strong><br />
+            Torsten Fogelqvists Gata 63, 603&nbsp;76 Norrköping<br />
+            <a href="mailto:info@tasmim.se">info@tasmim.se</a>
+        </address>
+    </div>
+</section>

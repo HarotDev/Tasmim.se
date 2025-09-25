@@ -1,92 +1,95 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
 @{
-    ViewData["Title"] = "Om oss – Tasmim";
+    ViewData["Title"] = T["Om oss – Tasmim"];
     Layout = "_Layout";
 }
 
-<!-- HERO – samma struktur som startsidan -->
-<section class="hero" aria-labelledby="about-title" style="--overlay:.45; min-height:60vh">
+<section class="hero" style="--overlay:.45;">
     <div class="hero__bg"
          style="background-image:url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop')">
     </div>
     <div class="hero__overlay"></div>
 
     <div class="container hero__inner">
-        <h1 id="about-title" class="hero-title">Vi bygger webb som är enkel att förstå – och lätt att äga</h1>
-        <p class="hero-sub">Liten byrå, snabba beslut. Från idé till lansering utan krångel.</p>
+        <h1 class="hero-title">@T["Vi bygger webb som är enkel att förstå och lätt att äga"]</h1>
+        <p class="hero-sub">@T["Liten byrå, snabba beslut. Från idé till lansering utan krångel."]</p>
         <ul class="about-bullets" style="margin-bottom:var(--space-m)">
-            <li>Webbplatser och e-handel</li>
-            <li>Design, innehåll och SEO</li>
-            <li>Fasta upplägg och tydliga priser</li>
+            <li>@T["Webbplatser och e-handel"]</li>
+            <li>@T["Design, innehåll och SEO"]</li>
+            <li>@T["Fasta upplägg och tydliga priser"]</li>
         </ul>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">Prata med oss</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="References">Se case</a>
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+            <a class="btn btn-outline" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
         </div>
     </div>
 </section>
 
-<!-- VARFÖR TASMIM – vit bakgrund -->
-<section class="section reveal" aria-labelledby="why">
+<section class="section">
     <div class="container reveal">
-        <h2 id="why">Därför väljer kunder oss</h2>
+        <header class="section-head text-center">
+            <h2 id="why">@T["Därför väljer kunder oss"]</h2>
+        </header>
         <div class="cards grid grid-3">
             <article class="card">
-                <h3>Tydligt</h3>
-                <p>En kontakt, rak kommunikation och en process du ser från start till mål.</p>
+                <h3>@T["Tydligt"]</h3>
+                <p>@T["En kontakt, rak kommunikation och en process du ser från start till mål."]</p>
             </article>
             <article class="card">
-                <h3>Snabbt</h3>
-                <p>Vi jobbar i korta iterationer och visar tidigt – så vi gör rätt saker direkt.</p>
+                <h3>@T["Snabbt"]</h3>
+                <p>@T["Vi jobbar i korta iterationer och visar tidigt – så vi gör rätt saker direkt."]</p>
             </article>
             <article class="card">
-                <h3>Ägbarhet</h3>
-                <p>Du får en sida som är lätt att uppdatera, skala och äga över tid.</p>
+                <h3>@T["Ägbarhet"]</h3>
+                <p>@T["Du får en sida som är lätt att uppdatera, skala och äga över tid."]</p>
             </article>
         </div>
     </div>
 </section>
 
-<!-- SÅ JOBBAR VI – behåller soft bakgrund -->
-<section class="section section--soft reveal" aria-labelledby="process">
+<section class="section section--soft">
     <div class="container reveal">
-        <h2 id="process">Så går det till</h2>
+        <header class="section-head text-center">
+            <h2 id="process">@T["Så går det till"]</h2>
+        </header>
         <div class="steps">
             <div class="step">
                 <div class="no">1</div>
                 <div>
-                    <h3>Start & plan</h3>
-                    <p>Vi sätter mål, scope och tidsplan. Du vet exakt vad som ingår.</p>
+                    <h3>@T["Start & plan"]</h3>
+                    <p>@T["Vi sätter mål, scope och tidsplan. Du vet exakt vad som ingår."]</p>
                 </div>
             </div>
             <div class="step">
                 <div class="no">2</div>
                 <div>
-                    <h3>Design & prototyp</h3>
-                    <p>Vi skissar snabbt och gör en klickbar prototyp som du kan testa.</p>
+                    <h3>@T["Design & prototyp"]</h3>
+                    <p>@T["Vi skissar snabbt och gör en klickbar prototyp som du kan testa."]</p>
                 </div>
             </div>
             <div class="step">
                 <div class="no">3</div>
                 <div>
-                    <h3>Bygg & lansering</h3>
-                    <p>Vi utvecklar, testar och lanserar. Sedan hjälper vi dig komma igång.</p>
+                    <h3>@T["Bygg & lansering"]</h3>
+                    <p>@T["Vi utvecklar, testar och lanserar. Sedan hjälper vi dig komma igång."]</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA – som tidigare -->
-<section class="cta-band section reveal" aria-labelledby="cta-about">
+<section class="cta-band">
     <div class="container">
         <div class="grid grid-2" style="align-items:center">
             <div>
-                <h2 id="cta-about" class="hero-title">Redo att starta?</h2>
-                <p class="hero-sub">Skriv några rader om vad du behöver – vi återkommer snabbt.</p>
+                <h2 class="hero-title">@T["Redo att starta?"]</h2>
+                <p class="hero-sub">@T["Skriv några rader om vad du behöver – vi återkommer snabbt."]</p>
             </div>
             <div class="hero__actions" style="justify-content:flex-end">
-                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
-                <a class="btn btn-primary" asp-controller="Home" asp-action="References">Se case →</a>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="References">@T["Referenser →"]</a>
             </div>
         </div>
     </div>

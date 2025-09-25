@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Marknadsföring – Tasmim" xml:space="preserve">
+	<value>التسويق – تصميم</value>
+  </data>
+	<data name="Din webbläsare stöder inte video-taggen." xml:space="preserve">
+	<value>متصفحك لا يدعم وسم الفيديو.</value>
+  </data>
+	<data name="Digital marknadsföring som driver affär" xml:space="preserve">
+	<value>تسويق رقمي يقود الأعمال</value>
+  </data>
+	<data name="SEO, SEM och innehåll som ökar relevant trafik och konverterar besökare till kunder." xml:space="preserve">
+	<value>تحسين محركات البحث، والتسويق عبرها، والمحتوى الذي يزيد من الزوار المستهدفين ويحولهم إلى عملاء.</value>
+  </data>
+	<data name="Se paket" xml:space="preserve">
+	<value>شاهد الباقات</value>
+  </data>
+	<data name="Kontakta oss" xml:space="preserve">
+	<value>اتصل بنا</value>
+  </data>
+	<data name="Vad ingår?" xml:space="preserve">
+	<value>ماذا تتضمن الخدمة؟</value>
+  </data>
+	<data name="Vi kombinerar långsiktig SEO med snabb effekt från annonser – allt mätt och optimerat." xml:space="preserve">
+	<value>نحن نجمع بين تحسين محركات البحث طويل الأمد والتأثير السريع من الإعلانات - كل شيء يتم قياسه وتحسينه.</value>
+  </data>
+	<data name="SEO" xml:space="preserve">
+	<value>تحسين محركات البحث (SEO)</value>
+  </data>
+	<data name="Teknik, innehåll och länkar. Vi bygger sökbar struktur och förbättrar Core Web Vitals." xml:space="preserve">
+	<value>التقنية، المحتوى، والروابط. نبني هيكلًا قابلاً للبحث ونحسن مؤشرات أداء الويب الأساسية.</value>
+  </data>
+	<data name="SEM / Paid" xml:space="preserve">
+	<value>التسويق عبر محركات البحث / الإعلانات المدفوعة</value>
+  </data>
+	<data name="Google Ads, Performance Max och retargeting. Smart budgivning och tydliga mål." xml:space="preserve">
+	<value>إعلانات جوجل، Performance Max، وإعادة الاستهداف. عروض أسعار ذكية وأهداف واضحة.</value>
+  </data>
+	<data name="Content" xml:space="preserve">
+	<value>المحتوى</value>
+  </data>
+	<data name="Planering, produktion och optimering av artiklar och landningssidor som konverterar." xml:space="preserve">
+	<value>تخطيط وإنتاج وتحسين المقالات والصفحات المقصودة التي تحقق التحويلات.</value>
+  </data>
+	<data name="Mätbart från dag ett" xml:space="preserve">
+	<value>قابل للقياس من اليوم الأول</value>
+  </data>
+	<data name="Vi sätter upp spårning i GA4 och Tag Manager, definierar KPI:er och bygger en enkel rapportvy. Du ser vad som fungerar och varför." xml:space="preserve">
+	<value>نقوم بإعداد التتبع في GA4 و Tag Manager، وتحديد مؤشرات الأداء الرئيسية، وبناء عرض تقارير بسيط. سترى ما ينجح ولماذا.</value>
+  </data>
+	<data name="Hur vi jobbar" xml:space="preserve">
+	<value>كيف نعمل</value>
+  </data>
+	<data name="Se prisexempel" xml:space="preserve">
+	<value>شاهد أمثلة الأسعار</value>
+  </data>
+	<data name="Dashboard med KPI:er" xml:space="preserve">
+	<value>لوحة تحكم بمؤشرات الأداء الرئيسية</value>
+  </data>
+	<data name="Vår process" xml:space="preserve">
+	<value>عمليتنا</value>
+  </data>
+	<data name="Tydliga steg, korta loopar och kontinuerlig förbättring." xml:space="preserve">
+	<value>خطوات واضحة، دورات قصيرة، وتحسين مستمر.</value>
+  </data>
+	<data name="Analys &amp; mål" xml:space="preserve">
+	<value>التحليل والأهداف</value>
+  </data>
+	<data name="Nuläge, konkurrenter och målgrupper. Vi sätter tydliga mål och väljer det viktigaste att göra först." xml:space="preserve">
+	<value>الوضع الحالي، المنافسون، والجمهور المستهدف. نضع أهدافًا واضحة ونختار أهم ما يجب القيام به أولاً.</value>
+  </data>
+	<data name="Setup" xml:space="preserve">
+	<value>الإعداد</value>
+  </data>
+	<data name="GA4/GTM, konverteringsspårning, kampanjstruktur och landningssidor." xml:space="preserve">
+	<value>GA4/GTM، تتبع التحويلات، هيكل الحملة، والصفحات المقصودة.</value>
+  </data>
+	<data name="Aktivering" xml:space="preserve">
+	<value>التفعيل</value>
+  </data>
+	<data name="SEO-åtgärder, annonser live och innehållsproduktion enligt plan." xml:space="preserve">
+	<value>إجراءات تحسين محركات البحث، إعلانات مباشرة، وإنتاج محتوى حسب الخطة.</value>
+  </data>
+	<data name="Optimering" xml:space="preserve">
+	<value>التحسين</value>
+  </data>
+	<data name="Vi jämför olika lösningar, väljer bra sökord, sätter rätt budget och finslipar löpande." xml:space="preserve">
+	<value>نقارن بين الحلول المختلفة، ونختار كلمات بحث جيدة، ونحدد الميزانية المناسبة، ونصقل باستمرار.</value>
+  </data>
+	<data name="Tjänster i detalj" xml:space="preserve">
+	<value>تفاصيل الخدمات</value>
+  </data>
+	<data name="Välj en insats eller kombinera – vi matchar efter mål och budget." xml:space="preserve">
+	<value>اختر خدمة أو ادمج بينها - نحن نكيفها حسب الهدف والميزانية.</value>
+  </data>
+	<data name="Teknisk SEO" xml:space="preserve">
+	<value>تحسين محركات البحث التقني</value>
+  </data>
+	<data name="Core Web Vitals &amp; prestanda" xml:space="preserve">
+	<value>مؤشرات أداء الويب الأساسية والأداء</value>
+  </data>
+	<data name="Indexering &amp; sitemap" xml:space="preserve">
+	<value>الفهرسة وخريطة الموقع</value>
+  </data>
+	<data name="Strukturerad data" xml:space="preserve">
+	<value>البيانات المنظمة</value>
+  </data>
+	<data name="On-page &amp; Content" xml:space="preserve">
+	<value>تحسين الصفحة والمحتوى</value>
+  </data>
+	<data name="Sökordsresearch &amp; brief" xml:space="preserve">
+	<value>بحث الكلمات المفتاحية والملخص</value>
+  </data>
+	<data name="Landningssidor &amp; artiklar" xml:space="preserve">
+	<value>الصفحات المقصودة والمقالات</value>
+  </data>
+	<data name="Internlänkar &amp; UX-signal" xml:space="preserve">
+	<value>الروابط الداخلية وإشارات تجربة المستخدم</value>
+  </data>
+	<data name="Google Ads" xml:space="preserve">
+	<value>إعلانات جوجل</value>
+  </data>
+	<data name="Search &amp; Performance Max" xml:space="preserve">
+	<value>البحث و Performance Max</value>
+  </data>
+	<data name="Konverteringsspårning" xml:space="preserve">
+	<value>تتبع التحويلات</value>
+  </data>
+	<data name="Budget &amp; ROAS-styrning" xml:space="preserve">
+	<value>إدارة الميزانية وعائد الإنفاق الإعلاني</value>
+  </data>
+	<data name="Redo att lyfta er trafik och försäljning?" xml:space="preserve">
+	<value>هل أنتم مستعدون لزيادة عدد الزوار والمبيعات؟</value>
+  </data>
+	<data name="Skriv några rader om er situation så återkommer vi med förslag och fast pris." xml:space="preserve">
+	<value>اكتب بضعة أسطر عن وضعكم وسنعاود الاتصال بكم مع اقتراحات وسعر ثابت.</value>
+  </data>
+</root>

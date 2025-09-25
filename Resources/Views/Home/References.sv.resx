@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>2.0</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+	<data name="Hero.Title" xml:space="preserve"><value>Utvalda hemsidor</value></data>
+	<data name="Hero.Sub" xml:space="preserve"><value>Hemsidor och webbutiker vi skapat – fokus på fart, tydlighet och enkel skötsel.</value></data>
+	<data name="Btn.Pricing" xml:space="preserve"><value>Se paket</value></data>
+	<data name="Btn.Contact" xml:space="preserve"><value>Kontakta oss</value></data>
+
+	<data name="List.Title" xml:space="preserve"><value>Utvalda hemsidor &amp; webbutiker</value></data>
+	<data name="List.Sub" xml:space="preserve"><value>Några kundcase där vi gjort allt: struktur, design, bilder och texter.</value></data>
+
+	<data name="Case1.Title" xml:space="preserve"><value>Golden Royale</value></data>
+	<data name="Case1.Desc" xml:space="preserve"><value>Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll.</value></data>
+	<data name="Case1.Platform" xml:space="preserve"><value>Shopify</value></data>
+	<data name="Case1.LinkText" xml:space="preserve"><value>Visa webbplats</value></data>
+
+	<data name="Case2.Title" xml:space="preserve"><value>Karmasha</value></data>
+	<data name="Case2.Desc" xml:space="preserve"><value>Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll.</value></data>
+	<data name="Case2.Platform" xml:space="preserve"><value>Shopify</value></data>
+	<data name="Case2.LinkText" xml:space="preserve"><value>Visa webbplats</value></data>
+
+	<data name="Case3.Title" xml:space="preserve"><value>Spånga Hair Studio</value></data>
+	<data name="Case3.Desc" xml:space="preserve"><value>Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär.</value></data>
+	<data name="Case3.Platform" xml:space="preserve"><value>one.com</value></data>
+	<data name="Case3.LinkText" xml:space="preserve"><value>Visa webbplats</value></data>
+
+	<data name="CTA.Title" xml:space="preserve"><value>Redo att starta något liknande?</value></data>
+	<data name="CTA.Text" xml:space="preserve"><value>Berätta kort om era mål – vi återkommer med upplägg och fast pris.</value></data>
+	<data name="CTA.Btn.Pricing" xml:space="preserve"><value>Se paket</value></data>
+	<data name="CTA.Btn.Contact" xml:space="preserve"><value>Kontakta oss</value></data>
+</root>

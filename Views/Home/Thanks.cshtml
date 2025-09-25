@@ -1,12 +1,16 @@
-﻿@{
-    ViewData["Title"] = "Tack!";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
+@{
+    ViewData["Title"] = T["Tack!"];
+    Layout = "_Layout";
 }
-<section class="section">
+<section class="section reveal">
     <div class="container text-center">
-        <h1>Tack för ditt meddelande!</h1>
-        <p class="muted">Vi återkommer så snart vi kan.</p>
+        <h1>@T["Tack för ditt meddelande!"]</h1>
+        <p>@T["Vi återkommer så snart vi kan."]</p>
         <div style="margin-top:16px">
-            <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Till startsidan</a>
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Index">@T["Till startsidan"]</a>
         </div>
     </div>
 </section>

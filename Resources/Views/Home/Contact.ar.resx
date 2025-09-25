@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Kontakt" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+    <data name="Välkommen att höra av dig" xml:space="preserve">
+    <value>نرحب بتواصلكم معنا</value>
+  </data>
+    <data name="Fyll i formuläret – vi återkommer inom 24 timmar." xml:space="preserve">
+    <value>املأ النموذج - سنعاود الاتصال بك في غضون ٢٤ ساعة.</value>
+  </data>
+    <data name="Tack!" xml:space="preserve">
+    <value>شكرًا لك!</value>
+  </data>
+    <data name="Ditt meddelande är skickat." xml:space="preserve">
+    <value>تم إرسال رسالتك بنجاح.</value>
+  </data>
+    <data name="Namn *" xml:space="preserve">
+    <value>الاسم *</value>
+  </data>
+    <data name="Företag" xml:space="preserve">
+    <value>الشركة</value>
+  </data>
+    <data name="Telefon" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
+    <data name="E-post *" xml:space="preserve">
+    <value>البريد الإلكتروني *</value>
+  </data>
+    <data name="Nuvarande webbplats" xml:space="preserve">
+    <value>الموقع الإلكتروني الحالي</value>
+  </data>
+    <data name="Vad gäller det? *" xml:space="preserve">
+    <value>الموضوع *</value>
+  </data>
+    <data name="Välj…" xml:space="preserve">
+    <value>اختر...</value>
+  </data>
+    <data name="Ny hemsida" xml:space="preserve">
+    <value>موقع إلكتروني جديد</value>
+  </data>
+    <data name="Webbutik / e-handel" xml:space="preserve">
+    <value>متجر إلكتروني / تجارة إلكترونية</value>
+  </data>
+    <data name="Design / UX" xml:space="preserve">
+    <value>تصميم / تجربة مستخدم</value>
+  </data>
+    <data name="SEO/SEM" xml:space="preserve">
+    <value>تحسين محركات البحث / التسويق عبر محركات البحث</value>
+  </data>
+    <data name="Support / annat" xml:space="preserve">
+    <value>دعم فني / أخرى</value>
+  </data>
+    <data name="Meddelande" xml:space="preserve">
+    <value>الرسالة</value>
+  </data>
+    <data name="Berätta kort vad du behöver hjälp med" xml:space="preserve">
+    <value>أخبرنا باختصار بما تحتاج إلى مساعدة بشأنه</value>
+  </data>
+    <data name="tecken" xml:space="preserve">
+    <value>حرفًا</value>
+  </data>
+    <data name="Skicka meddelande →" xml:space="preserve">
+    <value>إرسال الرسالة ←</value>
+  </data>
+    <data name="Genom att skicka godkänner du att vi kontaktar dig." xml:space="preserve">
+    <value>بإرسالك للنموذج، فإنك توافق على أن نتصل بك.</value>
+  </data>
+    <data name="Alla sidor är anpassade för SEO" xml:space="preserve">
+    <value>جميع الصفحات مُحسَّنة لمحركات البحث</value>
+  </data>
+    <data name="Fasta priser &amp; tydliga paket" xml:space="preserve">
+    <value>أسعار ثابتة وباقات واضحة</value>
+  </data>
+    <data name="Mobilanpassat och snabbt" xml:space="preserve">
+    <value>متجاوب مع الجوال وسريع</value>
+  </data>
+    <data name="Hjälp med texter &amp; bilder" xml:space="preserve">
+    <value>مساعدة في النصوص والصور</value>
+  </data>
+    <data name="Trygg process från idé till lansering" xml:space="preserve">
+    <value>عملية آمنة من الفكرة إلى الإطلاق</value>
+  </data>
+</root>

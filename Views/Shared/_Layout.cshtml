@@ -1,9 +1,18 @@
+@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
 @{
     var title = ViewData["Title"] as string ?? "Tasmim – Webbyrå";
     var desc = ViewData["MetaDescription"] as string ?? "Snabba, tydliga och säljande webbplatser & webbutiker.";
+
+    var ui = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+    var dir = ui == "ar" ? "rtl" : "ltr";
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
 }
+
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="@ui" dir="@dir">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,11 +20,13 @@
     <meta name="description" content="@desc" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        html[lang="ar"] body {
+            font-family: "Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        }
+    </style>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    
-
-
     @RenderSection("Head", required: false)
 </head>
 <body>
@@ -26,16 +37,31 @@
                 <img src="~/img/logo.png" alt="Tasmim" asp-append-version="true" />
             </a>
 
-            <button class="nav-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Öppna meny">
+            <button class="nav-toggle" aria-expanded="false"
+                    aria-controls="mainNav" aria-label='@T["Öppna meny"]'>
                 <span></span><span></span><span></span>
             </button>
 
-            <nav id="mainNav" class="nav-links" aria-label="Huvudmeny">
-                <a class="nav-link" asp-controller="Home" asp-action="Index">Hem</a>
-                <a class="nav-link" asp-controller="Services" asp-action="Index">Tjänster</a>
-                <a class="nav-link" asp-controller="Home" asp-action="References">Case</a>
-                <a class="nav-link" asp-controller="Pricing" asp-action="Index">Priser</a>
-                <a class="btn btn-primary nav-cta" asp-controller="Pricing" asp-action="Index">Kontakta oss</a>
+            <nav id="mainNav" class="nav-links" aria-label='@T["Huvudmeny"]'>
+                <a class="nav-link" asp-controller="Home" asp-action="Index">@T["Hem"]</a>
+                <a class="nav-link" asp-controller="Services" asp-action="Index">@T["Tjänster"]</a>
+                <a class="nav-link" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
+                <a class="nav-link" asp-controller="Pricing" asp-action="Index">@T["Priser"]</a>
+                <a class="nav-link" asp-controller="Home" asp-action="About">@T["Om oss"]</a>
+                <a class="btn btn-primary nav-cta" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+
+                <div class="nav-bottom">
+                    <div class="nav-lang">
+                        <form asp-controller="Language" asp-action="Set" method="post" id="langForm">
+                            <input type="hidden" name="returnUrl" value="@returnUrl" />
+                            <label for="langSwitch" class="sr-only">@T["Språk"]</label>
+                            <select id="langSwitch" name="culture" class="lang-select" onchange="this.form.submit()">
+                                <option value="sv" selected="@(ui == "sv")">Svenska</option>
+                                <option value="ar" selected="@(ui == "ar")">العربية</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -49,23 +75,26 @@
             <div class="footer-wrap">
                 <div class="footer-col">
                     <h4>Tasmim</h4>
-                    <p>Vi kombinerar kreativitet, teknik och affärsnytta för webb och e-handel som levererar.</p>
+                    <p>@T["Vi kombinerar kreativitet, teknik och affärsnytta för webb och e-handel som levererar."]</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontakta oss</h4>
-                    <p>info@tasmim.se</p>
+                    <h4>@T["Kontakta oss"]</h4>
+                    <p><a href="mailto:info@tasmim.se">info@tasmim.se</a></p>
                 </div>
+            </div>
 
             <div class="footer-bottom">
                 <span>© @DateTime.Now.Year Tasmim</span>
-                <nav class="footer-links">
-                    <a asp-controller="Home" asp-action="About">Om oss</a>
-                    <a asp-controller="Home" asp-action="Privacy">Integritet</a>
-                    <a asp-controller="Home" asp-action="Contact">Kontakt</a>
+                <nav class="footer-links" aria-label='@T["Footer länkar"]'>
+                    <a asp-controller="Home" asp-action="About">@T["Om oss"]</a>
+                    <a asp-controller="Home" asp-action="Privacy">@T["Integritet"]</a>
+                    <a asp-controller="Home" asp-action="Contact">@T["Kontakt"]</a>
                 </nav>
             </div>
         </div>
     </footer>
+
+    @await Html.PartialAsync("_Cookie")
 
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)

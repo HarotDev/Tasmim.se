@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
+@{
+    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+}
+
+<div id="cookie-banner" class="cookie-banner" hidden>
+    <div class="cookie-inner">
+        <div class="cookie-copy">
+            <h3 class="cookie-title">@T["Cookies på Tasmim"]</h3>
+            <p class="cookie-text">
+                @T["Vi använder cookies för nödvändiga funktioner samt för analys och marknadsföring. Du kan acceptera alla, avvisa alla eller välja dina preferenser."]
+                <a class="cookie-link" asp-controller="Home" asp-action="Privacy">@T["Läs mer"]</a>
+            </p>
+        </div>
+        <div class="cookie-actions">
+            <form asp-controller="Cookie" asp-action="Set" method="post" class="cookie-form" id="cookie-form-all-accept">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="acceptAll" value="true" />
+                <input type="hidden" name="returnUrl" value="@returnUrl" />
+                <button type="submit" class="btn btn-primary">@T["Acceptera alla"]</button>
+            </form>
+            <form asp-controller="Cookie" asp-action="Set" method="post" class="cookie-form" id="cookie-form-all-reject">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="rejectAll" value="true" />
+                <input type="hidden" name="returnUrl" value="@returnUrl" />
+                <button type="submit" class="btn btn-outline">@T["Avvisa alla"]</button>
+            </form>
+            <button type="button" class="btn" id="cookie-open-prefs">@T["Inställningar"]</button>
+        </div>
+    </div>
+    <div class="cookie-prefs" id="cookie-prefs" hidden>
+        <form asp-controller="Cookie" asp-action="Set" method="post" class="cookie-form-prefs">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="returnUrl" value="@returnUrl" />
+            <div class="cookie-pref-row">
+                <div>
+                    <strong>@T["Nödvändiga"]</strong>
+                    <p class="muted small">@T["Behövs för att webbplatsen ska fungera och kan inte stängas av."]</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked disabled />
+                    <span></span>
+                </label>
+            </div>
+            <div class="cookie-pref-row">
+                <div>
+                    <strong>@T["Analys"]</strong>
+                    <p>@T["Hjälper oss att förbättra prestanda och innehåll."]</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" name="analytics" />
+                    <span></span>
+                </label>
+            </div>
+            <div class="cookie-pref-row">
+                <div>
+                    <strong>@T["Marknadsföring"]</strong>
+                    <p>@T["Används för personaliserad annonsering."]</p>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" name="marketing" />
+                    <span></span>
+                </label>
+            </div>
+            <div class="cookie-prefs-actions">
+                <button type="submit" class="btn btn-primary">@T["Spara val"]</button>
+                <button type="button" class="btn btn-outline" id="cookie-close-prefs">@T["Avbryt"]</button>
+            </div>
+        </form>
+    </div>
+</div>

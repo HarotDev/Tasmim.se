@@ -1,120 +1,126 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
 @{
-    ViewData["Title"] = "Digital byrå – Tasmim";
+    ViewData["Title"] = T["Digital byrå – Tasmim"];
     Layout = "_Layout";
 }
+
 <section class="hero" style="--overlay:.55;">
     <div class="hero__bg">
         <video class="hero__video"
-               autoplay
-               muted
-               loop
-               playsinline
-               preload="auto"
-               poster="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop">
+               autoplay muted loop playsinline preload="auto"
+               poster="">
             <source src="~/videos/video2.mp4" type="video/mp4" />
-            Din webbläsare stöder inte video-taggen.
         </video>
     </div>
-
     <div class="hero__overlay" aria-hidden="true"></div>
-
     <div class="container hero__inner">
-        <h1 class="hero-title">Vi får ditt företag att växa</h1>
+        <h1 class="hero-title">@T["Vi får ditt företag att växa"]</h1>
         <p class="hero-sub">
-            Vi kombinerar kreativitet, teknik och affärsdriv för att leverera allt från smart webbutveckling till effektfull marknadsföring.
+            @T["Vi kombinerar kreativitet, teknik och affärsdriv för att leverera allt från smart webbutveckling till effektfull marknadsföring."]
         </p>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="References">Se våra case</a>
+            <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+            <a class="btn btn-outline" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
         </div>
     </div>
-
-    <noscript>
-        <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop');"></div>
-    </noscript>
 </section>
 
-
-
-<section class="section feature-split reveal">
-    <div class="container grid-2 grid feature">
-        <div class="feature-copy">
-            <h2>Vi gör det digitala lätt, snabbt och lite roligare</h2>
-            <p class="muted">Med kreativitet, teknik och affärer i perfekt mix levererar vi allt från vass webbutveckling till marknadsföring som gör skillnad.</p>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="About">Läs mer om hur vi jobbar</a>
-        </div>
-
-        <div class="feature-media">
-            <div class="square">
-                <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1600&auto=format&fit=crop" alt="">
+<section class="section section--soft">
+    <div class="container reveal">
+        <div class="grid grid-2 feature">
+            <div class="feature-copy">
+                <h2>@T["Vi gör det digitala lätt, snabbt och lite roligare"]</h2>
+                <p>@T["Med kreativitet, teknik och affärer i perfekt mix levererar vi allt från vass webbutveckling till marknadsföring som gör skillnad."]</p>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="About">@T["Läs mer om hur vi jobbar"]</a>
+            </div>
+            <div class="feature-media">
+                <div class="square">
+                    <img src="~/img/content/featuremediahome.jpg" alt="Team som arbetar med webbutveckling">
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section industries reveal" aria-labelledby="ind-title">
-    <div class="container">
-        <div class="industries-card reveal">
-            <h2 id="ind-title" class="industries-title">
-                Hemsidor för
-                <span class="word-roller" aria-live="polite">
-                    <span class="words">
-                        <span>Advokater</span>
-                        <span>Hantverkare</span>
-                        <span>Frisörer</span>
-                        <span>Bilhandlare</span>
-                        <span>Psykologer</span>
-                        <span>Konsultbolag</span>
-                        <span>Mäklare</span>
-                        <span>Föreningar</span>
-                        <span>Tandläkare</span>
-                        <span>Läkare</span>
-                        <span>Konstnärer</span>
-                        <span>Skolor</span>
-                        <span>Butiker</span>
-                    </span>
+<section class="section section--gradient">
+    <div class="container reveal text-center">
+        <h2 id="ind-title" class="industries-title">
+            @T["Hemsidor för"]
+            <span class="word-roller" aria-live="polite">
+                <span class="words">
+                    <span>@T["Advokater"]</span>
+                    <span>@T["Hantverkare"]</span>
+                    <span>@T["Frisörer"]</span>
+                    <span>@T["Bilhandlare"]</span>
+                    <span>@T["Psykologer"]</span>
+                    <span>@T["Konsultbolag"]</span>
+                    <span>@T["Mäklare"]</span>
+                    <span>@T["Föreningar"]</span>
+                    <span>@T["Tandläkare"]</span>
+                    <span>@T["Läkare"]</span>
+                    <span>@T["Konstnärer"]</span>
+                    <span>@T["Skolor"]</span>
+                    <span>@T["Butiker"]</span>
                 </span>
-            </h2>
+            </span>
+        </h2>
+        <p class="industries-sub">
+            @T["Snabba, tydliga och skräddarsydda webbplatser – designade för att sälja."]
+        </p>
+    </div>
+</section>
 
-            <p class="industries-sub">
-                Snabba, tydliga och skräddarsydda webbplatser – designade för att sälja.
-            </p>
+
+<section class="section">
+    <div class="container reveal">
+        <header class="section-head text-center">
+            <h2>@T["Verktyg & plattformar vi använder"]</h2>
+        </header>
+        <div class="logo-scroller">
+            <div class="scroller__inner">
+                <img src="~/img/tools/wordpress.svg" alt="WordPress" />
+                <img src="~/img/tools/Shopify.svg" alt="Shopify" />
+                <img src="~/img/tools/onecom.webp" alt="one.com" />
+                <img src="~/img/tools/elementor.webp" alt="Elementor Pro" />
+                <img src="~/img/tools/visualstudio.svg" alt="Visual Studio" />
+
+            </div>
         </div>
     </div>
 </section>
 
-<section class="section section--soft reveal" aria-labelledby="svc">
-    <div class="container">
-        <h2 id="svc">Vi hjälper dig med</h2>
+<section class="section section--soft">
+    <div class="container reveal">
+        <header class="section-head text-center">
+            <h2 id="svc">@T["Vi hjälper dig med"]</h2>
+        </header>
         <div class="svc-carousel" style="position:relative">
-            <button class="snap-btn snap-prev" aria-label="Föregående"></button>
-            <button class="snap-btn snap-next" aria-label="Nästa"></button>
-
+            <button class="snap-btn snap-prev" aria-label="@T["Föregående"]"></button>
+            <button class="snap-btn snap-next" aria-label="@T["Nästa"]"></button>
             <div class="svc-grid">
-                
                 <article class="svc-card">
                     <div class="svc-ico" style="--tone:#3b82f6" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 16 4 12l4-4M16 8l4 4-4 4M14 4 10 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></div>
-                    <h3 class="svc-title">Webbutveckling & e-handel</h3>
-                    <p class="svc-text">Snabba sidor och butiker som är lätta att äga och uppdatera.</p>
-                    <a class="svc-go" asp-controller="Services" asp-action="Web">
+                    <h3 class="svc-title">@T["Webbutveckling & e-handel"]</h3>
+                    <p class="svc-text">@T["Snabba sidor och butiker som är lätta att äga och uppdatera."]</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Web" aria-label="@T["Webbutveckling & e-handel"]">
                         <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
                     </a>
                 </article>
-
                 <article class="svc-card">
                     <div class="svc-ico" style="--tone:#7c3aed" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8" /><path d="M14.5 14.5 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" /></svg></div>
-                    <h3 class="svc-title">Design & UX</h3>
-                    <p class="svc-text">Form och funktion i balans – UI som inspirerar och konverterar.</p>
-                    <a class="svc-go" asp-controller="Services" asp-action="Design">
+                    <h3 class="svc-title">@T["Design & UX"]</h3>
+                    <p class="svc-text">@T["Form och funktion i balans – UI som inspirerar och konverterar."]</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Design" aria-label="@T["Design & UX"]">
                         <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
                     </a>
                 </article>
-
                 <article class="svc-card">
                     <div class="svc-ico" style="--tone:#ef4444" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 6h16M4 18h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg></div>
-                    <h3 class="svc-title">Digital marknadsföring</h3>
-                    <p class="svc-text">SEO, SEM och innehåll som höjer kvaliteten på trafiken och lyfter konverteringen.</p>
-                    <a class="svc-go" asp-controller="Services" asp-action="Marketing" aria-label="Till marknadsföring">
+                    <h3 class="svc-title">@T["Digital marknadsföring"]</h3>
+                    <p class="svc-text">@T["SEO, SEM och innehåll som höjer kvaliteten på trafiken och lyfter konverteringen."]</p>
+                    <a class="svc-go" asp-controller="Services" asp-action="Marketing" aria-label="@T["Till marknadsföring"]">
                         <svg viewBox="0 0 24 24"><path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
                     </a>
                 </article>
@@ -123,163 +129,61 @@
     </div>
 </section>
 
-<section class="section reveal">
-    <div class="container">
-        <h2>Projekt vi gärna visar upp</h2>
-
-        <div class="work-grid">
-            <!-- GOLDEN ROYALE -->
-            <article class="work-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Goldenroyale.png"
-                         alt="Golden Royale – webbutik för arabiska desserter" loading="lazy">
-                </div>
-                <h3>Golden Royale</h3>
-                <p class="muted">
-                    Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll.
-                </p>
-                <div class="case-meta">
-                    <span class="case-badge" title="Plattform">
-                        <span class="dot" style="background:#22c55e"></span> Shopify
-                    </span>
-                    <a class="muted" href="https://goldenroyale.se" target="_blank" rel="noopener">goldenroyale.se</a>
-                </div>
-                <div class="case-links">
-                    <a class="btn btn-outline" href="https://goldenroyale.se" target="_blank" rel="noopener">Visa webbplats</a>
-                </div>
-            </article>
-
-            <!-- KARMASHA -->
-            <article class="work-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Karmasha.png"
-                         alt="Karmasha – webbutik för frystorkade frukter, glass och godis" loading="lazy">
-                </div>
-                <h3>Karmasha</h3>
-                <p class="muted">
-                    Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll.
-                </p>
-                <div class="case-meta">
-                    <span class="case-badge" title="Plattform">
-                        <span class="dot" style="background:#22c55e"></span> Shopify
-                    </span>
-                    <a class="muted" href="https://karmasha.se" target="_blank" rel="noopener">karmasha.se</a>
-                </div>
-                <div class="case-links">
-                    <a class="btn btn-outline" href="https://karmasha.se" target="_blank" rel="noopener">Visa webbplats</a>
-                </div>
-            </article>
-
-            <!-- SPÅNGA HAIR STUDIO -->
-            <article class="work-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Spangahairstudio.png"
-                         alt="Spånga Hair Studio – hemsida med smidig bokningsväg" loading="lazy">
-                </div>
-                <h3>Spånga Hair Studio</h3>
-                <p class="muted">
-                    Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär.
-                </p>
-                <div class="case-meta">
-                    <span class="case-badge" title="Plattform">
-                        <span class="dot" style="background:#3b82f6"></span> one.com
-                    </span>
-                    <a class="muted" href="https://spangahairstudio.se" target="_blank" rel="noopener">spangahairstudio.se</a>
-                </div>
-                <div class="case-links">
-                    <a class="btn btn-outline" href="https://spangahairstudio.se" target="_blank" rel="noopener">Visa webbplats</a>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section class="section section--soft faq-section">
-    <div class="container container--narrow">
-        <h2 class="mb-s">Vanliga frågor</h2>
-        <p class="muted mb-l">Kort och tydligt om process, tid, pris och support.</p>
-
+<section class="section section--soft">
+    <div class="container container--narrow reveal">
+        <header class="section-head text-center">
+            <h2>@T["Vanliga frågor"]</h2>
+            <p>@T["Kort och tydligt om process, tid, pris och support."]</p>
+        </header>
         <div class="faq">
-            <!-- Item -->
             <article class="faq-item">
-                <h3 class="sr-only">Fråga 1</h3>
+                <h3 class="sr-only">@T["Fråga 1"]</h3>
                 <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
-                    Hur ser processen ut från start till lansering?
+                    @T["Hur ser processen ut från start till lansering?"]
                     <span class="faq-ico" aria-hidden="true"></span>
                 </button>
                 <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
                     <div class="faq-a__inner">
-                        Vi börjar med mål & scope, tar fram struktur/wireframes, designar gränssnitt, bygger och testar.
-                        Löpande avstämningar, sedan lansering och uppföljning.
+                        @T["Vi börjar med mål & scope, tar fram struktur/wireframes, designar gränssnitt, bygger och testar.Löpande avstämningar, sedan lansering och uppföljning."]
                     </div>
                 </div>
             </article>
-
             <article class="faq-item">
-                <h3 class="sr-only">Fråga 2</h3>
+                <h3 class="sr-only">@T["Fråga 2"]</h3>
                 <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
-                    Hur lång tid tar ett projekt?
+                    @T["Hur lång tid tar ett projekt?"]
                     <span class="faq-ico" aria-hidden="true"></span>
                 </button>
                 <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
                     <div class="faq-a__inner">
-                        Vanliga webbplatser tar ofta 2–6 veckor beroende på omfattning, innehåll och integrationer.
+                        @T["Vanliga webbplatser tar ofta 2–6 veckor beroende på omfattning, innehåll och integrationer."]
                     </div>
                 </div>
             </article>
-
             <article class="faq-item">
-                <h3 class="sr-only">Fråga 3</h3>
+                <h3 class="sr-only">@T["Fråga 3"]</h3>
                 <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
-                    Vad kostar en hemsida eller webbutik?
+                    @T["Vad kostar en hemsida eller webbutik?"]
                     <span class="faq-ico" aria-hidden="true"></span>
                 </button>
                 <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
                     <div class="faq-a__inner">
-                        Vi erbjuder fasta paket för vanliga behov och ett skräddarsytt upplägg för större projekt. Se prissidan.
-                    </div>
-                </div>
-            </article>
-
-            <article class="faq-item">
-                <h3 class="sr-only">Fråga 4</h3>
-                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
-                    Hjälper ni med innehåll och bilder?
-                    <span class="faq-ico" aria-hidden="true"></span>
-                </button>
-                <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
-                    <div class="faq-a__inner">
-                        Ja – vi kan ta fram struktur, copy och bildval, och säkerställa att allt följer varumärke och SEO.
-                    </div>
-                </div>
-            </article>
-
-            <article class="faq-item">
-                <h3 class="sr-only">Fråga 5</h3>
-                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
-                    Erbjuder ni support efter lansering?
-                    <span class="faq-ico" aria-hidden="true"></span>
-                </button>
-                <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
-                    <div class="faq-a__inner">
-                        Ja, vi har löpande förvaltning och support med uppdateringar, säkerhet och förbättringar.
+                        @T["Vi erbjuder fasta paket för vanliga behov och ett skräddarsytt upplägg för större projekt. Se prissidan."]
                     </div>
                 </div>
             </article>
         </div>
     </div>
 </section>
-
 
 <section class="cta-band">
     <div class="container">
         <div class="grid-2 grid" style="align-items:center">
             <div>
-                <h2>Vill du veta vad vi kan göra för dig?</h2>
+                <h2>@T["Vill du veta vad vi kan göra för dig?"]</h2>
             </div>
             <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-start">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
-                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Boka telefonmöte →</a>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
         </div>
     </div>

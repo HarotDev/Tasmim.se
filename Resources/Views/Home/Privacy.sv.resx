@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>2.0</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+	<data name="Hero.Title" xml:space="preserve"><value>Integritetspolicy</value></data>
+	<data name="Hero.Sub" xml:space="preserve"><value>Så här samlar, använder och skyddar Tasmim personuppgifter på tasmim.se. Tydligt, lagligt och med respekt för din integritet.</value></data>
+	<data name="Hero.Btn.Read" xml:space="preserve"><value>Läs policyn</value></data>
+	<data name="Hero.Btn.Contact" xml:space="preserve"><value>Kontakt</value></data>
+
+	<data name="Meta.Updated" xml:space="preserve"><value>Senast uppdaterad:</value></data>
+	<data name="H2.About" xml:space="preserve"><value>Om den här policyn</value></data>
+	<data name="H2.Data" xml:space="preserve"><value>Vilka uppgifter vi kan behandla</value></data>
+	<data name="H2.Lawfulness" xml:space="preserve"><value>Laglighet i behandlingen</value></data>
+	<data name="H2.LegalBasis" xml:space="preserve"><value>Rättslig grund och ändamål</value></data>
+	<data name="H2.Processors" xml:space="preserve"><value>Personuppgiftsbiträden</value></data>
+	<data name="H2.Cookies" xml:space="preserve"><value>Cookies</value></data>
+	<data name="H2.Security" xml:space="preserve"><value>Säkerhet</value></data>
+	<data name="H2.Rights" xml:space="preserve"><value>Dina rättigheter</value></data>
+	<data name="H2.Changes" xml:space="preserve"><value>Ändringar i denna policy</value></data>
+	<data name="H2.Contact" xml:space="preserve"><value>Kontaktinformation</value></data>
+
+	<data name="Contact.AddressLine1" xml:space="preserve"><value>Tasmim</value></data>
+	<data name="Contact.AddressLine2" xml:space="preserve"><value>Torsten Fogelqvists Gata 63, 603 76 Norrköping</value></data>
+	<data name="Contact.Email" xml:space="preserve"><value>info@tasmim.se</value></data>
+</root>

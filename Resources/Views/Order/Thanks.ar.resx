@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Tack för din beställning – Tasmim" xml:space="preserve">
+	<value>شكرًا لطلبك – تصميم</value>
+  </data>
+	<data name="Order mottagen" xml:space="preserve">
+	<value>تم استلام الطلب</value>
+  </data>
+	<data name="Tack! Din beställning är mottagen." xml:space="preserve">
+	<value>شكرًا! تم استلام طلبك.</value>
+  </data>
+	<data name="Vi hör av oss inom kort för att bekräfta detaljer och nästa steg." xml:space="preserve">
+	<value>سنتواصل معك قريبًا لتأكيد التفاصيل والخطوات التالية.</value>
+  </data>
+	<data name="Bekräftelse:" xml:space="preserve">
+	<value>التأكيد:</value>
+  </data>
+	<data name="Du får ett mejl med sammanfattning." xml:space="preserve">
+	<value>ستتلقى بريدًا إلكترونيًا يحتوي على ملخص.</value>
+  </data>
+	<data name="Kickoff:" xml:space="preserve">
+	<value>الانطلاق:</value>
+  </data>
+	<data name="Vi föreslår tid för ett kort samtal." xml:space="preserve">
+	<value>سنقترح وقتًا لمكالمة قصيرة.</value>
+  </data>
+	<data name="Underlag:" xml:space="preserve">
+	<value>المواد:</value>
+  </data>
+	<data name="Ev. texter/bilder kan skickas när det passar." xml:space="preserve">
+	<value>يمكن إرسال أي نصوص / صور عندما يناسبك ذلك.</value>
+  </data>
+	<data name="Till startsidan" xml:space="preserve">
+	<value>إلى الصفحة الرئيسية</value>
+  </data>
+	<data name="Se paket igen" xml:space="preserve">
+	<value>شاهد الباقات مرة أخرى</value>
+  </data>
+	<data name="Kontakta oss" xml:space="preserve">
+	<value>اتصل بنا</value>
+  </data>
+</root>

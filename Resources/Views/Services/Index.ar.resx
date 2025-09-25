@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Tjänster – Tasmim" xml:space="preserve">
+	<value>الخدمات – تصميم</value>
+  </data>
+	<data name="Din webbläsare stöder inte video-taggen." xml:space="preserve">
+	<value>متصفحك لا يدعم وسم الفيديو.</value>
+  </data>
+	<data name="Webbutveckling, e-handel och design." xml:space="preserve">
+	<value>تطوير الويب، التجارة الإلكترونية، والتصميم.</value>
+  </data>
+	<data name="Vi bygger snabba sidor och butiker, och tar fram en design som är enkel att förstå och jobba med." xml:space="preserve">
+	<value>نبني مواقع ومتاجر سريعة، ونقدم تصميمًا سهل الفهم والتعامل معه.</value>
+  </data>
+	<data name="Se priser" xml:space="preserve">
+	<value>شاهد الأسعار</value>
+  </data>
+	<data name="Kontakta oss" xml:space="preserve">
+	<value>اتصل بنا</value>
+  </data>
+	<data name="Våra tjänster" xml:space="preserve">
+	<value>خدماتنا</value>
+  </data>
+	<data name="Tydliga erbjudanden, samma fokus: fart, enkelhet och resultat." xml:space="preserve">
+	<value>عروض واضحة، نفس التركيز: السرعة، البساطة، والنتائج.</value>
+  </data>
+	<data name="Föregående" xml:space="preserve">
+	<value>السابق</value>
+  </data>
+	<data name="Nästa" xml:space="preserve">
+	<value>التالي</value>
+  </data>
+	<data name="Webbutveckling &amp; e-handel" xml:space="preserve">
+	<value>تطوير الويب والتجارة الإلكترونية</value>
+  </data>
+	<data name="Sidor och butiker som laddar snabbt och är lätta att uppdatera." xml:space="preserve">
+	<value>مواقع ومتاجر سريعة التحميل وسهلة التحديث.</value>
+  </data>
+	<data name="Läs mer om Webbutveckling &amp; e-handel" xml:space="preserve">
+	<value>اقرأ المزيد عن تطوير الويب والتجارة الإلكترونية</value>
+  </data>
+	<data name="Design &amp; UX" xml:space="preserve">
+	<value>التصميم وتجربة المستخدم</value>
+  </data>
+	<data name="Tydlig form och smarta gränssnitt. Vi tar fram ett UI som håller." xml:space="preserve">
+	<value>شكل واضح وواجهات ذكية. نحن نطور واجهة مستخدم مستدامة.</value>
+  </data>
+	<data name="Läs mer om Design &amp; UX" xml:space="preserve">
+	<value>اقرأ المزيد عن التصميم وتجربة المستخدم</value>
+  </data>
+	<data name="Digital marknadsföring" xml:space="preserve">
+	<value>التسويق الرقمي</value>
+  </data>
+	<data name="SEO, SEM och innehåll som höjer kvaliteten på trafiken och lyfter konverteringen." xml:space="preserve">
+	<value>تحسين محركات البحث، التسويق عبرها، والمحتوى الذي يرفع جودة الزوار ويزيد من التحويلات.</value>
+  </data>
+	<data name="Till marknadsföring" xml:space="preserve">
+	<value>إلى التسويق</value>
+  </data>
+	<data name="Bygg rätt från början" xml:space="preserve">
+	<value>ابنِ بشكل صحيح من البداية</value>
+  </data>
+	<data name="Vi gör en enkel plan med mål, vad vi mäter och vad som ingår. Sedan bygger vi snabbt och testar hela tiden." xml:space="preserve">
+	<value>نضع خطة بسيطة بالأهداف، وما نقيسه، وما تتضمنه. ثم نبني بسرعة ونختبر باستمرار.</value>
+  </data>
+	<data name="Se paket" xml:space="preserve">
+	<value>شاهد الباقات</value>
+  </data>
+	<data name="Team som planerar projekt" xml:space="preserve">
+	<value>فريق يخطط للمشاريع</value>
+  </data>
+	<data name="Varför Tasmim?" xml:space="preserve">
+	<value>لماذا تصميم؟</value>
+  </data>
+	<data name="Vi kombinerar enkelhet i förvaltning med mätbar prestanda." xml:space="preserve">
+	<value>نحن نجمع بين سهولة الإدارة والأداء القابل للقياس.</value>
+  </data>
+	<data name="Snabb laddning" xml:space="preserve">
+	<value>تحميل سريع</value>
+  </data>
+	<data name="Optimerade bilder, caching och modern bundling." xml:space="preserve">
+	<value>صور محسنة، تخزين مؤقت، وحزم حديثة.</value>
+  </data>
+	<data name="Tillgänglig" xml:space="preserve">
+	<value>متاح للجميع</value>
+  </data>
+	<data name="Tillgänglighet från start: tydlig kontrast, synligt fokus och allt ska gå att använda med tangentbord." xml:space="preserve">
+	<value>إمكانية الوصول من البداية: تباين واضح، تركيز مرئي، وإمكانية استخدام كل شيء بلوحة المفاتيح.</value>
+  </data>
+	<data name="Enkelt att äga" xml:space="preserve">
+	<value>سهولة التملك</value>
+  </data>
+	<data name="Modulär struktur och kort introduktion vid överlämning." xml:space="preserve">
+	<value>هيكل معياري ومقدمة قصيرة عند التسليم.</value>
+  </data>
+	<data name="Redo att starta?" xml:space="preserve">
+	<value>هل أنت مستعد للبدء؟</value>
+  </data>
+	<data name="Skriv några rader så återkommer vi med upplägg och fast pris." xml:space="preserve">
+	<value>اكتب بضعة أسطر وسنعاود الاتصال بك مع خطة عمل وسعر ثابت.</value>
+  </data>
+	<data name="Maila oss" xml:space="preserve">
+	<value>راسلنا عبر البريد الإلكتروني</value>
+  </data>
+</root>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <data name="1–6 undersidor" xml:space="preserve">
+    <value>١-٦ صفحات فرعية</value>
+  </data>
+    <data name="AI-stött sökmotoroptimering" xml:space="preserve">
+    <value>تحسين محركات البحث مدعوم بالذكاء الاصطناعي</value>
+  </data>
+    <data name="Alla ändringar efter överenskommelse" xml:space="preserve">
+    <value>جميع التعديلات بعد الاتفاق</value>
+  </data>
+    <data name="Anpassad design efter behov" xml:space="preserve">
+    <value>تصميم مخصص حسب الحاجة</value>
+  </data>
+    <data name="Beställ" xml:space="preserve">
+    <value>اطلب الآن</value>
+  </data>
+    <data name="Betalningsflöde &amp; kassa" xml:space="preserve">
+    <value>عملية الدفع والخروج</value>
+  </data>
+    <data name="Bild- och texthjälp" xml:space="preserve">
+    <value>مساعدة في الصور والنصوص</value>
+  </data>
+    <data name="Blogg/nyheter" xml:space="preserve">
+    <value>مدونة / أخبار</value>
+  </data>
+    <data name="Bäst värde" xml:space="preserve">
+    <value>أفضل قيمة</value>
+  </data>
+    <data name="Cirka 1–15 undersidor" xml:space="preserve">
+    <value>حوالي ١-١٥ صفحة فرعية</value>
+  </data>
+    <data name="Cirka 1–3 undersidor" xml:space="preserve">
+    <value>حوالي ١-٣ صفحات فرعية</value>
+  </data>
+    <data name="Cirka 1–7 undersidor" xml:space="preserve">
+    <value>حوالي ١-٧ صفحات فرعية</value>
+  </data>
+    <data name="Design efter varumärkesprofil" xml:space="preserve">
+    <value>تصميم حسب هوية العلامة التجارية</value>
+  </data>
+    <data name="engångskostnad" xml:space="preserve">
+    <value>تكلفة لمرة واحدة</value>
+  </data>
+    <data name="Från idé till affär: bli hittad, ladda snabbt, konvertera fler." xml:space="preserve">
+    <value>من الفكرة إلى العمل: كن مرئيًا، حمّل بسرعة، وحوّل المزيد من الزوار.</value>
+  </data>
+    <data name="Hemsida" xml:space="preserve">
+    <value>موقع إلكتروني</value>
+  </data>
+    <data name="Hittar du inget som passar?" xml:space="preserve">
+    <value>هل لم تجد ما يناسبك؟</value>
+  </data>
+    <data name="Inga problem – hör av dig så tar vi fram en lösning som passar dig och ditt projekt bäst." xml:space="preserve">
+    <value>لا مشكلة - تواصل معنا وسنقدم لك حلاً يناسبك ويناسب مشروعك على أفضل وجه.</value>
+  </data>
+    <data name="Kategorier &amp; filtrering" xml:space="preserve">
+    <value>فئات وتصنيفات</value>
+  </data>
+    <data name="Komplett paket" xml:space="preserve">
+    <value>باقة كاملة</value>
+  </data>
+    <data name="Kontaktformulär + karta" xml:space="preserve">
+    <value>نموذج اتصال + خريطة</value>
+  </data>
+    <data name="Kontakta oss" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+    <data name="Koppling till sociala medier" xml:space="preserve">
+    <value>ربط بوسائل التواصل الاجتماعي</value>
+  </data>
+    <data name="Liten" xml:space="preserve">
+    <value>صغير</value>
+  </data>
+    <data name="Liten butik" xml:space="preserve">
+    <value>متجر صغير</value>
+  </data>
+    <data name="Mellan" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+    <data name="Paket &amp; priser" xml:space="preserve">
+    <value>الباقات والأسعار</value>
+  </data>
+    <data name="Pakettyp" xml:space="preserve">
+    <value>نوع الباقة</value>
+  </data>
+    <data name="Personlig kontakt" xml:space="preserve">
+    <value>اتصال شخصي</value>
+  </data>
+    <data name="Plattform väljs efter vad som känns enklast för er" xml:space="preserve">
+    <value>يتم اختيار المنصة حسب ما هو أسهل لكم</value>
+  </data>
+    <data name="Populär" xml:space="preserve">
+    <value>الأكثر شيوعًا</value>
+  </data>
+    <data name="Priser – Tasmim" xml:space="preserve">
+    <value>الأسعار – تصميم</value>
+  </data>
+    <data name="Responsiv &amp; tillgänglig design" xml:space="preserve">
+    <value>تصميم متجاوب ومتاح للجميع</value>
+  </data>
+    <data name="Snabb laddtid &amp; Core Web Vitals" xml:space="preserve">
+    <value>سرعة تحميل عالية ومؤشرات أداء الويب الأساسية</value>
+  </data>
+    <data name="Stor" xml:space="preserve">
+    <value>كبير</value>
+  </data>
+    <data name="Tidsplan bestäms utifrån projektets omfattning" xml:space="preserve">
+    <value>يتم تحديد الجدول الزمني بناءً على حجم المشروع</value>
+  </data>
+    <data name="Upp till ~100 produkter" xml:space="preserve">
+    <value>حتى ~١٠٠ منتج تقريبًا</value>
+  </data>
+    <data name="Upp till ~20 produkter" xml:space="preserve">
+    <value>حتى ~٢٠ منتجًا تقريبًا</value>
+  </data>
+    <data name="Upp till ~50 produkter" xml:space="preserve">
+    <value>حتى ~٥٠ منتجًا تقريبًا</value>
+  </data>
+    <data name="Utökad funktionalitet &amp; integrationer" xml:space="preserve">
+    <value>وظائف موسعة وتكاملات</value>
+  </data>
+    <data name="Utökade funktioner &amp; integrationer" xml:space="preserve">
+    <value>ميزات موسعة وتكاملات</value>
+  </data>
+    <data name="Webbutik" xml:space="preserve">
+    <value>متجر إلكتروني</value>
+  </data>
+</root>

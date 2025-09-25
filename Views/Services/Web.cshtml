@@ -1,5 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Webbutveckling & e-handel – Tasmim";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
+@{
+    ViewData["Title"] = T["Webbutveckling & e-handel – Tasmim"];
     Layout = "_Layout";
 }
 
@@ -12,146 +15,128 @@
              fetchpriority="high" />
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
-
     <div class="container hero__inner">
-        <h1 class="hero-title">Webbutveckling och<br />e-handel</h1>
+        <h1 class="hero-title">@T["Webbutveckling och<br />e-handel"]</h1>
         <p class="hero-sub">
-            När det är dags att skapa en ny webbplats eller förbättra den ni redan har, ser vi till att allt –
-            från struktur och design till utveckling och förvaltning – fungerar som det ska. Målet? Att er
-            webbplats inte bara ska vara snygg och funktionell, utan också bidra till att ni når era affärsmål
-            på bästa sätt.
+            @T["När det är dags att skapa en ny webbplats eller förbättra den ni redan har, ser vi till att allt – från struktur och design till utveckling och förvaltning – fungerar som det ska. Målet? Att er webbplats inte bara ska vara snygg och funktionell, utan också bidra till att ni når era affärsmål på bästa sätt."]
         </p>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Boka ett samtal</a>
+            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
         </div>
     </div>
 </section>
 
-<section class="section feature-split reveal">
-    <div class="container grid-2 grid feature">
-        <div class="feature-copy">
-            <h2>Så bygger vi din nya webb</h2>
-            <p class="muted">
-                Vi kombinerar tydlig plan, snabb leverans och mätbar uppföljning. Projektledare, designer
-                och utvecklare jobbar tätt ihop för att få rätt struktur, rätt UI och rätt prestanda – med
-                leverans i varje steg.
+<section class="section">
+    <div class="container reveal">
+        <div class="grid grid-2 feature">
+            <div class="feature-copy">
+                <h2>@T["Så bygger vi din nya webb"]</h2>
+                <p>
+                    @T["Vi kombinerar tydlig plan, snabb leverans och mätbar uppföljning. Projektledare, designer och utvecklare jobbar tätt ihop för att få rätt struktur, rätt UI och rätt prestanda – med leverans i varje steg."]
+                </p>
+                <ul class="about-bullets">
+                    <li>@T["Innehåll & struktur först – rätt sidor och rubriker"]</li>
+                    <li>@T["UI-kit & komponenter som går att återanvända"]</li>
+                    <li>@T["Fokus på Core Web Vitals och tillgänglighet"]</li>
+                </ul>
+                <div class="hero__actions" style="margin-top:12px">
+                    <a class="btn btn-outline" asp-controller="Home" asp-action="About">@T["Hur vi jobbar"]</a>
+                    <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se prisexempel"]</a>
+                </div>
+            </div>
+            <div class="feature-media">
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop"
+                         alt='@T["Arbete med design och kod"]'>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--soft">
+    <div class="container container--narrow reveal">
+        <header class="section-head text-center">
+            <h2>@T["Vårt mål: göra det svåra enkelt"]</h2>
+            <p class=" lead">
+                @T["Vi bygger webb som är snabb, lätt att äga och enkel att vidareutveckla – utan onödig komplexitet."]
             </p>
-            <ul class="about-bullets">
-                <li>Innehåll & struktur först – rätt sidor och rubriker</li>
-                <li>UI-kit & komponenter som går att återanvända</li>
-                <li>Fokus på Core Web Vitals och tillgänglighet</li>
-            </ul>
-            <div class="hero__actions" style="margin-top:12px">
-                <a class="btn btn-outline" asp-controller="Home" asp-action="About">Hur vi jobbar</a>
-                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se prisexempel</a>
+            <h3 style="margin-top:var(--space-m)">@T["Tekniker & plattformar vi trivs med"]</h3>
+            <p>
+                @T["Vi väljer stabila verktyg som passar mål och budget. När det behövs kopplar vi på betalningar, frakt och spårning – utan att tumma på prestanda."]
+            </p>
+        </header>
+        <div class="tool-board" role="list">
+            <div class="tool-badge" role="listitem" title="WordPress">
+                <span class="tool-ico"><img src="~/img/tools/wordpress.svg" alt="WordPress"></span>
+                <em>WordPress</em>
             </div>
-        </div>
-
-        <div class="feature-media">
-            <div class="square">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop"
-                     alt="Arbete med design och kod">
+            <div class="tool-badge" role="listitem" title="Shopify">
+                <span class="tool-ico"><img src="~/img/tools/Shopify.svg" alt="Shopify"></span>
+                <em>Shopify</em>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section--soft reveal">
-    <div class="container container--narrow">
-        <div class="tools-block">
-            <header class="tools-head">
-                <h2>Vårt mål: göra det svåra enkelt</h2>
-                <p class="muted lead">
-                    Vi bygger webb som är snabb, lätt att äga och enkel att vidareutveckla – utan onödig komplexitet.
-                </p>
-
-                <h3 style="margin-top:var(--space-m)">Tekniker & plattformar vi trivs med</h3>
-                <p class="muted">
-                    Vi väljer stabila verktyg som passar mål och budget. När det behövs kopplar vi på betalningar,
-                    frakt och spårning – utan att tumma på prestanda.
-                </p>
-            </header>
-
-            <div class="tool-board" role="list">
-                <div class="tool-badge" role="listitem" title="WordPress">
-                    <span class="tool-ico"><img src="~/img/tools/wordpress.svg" alt="WordPress"></span>
-                    <em>WordPress</em>
-                </div>
-
-                <div class="tool-badge" role="listitem" title="Shopify">
-                    <span class="tool-ico"><img src="~/img/tools/Shopify.svg" alt="Shopify"></span>
-                    <em>Shopify</em>
-                </div>
-
-                <div class="tool-badge" role="listitem" title="one.com">
-                    <span class="tool-ico"><img src="~/img/tools/onecom.webp" alt="one.com"></span>
-                    <em>one.com</em>
-                </div>
-
-                <div class="tool-badge" role="listitem" title="Elementor Pro">
-                    <span class="tool-ico"><img src="~/img/tools/elementor.webp" alt="Elementor Pro"></span>
-                    <em>Elementor Pro</em>
-                </div>
-
-                <div class="tool-badge" role="listitem" title="Visual Studio">
-                    <span class="tool-ico"><img src="~/img/tools/visualstudio.svg" alt="Visual Studio"></span>
-                    <em>Visual Studio</em>
-                </div>
+            <div class="tool-badge" role="listitem" title="one.com">
+                <span class="tool-ico"><img src="~/img/tools/onecom.webp" alt="one.com"></span>
+                <em>one.com</em>
+            </div>
+            <div class="tool-badge" role="listitem" title="Elementor Pro">
+                <span class="tool-ico"><img src="~/img/tools/elementor.webp" alt="Elementor Pro"></span>
+                <em>Elementor Pro</em>
+            </div>
+            <div class="tool-badge" role="listitem" title="Visual Studio">
+                <span class="tool-ico"><img src="~/img/tools/visualstudio.svg" alt="Visual Studio"></span>
+                <em>Visual Studio</em>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<section class="section reveal">
-    <div class="container">
-        <h2>Tjänster i detalj</h2>
-        <p class="muted">Välj en insats eller kombinera – vi matchar efter mål och budget.</p>
-
+<section class="section">
+    <div class="container reveal">
+        <header class="section-head text-center">
+            <h2>@T["Tjänster i detalj"]</h2>
+            <p>@T["Välj en insats eller kombinera – vi matchar efter mål och budget."]</p>
+        </header>
         <div class="cards grid grid-3">
             <article class="card">
-                <h3>Webbplatser</h3>
+                <h3>@T["Webbplatser"]</h3>
                 <ul class="ticks">
-                    <li>Modulära sidmallar</li>
-                    <li>Hög prestanda & tillgänglighet</li>
-                    <li>Grundläggande SEO</li>
+                    <li>@T["Modulära sidmallar"]</li>
+                    <li>@T["Hög prestanda & tillgänglighet"]</li>
+                    <li>@T["Grundläggande SEO"]</li>
                 </ul>
             </article>
-
             <article class="card">
-                <h3>E-handel</h3>
+                <h3>@T["E-handel"]</h3>
                 <ul class="ticks">
-                    <li>Kassa, betalning och frakt</li>
-                    <li>Produktflöden och lager</li>
-                    <li>Konverteringsspårning</li>
+                    <li>@T["Kassa, betalning och frakt"]</li>
+                    <li>@T["Produktflöden och lager"]</li>
+                    <li>@T["Konverteringsspårning"]</li>
                 </ul>
             </article>
-
             <article class="card">
-                <h3>Integrationer & spårning</h3>
+                <h3>@T["Integrationer & spårning"]</h3>
                 <ul class="ticks">
-                    <li>CMS/ERP/CRM-kopplingar</li>
-                    <li>GA4 & Tag Manager</li>
-                    <li>Dashboard & rapporter</li>
+                    <li>@T["CMS/ERP/CRM-kopplingar"]</li>
+                    <li>@T["GA4 & Tag Manager"]</li>
+                    <li>@T["Dashboard & rapporter"]</li>
                 </ul>
             </article>
         </div>
     </div>
 </section>
-
 
 <section class="cta-band">
     <div class="container">
         <div class="grid grid-2">
             <div>
-                <h2>Vill ni starta en ny sida eller butik?</h2>
-                <p>Skriv några rader så återkommer vi med upplägg och fast pris.</p>
+                <h2>@T["Vill ni starta en ny sida eller butik?"]</h2>
+                <p>@T["Skriv några rader så återkommer vi med upplägg och fast pris."]</p>
             </div>
             <div class="hero__actions">
-                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
         </div>
     </div>

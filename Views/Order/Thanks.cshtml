@@ -1,5 +1,8 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
 @{
-    ViewData["Title"] = "Tack för din beställning – Tasmim";
+    ViewData["Title"] = T["Tack för din beställning – Tasmim"];
     Layout = "_Layout";
 
     var category = TempData["Category"] as string;
@@ -12,14 +15,14 @@
         <div class="success-wrap reveal">
 
             <div class="success-badge" aria-hidden="true">
-                <svg viewBox="0 0 48 48" role="img" aria-label="Order mottagen">
+                <svg viewBox="0 0 48 48" role="img" aria-label='@T["Order mottagen"]'>
                     <circle class="ring" cx="24" cy="24" r="22"></circle>
                     <path class="check" d="M16 24.5l5.2 5.3L32 18" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
 
-            <h1>Tack! Din beställning är mottagen.</h1>
-            <p class="muted">Vi hör av oss inom kort för att bekräfta detaljer och nästa steg.</p>
+            <h1>@T["Tack! Din beställning är mottagen."]</h1>
+            <p class="muted">@T["Vi hör av oss inom kort för att bekräfta detaljer och nästa steg."]</p>
 
             @if (!string.IsNullOrWhiteSpace(category) && !string.IsNullOrWhiteSpace(plan))
             {
@@ -33,15 +36,15 @@
             }
 
             <ol class="success-steps">
-                <li><strong>Bekräftelse:</strong> Du får ett mejl med sammanfattning.</li>
-                <li><strong>Kickoff:</strong> Vi föreslår tid för ett kort samtal.</li>
-                <li><strong>Underlag:</strong> Ev. texter/bilder kan skickas när det passar.</li>
+                <li><strong>@T["Bekräftelse:"]</strong> @T["Du får ett mejl med sammanfattning."]</li>
+                <li><strong>@T["Kickoff:"]</strong> @T["Vi föreslår tid för ett kort samtal."]</li>
+                <li><strong>@T["Underlag:"]</strong> @T["Ev. texter/bilder kan skickas när det passar."]</li>
             </ol>
 
             <div class="success-actions">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Till startsidan</a>
-                <a class="btn btn-outline" asp-controller="Pricing" asp-action="Index">Se paket igen</a>
-                <a class="btn btn-outline" href="mailto:hello@tasmim.se">Kontakta oss</a>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Index">@T["Till startsidan"]</a>
+                <a class="btn btn-outline" asp-controller="Pricing" asp-action="Index">@T["Se paket igen"]</a>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
 
         </div>

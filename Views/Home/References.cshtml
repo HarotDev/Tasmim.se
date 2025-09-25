@@ -1,106 +1,105 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
 @{
-    ViewData["Title"] = "Case – Tasmim";
+    ViewData["Title"] = T["Case – Tasmim"];
     Layout = "_Layout";
 }
 
-<section class="hero" style="--overlay:.42;">
-    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop');"></div>
+<section class="hero" style="--overlay:.55;">
+    <div class="hero__bg">
+        <video class="hero__video"
+               autoplay muted loop playsinline preload="auto"
+               poster="">
+            <source src="~/videos/Referenservideo.mp4" type="video/mp4" />
+        </video>
+    </div>
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="container hero__inner">
-        <h1 class="hero-title">Utvalda case</h1>
-        <p class="hero-sub">Hemsidor och webbutiker vi skapat – fokus på fart, tydlighet och enkel skötsel.</p>
+        <h1 class="hero-title">@T["Utvalda hemsidor"]</h1>
+        <p class="hero-sub">@T["Hemsidor och webbutiker vi skapat – fokus på fart, tydlighet och enkel skötsel."]</p>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
+            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
         </div>
     </div>
 </section>
 
-<section class="section reveal">
+<section class="section">
     <div class="container">
-        <h2>Utvalda hemsidor & webbutiker</h2>
-        <p class="muted">Tre referenser där vi ansvarat för struktur, design, bilder och innehåll.</p>
-
-        <div class="cards grid case-grid">
-            <!-- Golden Royale -->
-            <article class="card case-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Goldenroyale.png" alt="Golden Royale – webbutik för arabiska desserter">
-                </div>
-                <div class="body">
-                    <h3>Golden Royale</h3>
-                    <p class="muted">Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll.</p>
-
+        <header class="section-head text-center">
+            <h2>@T["Utvalda hemsidor & webbutiker"]</h2>
+            <p>@T["Några kundcase där vi gjort allt: struktur, design, bilder och texter."]</p>
+        </header>
+        <div class="case-gallery">
+            <article class="case-pro reveal">
+                <a class="case-media" href="https://goldenroyale.se" target="_blank" rel="noopener" aria-label="@T["Öppna goldenroyale.se"]">
+                    <img src="~/img/casesimg/Goldenroyale.png" alt="@T["Golden Royale – webbutik för arabiska desserter"]" loading="lazy">
+                    <span class="case-chip"><span class="dot" style="background:#22c55e"></span>Shopify</span>
+                </a>
+                <div class="case-body">
+                    <h3 class="case-title">Golden Royale</h3>
+                    <p class="case-desc">
+                        @T["Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll."]
+                    </p>
                     <div class="case-meta">
-                        <span class="case-badge" title="Plattform">
-                            <span class="dot" style="background:#22c55e"></span> Shopify
-                        </span>
-                        <a class="muted" href="https://goldenroyale.se" target="_blank" rel="noopener">goldenroyale.se</a>
-                    </div>
-
-                    <div class="case-links">
-                        <a class="btn btn-outline" href="https://goldenroyale.se" target="_blank" rel="noopener">Visa webbplats</a>
+                        <a class="case-link" href="https://goldenroyale.se" target="_blank" rel="noopener">goldenroyale.se</a>
+                        <div class="case-actions">
+                            <a class="btn btn-outline" href="https://goldenroyale.se" target="_blank" rel="noopener">@T["Visa webbplats"]</a>
+                        </div>
                     </div>
                 </div>
             </article>
-
-            <article class="card case-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Karmasha.png" alt="Karmasha – webbutik för frystorkade frukter, glass och godis">
-                </div>
-                <div class="body">
-                    <h3>Karmasha</h3>
-                    <p class="muted">Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll.</p>
-
+            <article class="case-pro reveal">
+                <a class="case-media" href="https://karmasha.se" target="_blank" rel="noopener" aria-label="@T["Öppna karmasha.se"]">
+                    <img src="~/img/casesimg/Karmasha.png" alt="@T["Karmasha – webbutik för frystorkade frukter, glass och godis"]" loading="lazy">
+                    <span class="case-chip"><span class="dot" style="background:#22c55e"></span>Shopify</span>
+                </a>
+                <div class="case-body">
+                    <h3 class="case-title">Karmasha</h3>
+                    <p class="case-desc">
+                        @T["Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll."]
+                    </p>
                     <div class="case-meta">
-                        <span class="case-badge" title="Plattform">
-                            <span class="dot" style="background:#22c55e"></span> Shopify
-                        </span>
-                        <a class="muted" href="https://karmasha.se" target="_blank" rel="noopener">karmasha.se</a>
-                    </div>
-
-                    <div class="case-links">
-                        <a class="btn btn-outline" href="https://karmasha.se" target="_blank" rel="noopener">Visa webbplats</a>
+                        <a class="case-link" href="https://karmasha.se" target="_blank" rel="noopener">karmasha.se</a>
+                        <div class="case-actions">
+                            <a class="btn btn-outline" href="https://karmasha.se" target="_blank" rel="noopener">@T["Visa webbplats"]</a>
+                        </div>
                     </div>
                 </div>
             </article>
-
-
-            <article class="card case-card">
-                <div class="thumb">
-                    <img src="~/img/casesimg/Spangahairstudio.png" alt="Spånga Hair Studio – hemsida med smidig bokningsväg">
-                </div>
-                <div class="body">
-                    <h3>Spånga Hair Studio</h3>
-                    <p class="muted">Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär.</p>
-
+            <article class="case-pro reveal">
+                <a class="case-media" href="https://spangahairstudio.se" target="_blank" rel="noopener" aria-label="@T["Öppna spangahairstudio.se"]">
+                    <img src="~/img/casesimg/Spangahairstudio.png" alt="@T["Spånga Hair Studio – hemsida med smidig bokningsväg"]" loading="lazy">
+                    <span class="case-chip"><span class="dot" style="background:#3b82f6"></span>one.com</span>
+                </a>
+                <div class="case-body">
+                    <h3 class="case-title">Spånga Hair Studio</h3>
+                    <p class="case-desc">
+                        @T["Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär."]
+                    </p>
                     <div class="case-meta">
-                        <span class="case-badge" title="Plattform">
-                            <span class="dot" style="background:#3b82f6"></span> one.com
-                        </span>
-                        <a class="muted" href="https://spangahairstudio.se" target="_blank" rel="noopener">spangahairstudio.se</a>
-                    </div>
-
-                    <div class="case-links">
-                        <a class="btn btn-outline" href="https://spangahairstudio.se" target="_blank" rel="noopener">Visa webbplats</a>
+                        <a class="case-link" href="https://spangahairstudio.se" target="_blank" rel="noopener">spangahairstudio.se</a>
+                        <div class="case-actions">
+                            <a class="btn btn-outline" href="https://spangahairstudio.se" target="_blank" rel="noopener">@T["Visa webbplats"]</a>
+                        </div>
                     </div>
                 </div>
             </article>
         </div>
     </div>
 </section>
-
 
 <section class="cta-band">
     <div class="container">
         <div class="grid grid-2">
             <div>
-                <h2>Redo att starta något liknande?</h2>
-                <p>Berätta kort om era mål – vi återkommer med upplägg och fast pris.</p>
+                <h2>@T["Redo att starta något liknande?"]</h2>
+                <p>@T["Berätta kort om era mål – vi återkommer med upplägg och fast pris."]</p>
             </div>
             <div class="hero__actions">
-                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
         </div>
     </div>

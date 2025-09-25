@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Design &amp; UX – Tasmim" xml:space="preserve">
+	<value>التصميم وتجربة المستخدم – تصميم</value>
+  </data>
+	<data name="Din webbläsare stöder inte video-taggen." xml:space="preserve">
+	<value>متصفحك لا يدعم وسم الفيديو.</value>
+  </data>
+	<data name="Design &amp; UX som känns självklar" xml:space="preserve">
+	<value>تصميم وتجربة مستخدم تبدو بديهية</value>
+  </data>
+	<data name="Vi skapar tydliga gränssnitt och hållbara UI-kit som gör det enkelt att växa och förvalta." xml:space="preserve">
+	<value>نحن ننشئ واجهات واضحة ومجموعات واجهة مستخدم مستدامة تجعل النمو والإدارة أمرًا سهلاً.</value>
+  </data>
+	<data name="Se paket" xml:space="preserve">
+	<value>شاهد الباقات</value>
+  </data>
+	<data name="Kontakta oss" xml:space="preserve">
+	<value>اتصل بنا</value>
+  </data>
+	<data name="Vad ingår?" xml:space="preserve">
+	<value>ماذا تتضمن الخدمة؟</value>
+  </data>
+	<data name="Ett smidigt flöde från struktur till färdigt designsystem – optimerat för fart och tydlighet." xml:space="preserve">
+	<value>تدفق سلس من الهيكل إلى نظام تصميم جاهز - مُحسَّن للسرعة والوضوح.</value>
+  </data>
+	<data name="Designsystem" xml:space="preserve">
+	<value>نظام التصميم</value>
+  </data>
+	<data name="Komponenter, färger och typografi som håller ihop och skalar." xml:space="preserve">
+	<value>مكونات وألوان وخطوط متناسقة وقابلة للتطوير.</value>
+  </data>
+	<data name="Prototyper" xml:space="preserve">
+	<value>نماذج أولية</value>
+  </data>
+	<data name="Snabba klickbara prototyper för beslut och tidiga tester." xml:space="preserve">
+	<value>نماذج أولية تفاعلية سريعة لاتخاذ القرارات والاختبارات الأولية.</value>
+  </data>
+	<data name="Varumärkesgrund" xml:space="preserve">
+	<value>أساس العلامة التجارية</value>
+  </data>
+	<data name="Ton, uttryck och riktlinjer så allt känns konsekvent." xml:space="preserve">
+	<value>النبرة والأسلوب والإرشادات لضمان تناسق كل شيء.</value>
+  </data>
+	<data name="Från idé till designsystem" xml:space="preserve">
+	<value>من الفكرة إلى نظام التصميم</value>
+  </data>
+	<data name="Vi börjar i innehållet, definierar hierarki och flöden, och bygger sedan ett lättanvänt UI-kit som gör uppdateringar snabba och trygga." xml:space="preserve">
+	<value>نبدأ بالمحتوى، ونحدد التسلسل الهرمي والتدفقات، ثم نبني مجموعة واجهة مستخدم سهلة الاستخدام تجعل التحديثات سريعة وآمنة.</value>
+  </data>
+	<data name="Hur vi jobbar" xml:space="preserve">
+	<value>كيف نعمل</value>
+  </data>
+	<data name="Se prisexempel" xml:space="preserve">
+	<value>شاهد أمثلة الأسعار</value>
+  </data>
+	<data name="UI-komponenter och prototyper" xml:space="preserve">
+	<value>مكونات واجهة المستخدم والنماذج الأولية</value>
+  </data>
+	<data name="Vår process" xml:space="preserve">
+	<value>عمليتنا</value>
+  </data>
+	<data name="Tydliga steg, korta loopar och beslut på riktig användarfeedback." xml:space="preserve">
+	<value>خطوات واضحة، دورات قصيرة، وقرارات مبنية على ملاحظات المستخدمين الحقيقية.</value>
+  </data>
+	<data name="Upptäck" xml:space="preserve">
+	<value>الاكتشاف</value>
+  </data>
+	<data name="Mål, målgrupper och innehåll. Vi samlar krav och definierar KPI:er." xml:space="preserve">
+	<value>الأهداف، الجمهور المستهدف، والمحتوى. نجمع المتطلبات ونحدد مؤشرات الأداء الرئيسية.</value>
+  </data>
+	<data name="Struktur" xml:space="preserve">
+	<value>الهيكل</value>
+  </data>
+	<data name="Informationsarkitektur, wireframes och navigationsmönster." xml:space="preserve">
+	<value>هندسة المعلومات، النماذج الأولية، وأنماط التنقل.</value>
+  </data>
+	<data name="UI" xml:space="preserve">
+	<value>واجهة المستخدم</value>
+  </data>
+	<data name="Komponenter, färger och typografi - som prototyp testas och förbättras." xml:space="preserve">
+	<value>المكونات والألوان والخطوط - يتم اختبارها وتحسينها كنموذج أولي.</value>
+  </data>
+	<data name="Handoff" xml:space="preserve">
+	<value>التسليم</value>
+  </data>
+	<data name="Specar och bibliotek för smidig utveckling och förvaltning." xml:space="preserve">
+	<value>مواصفات ومكتبات لتطوير وإدارة سلسة.</value>
+  </data>
+	<data name="Tjänster i detalj" xml:space="preserve">
+	<value>تفاصيل الخدمات</value>
+  </data>
+	<data name="Välj insats eller kombinera – vi anpassar efter mål och budget." xml:space="preserve">
+	<value>اختر خدمة أو ادمج بينها - نحن نكيفها حسب الهدف والميزانية.</value>
+  </data>
+	<data name="UI-kit" xml:space="preserve">
+	<value>مجموعة واجهة المستخدم</value>
+  </data>
+	<data name="Knapp-, formulär- och kortkomponenter" xml:space="preserve">
+	<value>مكونات الأزرار والنماذج والبطاقات</value>
+  </data>
+	<data name="Färger, typografi och ikoner" xml:space="preserve">
+	<value>الألوان والخطوط والأيقونات</value>
+  </data>
+	<data name="Tillgänglighet och states" xml:space="preserve">
+	<value>إمكانية الوصول والحالات</value>
+  </data>
+	<data name="Tokens och naming" xml:space="preserve">
+	<value>الرموز والتسمية</value>
+  </data>
+	<data name="Mönster och guidelines" xml:space="preserve">
+	<value>الأنماط والإرشادات</value>
+  </data>
+	<data name="Versionering &amp; dokumentation" xml:space="preserve">
+	<value>إدارة الإصدارات والتوثيق</value>
+  </data>
+	<data name="Prototyp &amp; test" xml:space="preserve">
+	<value>النموذج الأولي والاختبار</value>
+  </data>
+	<data name="Klickbara flöden" xml:space="preserve">
+	<value>تدفقات تفاعلية</value>
+  </data>
+	<data name="Snabba användartester" xml:space="preserve">
+	<value>اختبارات مستخدم سريعة</value>
+  </data>
+	<data name="Funnel- och A/B-upplägg" xml:space="preserve">
+	<value>إعداد مسار التحويل واختبار أ/ب</value>
+  </data>
+	<data name="Redo att uppdatera ert uttryck?" xml:space="preserve">
+	<value>هل أنتم مستعدون لتحديث هويتكم البصرية؟</value>
+  </data>
+	<data name="Vi tar fram ett UI-kit och en startsida som sätter tonen." xml:space="preserve">
+	<value>سنقوم بتصميم مجموعة واجهة مستخدم وصفحة رئيسية تحدد الأسلوب.</value>
+  </data>
+</root>

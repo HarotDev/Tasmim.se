@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="Title" xml:space="preserve"><value>Design &amp; UX – Tasmim</value></data>
+	<data name="Hero.Title" xml:space="preserve"><value>Design &amp; UX som känns självklar</value></data>
+	<data name="Hero.Sub" xml:space="preserve"><value>Vi skapar tydliga gränssnitt och hållbara UI-kit som gör det enkelt att växa och förvalta.</value></data>
+	<data name="Btn.Pricing" xml:space="preserve"><value>Se paket</value></data>
+	<data name="Btn.Contact" xml:space="preserve"><value>Kontakta oss</value></data>
+
+	<data name="Section.Included.Title" xml:space="preserve"><value>Vad ingår?</value></data>
+	<data name="Section.Included.Sub" xml:space="preserve"><value>Ett smidigt flöde från struktur till färdigt designsystem – optimerat för fart och tydlighet.</value></data>
+
+	<data name="Cards.Designsystem.Title" xml:space="preserve"><value>Designsystem</value></data>
+	<data name="Cards.Designsystem.Text" xml:space="preserve"><value>Komponenter, färger och typografi som håller ihop och skalar.</value></data>
+
+	<data name="Cards.Prototyper.Title" xml:space="preserve"><value>Prototyper</value></data>
+	<data name="Cards.Prototyper.Text" xml:space="preserve"><value>Snabba klickbara prototyper för beslut och tidiga tester.</value></data>
+
+	<data name="Cards.BrandBase.Title" xml:space="preserve"><value>Varumärkesgrund</value></data>
+	<data name="Cards.BrandBase.Text" xml:space="preserve"><value>Ton, uttryck och riktlinjer så allt känns konsekvent.</value></data>
+
+	<data name="Feature.Title" xml:space="preserve"><value>Från idé till designsystem</value></data>
+	<data name="Feature.Text" xml:space="preserve"><value>Vi börjar i innehållet, definierar hierarki och flöden, och bygger sedan ett lättanvänt UI-kit som gör uppdateringar snabba och trygga.</value></data>
+	<data name="Btn.HowWeWork" xml:space="preserve"><value>Hur vi jobbar</value></data>
+	<data name="Btn.PriceExamples" xml:space="preserve"><value>Se prisexempel</value></data>
+
+	<data name="Process.Title" xml:space="preserve"><value>Vår process</value></data>
+	<data name="Process.Sub" xml:space="preserve"><value>Tydliga steg, korta loopar och beslut på riktig användarfeedback.</value></data>
+
+	<data name="Process.Step1.No" xml:space="preserve"><value>1</value></data>
+	<data name="Process.Step1.Title" xml:space="preserve"><value>Upptäck</value></data>
+	<data name="Process.Step1.Text" xml:space="preserve"><value>Mål, målgrupper och innehåll. Vi samlar krav och definierar KPI:er.</value></data>
+
+	<data name="Process.Step2.No" xml:space="preserve"><value>2</value></data>
+	<data name="Process.Step2.Title" xml:space="preserve"><value>Struktur</value></data>
+	<data name="Process.Step2.Text" xml:space="preserve"><value>Informationsarkitektur, wireframes och navigationsmönster.</value></data>
+
+	<data name="Process.Step3.No" xml:space="preserve"><value>3</value></data>
+	<data name="Process.Step3.Title" xml:space="preserve"><value>UI</value></data>
+	<data name="Process.Step3.Text" xml:space="preserve"><value>Komponenter, färger och typografi – som prototyp testas och förbättras.</value></data>
+
+	<data name="Process.Step4.No" xml:space="preserve"><value>4</value></data>
+	<data name="Process.Step4.Title" xml:space="preserve"><value>Handoff</value></data>
+	<data name="Process.Step4.Text" xml:space="preserve"><value>Specar och bibliotek för smidig utveckling och förvaltning.</value></data>
+
+	<data name="ServicesDetail.Title" xml:space="preserve"><value>Tjänster i detalj</value></data>
+	<data name="ServicesDetail.Sub" xml:space="preserve"><value>Välj insats eller kombinera – vi anpassar efter mål och budget.</value></data>
+
+	<data name="ServicesDetail.UIKit.Title" xml:space="preserve"><value>UI-kit</value></data>
+	<data name="ServicesDetail.UIKit.Item1" xml:space="preserve"><value>Knapp-, formulär- och kortkomponenter</value></data>
+	<data name="ServicesDetail.UIKit.Item2" xml:space="preserve"><value>Färger, typografi och ikoner</value></data>
+	<data name="ServicesDetail.UIKit.Item3" xml:space="preserve"><value>Tillgänglighet och states</value></data>
+
+	<data name="ServicesDetail.Designsystem.Title" xml:space="preserve"><value>Designsystem</value></data>
+	<data name="ServicesDetail.Designsystem.Item1" xml:space="preserve"><value>Tokens och naming</value></data>
+	<data name="ServicesDetail.Designsystem.Item2" xml:space="preserve"><value>Mönster och guidelines</value></data>
+	<data name="ServicesDetail.Designsystem.Item3" xml:space="preserve"><value>Versionering &amp; dokumentation</value></data>
+
+	<data name="ServicesDetail.PrototypeTest.Title" xml:space="preserve"><value>Prototyp &amp; test</value></data>
+	<data name="ServicesDetail.PrototypeTest.Item1" xml:space="preserve"><value>Klickbara flöden</value></data>
+	<data name="ServicesDetail.PrototypeTest.Item2" xml:space="preserve"><value>Snabba användartester</value></data>
+	<data name="ServicesDetail.PrototypeTest.Item3" xml:space="preserve"><value>Funnel- och A/B-upplägg</value></data>
+
+	<data name="CTA.Title" xml:space="preserve"><value>Redo att uppdatera ert uttryck?</value></data>
+	<data name="CTA.Sub" xml:space="preserve"><value>Vi tar fram ett UI-kit och en startsida som sätter tonen.</value></data>
+</root>

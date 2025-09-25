@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!--
+      Microsoft ResX Schema
+
+      Version 2.0
+
+      The primary goals of this format is to allow a simple XML format
+      that is mostly human readable. The generation and parsing of the
+      various data types are done through the TypeConverter classes
+      associated with the data types.
+
+      Example:
+
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+      </data>
+
+      Each data element represents a name/value pair. If the name is
+      not specified, it is like an empty string. To generate this file,
+      generate part of the string and then save it as XML an empty data
+      element as shown below. Find an example of this file in your hank
+      project.
+
+      Visual Studio will create a .resX file that cannot be read with a text
+      editor. If you wish to create this file by hand, you must allow
+      the Visual Studio text editor to create a new file and rerun ResGen
+      with the /str option like this:
+
+      resgen /str:en-US:source.txt,output.resx
+
+      A human readable form of this file is represented by a name/value pair
+      formatted like this:
+
+      Name1=Value1
+      Name2=Value2
+      ...
+
+      Basically, the comments are specified in XML comments like pretty much
+      anything else in XML.
+      -->
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complexType>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <!-- Page Title -->
+    <data name="Digital byrå – Tasmim" xml:space="preserve">
+    <value>وكالة رقمية – تصميم</value>
+  </data>
+
+    <!-- Hero Section -->
+    <data name="Vi får ditt företag att växa" xml:space="preserve">
+    <value>نحن نساعد عملك على النمو</value>
+  </data>
+    <data name="Vi kombinerar kreativitet, teknik och affärsdriv för att leverera allt från smart webbutveckling till effektfull marknadsföring." xml:space="preserve">
+    <value>نحن نجمع بين الإبداع والتقنية وريادة الأعمال لتقديم كل شيء من تطوير الويب الذكي إلى التسويق الفعال.</value>
+  </data>
+    <data name="Kontakta oss" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+    <data name="Referenser" xml:space="preserve">
+    <value>أعمالنا</value>
+  </data>
+
+    <!-- Feature Split Section -->
+    <data name="Vi gör det digitala lätt, snabbt och lite roligare" xml:space="preserve">
+    <value>نجعل العالم الرقمي سهلاً وسريعاً وأكثر متعة</value>
+  </data>
+    <data name="Med kreativitet, teknik och affärer i perfekt mix levererar vi allt från vass webbutveckling till marknadsföring som gör skillnad." xml:space="preserve">
+    <value>بمزيج مثالي من الإبداع والتقنية والأعمال، نقدم كل شيء من تطوير الويب المتميز إلى التسويق الذي يحدث فرقًا.</value>
+  </data>
+    <data name="Läs mer om hur vi jobbar" xml:space="preserve">
+    <value>اقرأ المزيد عن طريقة عملنا</value>
+  </data>
+
+    <!-- Industries Section -->
+    <data name="Hemsidor för" xml:space="preserve">
+    <value>مواقع إلكترونية لـ</value>
+  </data>
+    <data name="Advokater" xml:space="preserve">
+    <value>المحامين</value>
+  </data>
+    <data name="Hantverkare" xml:space="preserve">
+    <value>الحرفيين</value>
+  </data>
+    <data name="Frisörer" xml:space="preserve">
+    <value>مصففي الشعر</value>
+  </data>
+    <data name="Bilhandlare" xml:space="preserve">
+    <value>وكلاء السيارات</value>
+  </data>
+    <data name="Psykologer" xml:space="preserve">
+    <value>الأخصائيين النفسيين</value>
+  </data>
+    <data name="Konsultbolag" xml:space="preserve">
+    <value>شركات الاستشارات</value>
+  </data>
+    <data name="Mäklare" xml:space="preserve">
+    <value>الوسطاء العقاريين</value>
+  </data>
+    <data name="Föreningar" xml:space="preserve">
+    <value>الجمعيات</value>
+  </data>
+    <data name="Tandläkare" xml:space="preserve">
+    <value>أطباء الأسنان</value>
+  </data>
+    <data name="Läkare" xml:space="preserve">
+    <value>الأطباء</value>
+  </data>
+    <data name="Konstnärer" xml:space="preserve">
+    <value>الفنانين</value>
+  </data>
+    <data name="Skolor" xml:space="preserve">
+    <value>المدارس</value>
+  </data>
+    <data name="Butiker" xml:space="preserve">
+    <value>المتاجر</value>
+  </data>
+    <data name="Snabba, tydliga och skräddarsydda webbplatser – designade för att sälja." xml:space="preserve">
+    <value>مواقع ويب سريعة وواضحة ومخصصة - مصممة للبيع.</value>
+  </data>
+
+    <!-- Tools Section -->
+    <data name="Verktyg &amp; plattformar vi använder" xml:space="preserve">
+    <value>الأدوات والمنصات التي نستخدمها</value>
+  </data>
+
+    <!-- Services Section -->
+    <data name="Vi hjälper dig med" xml:space="preserve">
+    <value>نحن نساعدك في</value>
+  </data>
+    <data name="Föregående" xml:space="preserve">
+    <value>السابق</value>
+  </data>
+    <data name="Nästa" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+    <data name="Webbutveckling &amp; e-handel" xml:space="preserve">
+    <value>تطوير الويب والتجارة الإلكترونية</value>
+  </data>
+    <data name="Snabba sidor och butiker som är lätta att äga och uppdatera." xml:space="preserve">
+    <value>صفحات ومتاجر سريعة يسهل امتلاكها وتحديثها.</value>
+  </data>
+    <data name="Design &amp; UX" xml:space="preserve">
+    <value>التصميم وتجربة المستخدم</value>
+  </data>
+    <data name="Form och funktion i balans – UI som inspirerar och konverterar." xml:space="preserve">
+    <value>شكل ووظيفة في توازن - واجهة مستخدم تلهم وتحول.</value>
+  </data>
+    <data name="Digital marknadsföring" xml:space="preserve">
+    <value>التسويق الرقمي</value>
+  </data>
+    <data name="SEO, SEM och innehåll som höjer kvaliteten på trafiken och lyfter konverteringen." xml:space="preserve">
+    <value>تحسين محركات البحث (SEO)، والتسويق عبر محركات البحث (SEM)، والمحتوى الذي يرفع جودة الزوار ويزيد من التحويلات.</value>
+  </data>
+    <data name="Till marknadsföring" xml:space="preserve">
+    <value>المزيد عن التسويق</value>
+  </data>
+
+    <!-- FAQ Section -->
+    <data name="Vanliga frågor" xml:space="preserve">
+    <value>الأسئلة الشائعة</value>
+  </data>
+    <data name="Kort och tydligt om process, tid, pris och support." xml:space="preserve">
+    <value>نبذة مختصرة وواضحة عن العملية، الوقت، السعر والدعم.</value>
+  </data>
+    <data name="Fråga 1" xml:space="preserve">
+    <value>السؤال 1</value>
+  </data>
+    <data name="Hur ser processen ut från start till lansering?" xml:space="preserve">
+    <value>كيف تبدو العملية من البداية إلى الإطلاق؟</value>
+  </data>
+    <data name="Vi börjar med mål &amp; scope, tar fram struktur/wireframes, designar gränssnitt, bygger och testar.Löpande avstämningar, sedan lansering och uppföljning." xml:space="preserve">
+    <value>نبدأ بالأهداف والنطاق، نطور الهيكل والنماذج الأولية، نصمم الواجهة، نبني ونختبر. اجتماعات متابعة مستمرة، ثم الإطلاق والمتابعة.</value>
+  </data>
+    <data name="Fråga 2" xml:space="preserve">
+    <value>السؤال 2</value>
+  </data>
+    <data name="Hur lång tid tar ett projekt?" xml:space="preserve">
+    <value>كم من الوقت يستغرق المشروع؟</value>
+  </data>
+    <data name="Vanliga webbplatser tar ofta 2–6 veckor beroende på omfattning, innehåll och integrationer." xml:space="preserve">
+    <value>عادةً ما تستغرق مواقع الويب القياسية من 2 إلى 6 أسابيع اعتمادًا على النطاق والمحتوى والتكاملات.</value>
+  </data>
+    <data name="Fråga 3" xml:space="preserve">
+    <value>السؤال 3</value>
+  </data>
+    <data name="Vad kostar en hemsida eller webbutik?" xml:space="preserve">
+    <value>كم تكلفة موقع الويب أو المتجر الإلكتروني؟</value>
+  </data>
+    <data name="Vi erbjuder fasta paket för vanliga behov och ett skräddarsytt upplägg för större projekt. Se prissidan." xml:space="preserve">
+    <value>نحن نقدم باقات بأسعار ثابتة للاحتياجات الشائعة وترتيبات مخصصة للمشاريع الكبرى. انظر صفحة الأسعار.</value>
+  </data>
+
+    <!-- CTA Section -->
+    <data name="Vill du veta vad vi kan göra för dig?" xml:space="preserve">
+    <value>هل تريد أن تعرف ماذا يمكننا أن نفعل لك؟</value>
+  </data>
+
+</root>

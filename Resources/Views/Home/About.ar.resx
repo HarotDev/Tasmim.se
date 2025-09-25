@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:IsDataSet="true">
+            <xsd:complexType>
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="data">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complexType>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complexType>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complexType>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Om oss – Tasmim" xml:space="preserve">
+    <value>من نحن – تصميم</value>
+  </data>
+    <data name="Vi bygger webb som är enkel att förstå och lätt att äga" xml:space="preserve">
+    <value>نبني مواقع إلكترونية سهلة الفهم والتملك</value>
+  </data>
+    <data name="Liten byrå, snabba beslut. Från idé till lansering utan krångel." xml:space="preserve">
+    <value>وكالة صغيرة، قرارات سريعة. من الفكرة إلى الإطلاق بدون تعقيدات.</value>
+  </data>
+    <data name="Webbplatser och e-handel" xml:space="preserve">
+    <value>مواقع إلكترونية وتجارة إلكترونية</value>
+  </data>
+    <data name="Design, innehåll och SEO" xml:space="preserve">
+    <value>تصميم، محتوى، وتحسين محركات البحث</value>
+  </data>
+    <data name="Fasta upplägg och tydliga priser" xml:space="preserve">
+    <value>باقات ثابتة وأسعار واضحة</value>
+  </data>
+    <data name="Kontakta oss" xml:space="preserve">
+    <value>اتصل بنا</value>
+  </data>
+    <data name="Referenser" xml:space="preserve">
+    <value>أعمالنا</value>
+  </data>
+    <data name="Därför väljer kunder oss" xml:space="preserve">
+    <value>لماذا يختارنا العملاء</value>
+  </data>
+    <data name="Tydligt" xml:space="preserve">
+    <value>وضوح</value>
+  </data>
+    <data name="En kontakt, rak kommunikation och en process du ser från start till mål." xml:space="preserve">
+    <value>جهة اتصال واحدة، تواصل مباشر، وعملية شفافة من البداية إلى النهاية.</value>
+  </data>
+    <data name="Snabbt" xml:space="preserve">
+    <value>سرعة</value>
+  </data>
+    <data name="Vi jobbar i korta iterationer och visar tidigt – så vi gör rätt saker direkt." xml:space="preserve">
+    <value>نعمل في دورات قصيرة ونعرض النتائج مبكرًا - لنضمن أننا نفعل الأشياء الصحيحة على الفور.</value>
+  </data>
+    <data name="Ägbarhet" xml:space="preserve">
+    <value>سهولة التملك</value>
+  </data>
+    <data name="Du får en sida som är lätt att uppdatera, skala och äga över tid." xml:space="preserve">
+    <value>تحصل على موقع سهل التحديث والتوسيع والتملك على المدى الطويل.</value>
+  </data>
+    <data name="Så går det till" xml:space="preserve">
+    <value>كيف يتم ذلك</value>
+  </data>
+    <data name="Start &amp; plan" xml:space="preserve">
+    <value>البداية والتخطيط</value>
+  </data>
+    <data name="Vi sätter mål, scope och tidsplan. Du vet exakt vad som ingår." xml:space="preserve">
+    <value>نحدد الأهداف والنطاق والجدول الزمني. ستعرف بالضبط ما الذي تتضمنه الخدمة.</value>
+  </data>
+    <data name="Design &amp; prototyp" xml:space="preserve">
+    <value>التصميم والنموذج الأولي</value>
+  </data>
+    <data name="Vi skissar snabbt och gör en klickbar prototyp som du kan testa." xml:space="preserve">
+    <value>نرسم المخططات الأولية بسرعة وننشئ نموذجًا أوليًا تفاعليًا يمكنك اختباره.</value>
+  </data>
+    <data name="Bygg &amp; lansering" xml:space="preserve">
+    <value>التطوير والإطلاق</value>
+  </data>
+    <data name="Vi utvecklar, testar och lanserar. Sedan hjälper vi dig komma igång." xml:space="preserve">
+    <value>نقوم بالتطوير والاختبار والإطلاق. ثم نساعدك على الانطلاق.</value>
+  </data>
+    <data name="Redo att starta?" xml:space="preserve">
+    <value>هل أنت مستعد للبدء؟</value>
+  </data>
+    <data name="Skriv några rader om vad du behöver – vi återkommer snabbt." xml:space="preserve">
+    <value>اكتب بضعة أسطر حول ما تحتاجه - وسنعاود الاتصال بك بسرعة.</value>
+  </data>
+    <data name="Referenser →" xml:space="preserve">
+    <value>أعمالنا ←</value>
+  </data>
+</root>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<data name="+46 7X XXX XX XX" xml:space="preserve">
+	<value>+٤٦ ٧X XXX XX XX</value>
+  </data>
+	<data name="Berätta kort om företaget och vad du vill göra." xml:space="preserve">
+	<value>أخبرنا باختصار عن شركتك وما تريد القيام به.</value>
+  </data>
+	<data name="Beställ" xml:space="preserve">
+	<value>اطلب</value>
+  </data>
+	<data name="Beställ – {0} {1}" xml:space="preserve">
+	<value>اطلب – {0} {1}</value>
+  </data>
+	<data name="Din beställning" xml:space="preserve">
+	<value>طلبك</value>
+  </data>
+	<data name="Dina uppgifter" xml:space="preserve">
+	<value>بياناتك</value>
+  </data>
+	<data name="Domän (om du har)" xml:space="preserve">
+	<value>النطاق (إن وجد)</value>
+  </data>
+	<data name="Du får en bekräftelse via e-post." xml:space="preserve">
+	<value>ستتلقى تأكيدًا عبر البريد الإلكتروني.</value>
+  </data>
+	<data name="E-post *" xml:space="preserve">
+	<value>البريد الإلكتروني *</value>
+  </data>
+	<data name="Fyll i dina uppgifter så återkommer vi snabbt och bekräftar." xml:space="preserve">
+	<value>املأ بياناتك وسنعاود الاتصال بك بسرعة للتأكيد.</value>
+  </data>
+	<data name="Företag" xml:space="preserve">
+	<value>شركة</value>
+  </data>
+	<data name="Grundläggande SEO" xml:space="preserve">
+	<value>تحسين أساسي لمحركات البحث</value>
+  </data>
+	<data name="Hemsida" xml:space="preserve">
+	<value>موقع إلكتروني</value>
+  </data>
+	<data name="Jag godkänner att ni kontaktar mig om min förfrågan." xml:space="preserve">
+	<value>أوافق على أن تتصلوا بي بخصوص طلبي.</value>
+  </data>
+	<data name="Kundtyp" xml:space="preserve">
+	<value>نوع العميل</value>
+  </data>
+	<data name="Leveransplan och eventuella tillval bestämmer vi tillsammans." xml:space="preserve">
+	<value>نحدد خطة التسليم وأي خيارات إضافية معًا.</value>
+  </data>
+	<data name="Liten" xml:space="preserve">
+	<value>صغير</value>
+  </data>
+	<data name="Liten butik" xml:space="preserve">
+	<value>متجر صغير</value>
+  </data>
+	<data name="Mellan" xml:space="preserve">
+	<value>متوسط</value>
+  </data>
+	<data name="Mobil" xml:space="preserve">
+	<value>الجوال</value>
+  </data>
+	<data name="Mobilanpassad &amp; snabb" xml:space="preserve">
+	<value>متجاوب مع الجوال وسريع</value>
+  </data>
+	<data name="Namn *" xml:space="preserve">
+	<value>الاسم *</value>
+  </data>
+	<data name="Personlig kontakt" xml:space="preserve">
+	<value>اتصال شخصي</value>
+  </data>
+	<data name="Privat" xml:space="preserve">
+	<value>خاص</value>
+  </data>
+	<data name="Skicka beställning" xml:space="preserve">
+	<value>إرسال الطلب</value>
+  </data>
+	<data name="Skickar…" xml:space="preserve">
+	<value>جارٍ الإرسال…</value>
+  </data>
+	<data name="Skriv utan http(s) om du vill – vi fixar resten." xml:space="preserve">
+	<value>اكتب بدون http(s) إذا أردت - نحن نهتم بالباقي.</value>
+  </data>
+	<data name="Stor" xml:space="preserve">
+	<value>كبير</value>
+  </data>
+	<data name="Support vid start" xml:space="preserve">
+	<value>دعم عند الانطلاق</value>
+  </data>
+	<data name="t.ex. dittföretag.se" xml:space="preserve">
+	<value>مثال: yourcompany.se</value>
+  </data>
+	<data name="Webbutik" xml:space="preserve">
+	<value>متجر إلكتروني</value>
+  </data>
+	<data name="Övrigt" xml:space="preserve">
+	<value>ملاحظات أخرى</value>
+  </data>
+</root>

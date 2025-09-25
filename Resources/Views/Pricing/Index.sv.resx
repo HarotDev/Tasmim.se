@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>2.0</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+	<data name="Title" xml:space="preserve"><value>Paket &amp; priser</value></data>
+	<data name="Sub" xml:space="preserve"><value>Från idé till affär: bli hittad, ladda snabbt, konvertera fler.</value></data>
+
+	<data name="Tabs.Website" xml:space="preserve"><value>Hemsida</value></data>
+	<data name="Tabs.Shop" xml:space="preserve"><value>Webbutik</value></data>
+
+	<data name="Card.Common.Eyebrow" xml:space="preserve"><value>Komplett paket</value></data>
+	<data name="Card.Common.Price.Unit" xml:space="preserve"><value>engångskostnad</value></data>
+	<data name="Card.Common.Order" xml:space="preserve"><value>Beställ</value></data>
+	<data name="Ribbon.Popular" xml:space="preserve"><value>Populär</value></data>
+	<data name="Ribbon.BestValue" xml:space="preserve"><value>Bäst värde</value></data>
+
+	<data name="Website.Small.Title" xml:space="preserve"><value>Hemsida Liten</value></data>
+	<data name="Website.Small.Features" xml:space="preserve"><value>Cirka 1–3 undersidor|Responsiv &amp; tillgänglig design|Kontaktformulär + karta|AI-stött sökmotoroptimering|Anpassning efter era önskemål|Alla ändringar efter överenskommelse|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt</value></data>
+
+	<data name="Website.Medium.Title" xml:space="preserve"><value>Hemsida Mellan</value></data>
+	<data name="Website.Medium.Features" xml:space="preserve"><value>Cirka 1–7 undersidor|Snabb laddtid &amp; Core Web Vitals|Kontaktformulär + karta|AI-stött sökmotoroptimering|Design efter varumärkesprofil|Alla ändringar efter överenskommelse|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt</value></data>
+
+	<data name="Website.Large.Title" xml:space="preserve"><value>Hemsida Stor</value></data>
+	<data name="Website.Large.Features" xml:space="preserve"><value>Cirka 1–15 undersidor|Utökad funktionalitet &amp; integrationer|Kontaktformulär + karta|AI-stött sökmotoroptimering|Anpassad design efter behov|Alla ändringar efter överenskommelse|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt</value></data>
+
+	<data name="Shop.Small.Title" xml:space="preserve"><value>Webbutik Liten</value></data>
+	<data name="Shop.Small.Features" xml:space="preserve"><value>1–6 undersidor|Upp till ~20 produkter|Betalningsflöde &amp; kassa|Plattform väljs efter vad som känns enklast för er|AI-stött sökmotoroptimering|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt|Tidsplan bestäms utifrån projektets omfattning</value></data>
+
+	<data name="Shop.Medium.Title" xml:space="preserve"><value>Webbutik Mellan</value></data>
+	<data name="Shop.Medium.Features" xml:space="preserve"><value>1–6 undersidor|Upp till ~50 produkter|Kategorier &amp; filtrering|Plattform väljs efter vad som känns enklast för er|AI-stött sökmotoroptimering|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt|Tidsplan bestäms utifrån projektets omfattning</value></data>
+
+	<data name="Shop.Large.Title" xml:space="preserve"><value>Webbutik Stor</value></data>
+	<data name="Shop.Large.Features" xml:space="preserve"><value>1–6 undersidor|Upp till ~100 produkter|Utökade funktioner &amp; integrationer|Plattform väljs efter vad som känns enklast för er|AI-stött sökmotoroptimering|Bild- och texthjälp|Koppling till sociala medier|Blogg/nyheter|Personlig kontakt|Tidsplan bestäms utifrån projektets omfattning</value></data>
+
+	<data name="TailCTA.Title" xml:space="preserve"><value>Hittar du inget som passar?</value></data>
+	<data name="TailCTA.Text" xml:space="preserve"><value>Inga problem – hör av dig så tar vi fram en lösning som passar dig och ditt projekt bäst.</value></data>
+	<data name="TailCTA.Btn" xml:space="preserve"><value>Kontakta oss</value></data>
+</root>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Integritetspolicy" xml:space="preserve">
+	<value>سياسة الخصوصية</value>
+  </data>
+	<data name="Abstrakt bakgrundsbild för integritetspolicy" xml:space="preserve">
+	<value>صورة خلفية مجردة لسياسة الخصوصية</value>
+  </data>
+	<data name="Så här samlar, använder och skyddar Tasmim personuppgifter på tasmim.se. Tydligt, lagligt och med respekt för din integritet." xml:space="preserve">
+	<value>كيف تقوم "تصميم" بجمع واستخدام وحماية البيانات الشخصية على tasmim.se. بوضوح، وبشكل قانوني، ومع احترام خصوصيتك.</value>
+  </data>
+	<data name="Läs policyn" xml:space="preserve">
+	<value>اقرأ السياسة</value>
+  </data>
+	<data name="Kontakt" xml:space="preserve">
+	<value>اتصل بنا</value>
+  </data>
+	<data name="Senast uppdaterad:" xml:space="preserve">
+	<value>آخر تحديث:</value>
+  </data>
+	<data name="Om den här policyn" xml:space="preserve">
+	<value>حول هذه السياسة</value>
+  </data>
+	<data name="Denna sekretess- och cookiespolicy beskriver hur vi behandlar personuppgifter som lämnas till oss eller som vi samlar in online (bl.a. via cookies). Policyn gäller för &lt;strong&gt;tasmim.se&lt;/strong&gt; (”Webbplatsen”). Vi följer GDPR och hanterar uppgifter säkert och konfidentiellt. Utlämning till tredje part sker inte utan rättslig grund eller ditt samtycke, om inte annat framgår här." xml:space="preserve">
+	<value>توضح سياسة الخصوصية وملفات تعريف الارتباط هذه كيفية تعاملنا مع البيانات الشخصية التي يتم تقديمها إلينا أو التي نجمعها عبر الإنترنت (بما في ذلك عبر ملفات تعريف الارتباط). تنطبق السياسة على &lt;strong&gt;tasmim.se&lt;/strong&gt; ("الموقع الإلكتروني"). نحن نلتزم باللائحة العامة لحماية البيانات (GDPR) ونتعامل مع البيانات بأمان وسرية. لا يتم الكشف عن البيانات لطرف ثالث دون أساس قانوني أو موافقتك، ما لم ينص على خلاف ذلك هنا.</value>
+  </data>
+	<data name="Vilka uppgifter vi kan behandla" xml:space="preserve">
+	<value>ما هي البيانات التي قد نعالجها</value>
+  </data>
+	<data name="Namn, företag, e-post och telefonnummer vid förfrågningar eller avtal med Tasmim." xml:space="preserve">
+	<value>الاسم، الشركة، البريد الإلكتروني ورقم الهاتف عند الاستفسارات أو إبرام العقود مع "تصميم".</value>
+  </data>
+	<data name="Kontaktuppgifter när du kontaktar oss som företrädare för din arbetsgivare/uppdragsgivare." xml:space="preserve">
+	<value>بيانات الاتصال عندما تتواصل معنا كممثل لصاحب العمل / العميل الخاص بك.</value>
+  </data>
+	<data name="Korrespondens/kommentarer i ärenden för att ge bättre service vid senare kontakt." xml:space="preserve">
+	<value>المراسلات / التعليقات في القضايا لتقديم خدمة أفضل في الاتصالات المستقبلية.</value>
+  </data>
+	<data name="Laglighet i behandlingen" xml:space="preserve">
+	<value>قانونية المعالجة</value>
+  </data>
+	<data name="Tasmim kommer att:" xml:space="preserve">
+	<value>ستقوم "تصميم" بما يلي:</value>
+  </data>
+	<data name="Behandla uppgifter lagligt, korrekt och öppet." xml:space="preserve">
+	<value>معالجة البيانات بشكل قانوني وصحيح وشفاف.</value>
+  </data>
+	<data name="Använda uppgifter för tydliga, berättigade ändamål och inte oförenligt med dessa." xml:space="preserve">
+	<value>استخدام البيانات لأغراض واضحة ومشروعة وغير متعارضة معها.</value>
+  </data>
+	<data name="Begränsa insamling till vad som är adekvat, relevant och nödvändigt." xml:space="preserve">
+	<value>قصر جمع البيانات على ما هو مناسب وملائم وضروري.</value>
+  </data>
+	<data name="Spara uppgifter endast så länge det behövs för syftet." xml:space="preserve">
+	<value>الاحتفاظ بالبيانات فقط طالما كان ذلك ضرورياً للغرض منها.</value>
+  </data>
+	<data name="Skydda uppgifter med lämpliga tekniska och organisatoriska åtgärder." xml:space="preserve">
+	<value>حماية البيانات بتدابير فنية وتنظيمية مناسبة.</value>
+  </data>
+	<data name="Rättslig grund och ändamål" xml:space="preserve">
+	<value>الأساس القانوني والغرض</value>
+  </data>
+	<data name="Vi behandlar uppgifter för att besvara förfrågningar (&lt;em&gt;berättigat intresse&lt;/em&gt;, GDPR art. 6.1 f). Leder förfrågan till avtal behandlas uppgifter för att förbereda/uppfylla avtalet (GDPR art. 6.1 b). Vi behandlar även uppgifter när lag eller myndighetsbeslut kräver det (GDPR art. 6.1 c)." xml:space="preserve">
+	<value>نقوم بمعالجة البيانات للرد على الاستفسارات (&lt;em&gt;مصلحة مشروعة&lt;/em&gt;، المادة ٦.١ (و) من اللائحة العامة لحماية البيانات). إذا أدى الاستفسار إلى عقد، تتم معالجة البيانات لإعداد / تنفيذ العقد (المادة ٦.١ (ب) من اللائحة). كما نقوم بمعالجة البيانات عندما يتطلب ذلك القانون أو قرار من السلطات (المادة ٦.١ (ج) من اللائحة).</value>
+  </data>
+	<data name="Ibland kan vi använda e-post/telefon för att skicka information och marknadsföring om våra tjänster baserat på intresseavvägning (GDPR art. 6.1 f). Du kan alltid invända mot direktmarknadsföring." xml:space="preserve">
+	<value>في بعض الأحيان، قد نستخدم البريد الإلكتروني / الهاتف لإرسال معلومات وتسويق حول خدماتنا بناءً على توازن المصالح (المادة ٦.١ (و) من اللائحة). يمكنك دائمًا الاعتراض على التسويق المباشر.</value>
+  </data>
+	<data name="Personuppgiftsbiträden" xml:space="preserve">
+	<value>معالجو البيانات</value>
+  </data>
+	<data name="Vi använder betrodda leverantörer för drift, lagring och e-post. De behandlar uppgifter endast enligt våra instruktioner. Lagring sker inom EU/EES eller med giltiga skyddsmekanismer enligt GDPR." xml:space="preserve">
+	<value>نحن نستخدم موردين موثوقين للتشغيل والتخزين والبريد الإلكتروني. يقومون بمعالجة البيانات فقط وفقًا لتعليماتنا. يتم التخزين داخل الاتحاد الأوروبي / المنطقة الاقتصادية الأوروبية أو بآليات حماية صالحة وفقًا للائحة العامة لحماية البيانات.</value>
+  </data>
+	<data name="Cookies" xml:space="preserve">
+	<value>ملفات تعريف الارتباط (كوكيز)</value>
+  </data>
+	<data name="Webbplatsen använder cookies för nödvändiga funktioner och förbättrad upplevelse. Tredjepartscookies (t.ex. analys) kan förekomma. Du kan i din webbläsare begränsa eller välja bort cookies samt, där det stöds, anonymisera IP-adress." xml:space="preserve">
+	<value>يستخدم الموقع ملفات تعريف الارتباط للوظائف الضرورية وتحسين التجربة. قد توجد ملفات تعريف ارتباط من جهات خارجية (مثل التحليلات). يمكنك في متصفحك تقييد أو إلغاء ملفات تعريف الارتباط، وحيثما كان ذلك مدعومًا، إخفاء هوية عنوان IP.</value>
+  </data>
+	<data name="Säkerhet" xml:space="preserve">
+	<value>الأمان</value>
+  </data>
+	<data name="Vi begränsar åtkomst till personuppgifter till behöriga personer hos Tasmim och våra biträden, och använder tekniska/organisatoriska skyddsåtgärder för att förhindra obehörig åtkomst, förlust eller skada." xml:space="preserve">
+	<value>نقصر الوصول إلى البيانات الشخصية على الأشخاص المصرح لهم في "تصميم" ومعالجي البيانات لدينا، ونستخدم تدابير حماية فنية / تنظيمية لمنع الوصول غير المصرح به أو الفقدان أو التلف.</value>
+  </data>
+	<data name="Dina rättigheter" xml:space="preserve">
+	<value>حقوقك</value>
+  </data>
+	<data name="Tillgång till och bekräftelse på om vi behandlar dina uppgifter." xml:space="preserve">
+	<value>الوصول إلى بياناتك وتأكيد ما إذا كنا نعالجها.</value>
+  </data>
+	<data name="Rättelse och, när skäl finns, radering." xml:space="preserve">
+	<value>التصحيح، وعند وجود أسباب، الحذف.</value>
+  </data>
+	<data name="Begränsning eller invändning mot viss behandling." xml:space="preserve">
+	<value>تقييد أو الاعتراض على معالجة معينة.</value>
+  </data>
+	<data name="Dataportabilitet (strukturerات, allmänt använt och maskinläsbart format)." xml:space="preserve">
+	<value>إمكانية نقل البيانات (بتنسيق منظم وشائع الاستخدام وقابل للقراءة آليًا).</value>
+  </data>
+	<data name="Klagomål till Integritetsskyddsmyndigheten: " xml:space="preserve">
+	<value>تقديم شكوى إلى هيئة حماية الخصوصية:</value>
+  </data>
+	<data name="Vid begäran kan identitetskontroll krävas." xml:space="preserve">
+	<value>عند الطلب، قد يكون التحقق من الهوية مطلوبًا.</value>
+  </data>
+	<data name="Ändringar i denna policy" xml:space="preserve">
+	<value>التغييرات في هذه السياسة</value>
+  </data>
+	<data name="Policyn kan uppdateras vid behov, t.ex. vid ändrad lagstiftning. Senaste versionen publiceras alltid här." xml:space="preserve">
+	<value>يمكن تحديث السياسة عند الحاجة، على سبيل المثال عند تغيير التشريعات. يتم دائمًا نشر أحدث إصدار هنا.</value>
+  </data>
+	<data name="Kontaktinformation" xml:space="preserve">
+	<value>معلومات الاتصال</value>
+  </data>
+</root>

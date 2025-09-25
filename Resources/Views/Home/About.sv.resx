@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+	<data name="Hero.Title" xml:space="preserve"><value>Vi bygger webb som är enkel att förstå och lätt att äga</value></data>
+	<data name="Hero.Sub" xml:space="preserve"><value>Liten byrå, snabba beslut. Från idé till lansering utan krångel.</value></data>
+	<data name="Bullets.1" xml:space="preserve"><value>Webbplatser och e-handel</value></data>
+	<data name="Bullets.2" xml:space="preserve"><value>Design, innehåll och SEO</value></data>
+	<data name="Bullets.3" xml:space="preserve"><value>Fasta upplägg och tydliga priser</value></data>
+	<data name="Btn.Contact" xml:space="preserve"><value>Kontakta oss</value></data>
+	<data name="Btn.References" xml:space="preserve"><value>Referenser</value></data>
+
+	<data name="Why.Title" xml:space="preserve"><value>Därför väljer kunder oss</value></data>
+	<data name="Why.Card1.Title" xml:space="preserve"><value>Tydligt</value></data>
+	<data name="Why.Card1.Text" xml:space="preserve"><value>En kontakt, rak kommunikation och en process du ser från start till mål.</value></data>
+	<data name="Why.Card2.Title" xml:space="preserve"><value>Snabbt</value></data>
+	<data name="Why.Card2.Text" xml:space="preserve"><value>Vi jobbar i korta iterationer och visar tidigt – så vi gör rätt saker direkt.</value></data>
+	<data name="Why.Card3.Title" xml:space="preserve"><value>Ägbarhet</value></data>
+	<data name="Why.Card3.Text" xml:space="preserve"><value>Du får en sida som är lätt att uppdatera, skala och äga över tid.</value></data>
+
+	<data name="Process.Title" xml:space="preserve"><value>Så går det till</value></data>
+	<data name="Process.1.Title" xml:space="preserve"><value>Start &amp; plan</value></data>
+	<data name="Process.1.Text" xml:space="preserve"><value>Vi sätter mål, scope och tidsplan. Du vet exakt vad som ingår.</value></data>
+	<data name="Process.2.Title" xml:space="preserve"><value>Design &amp; prototyp</value></data>
+	<data name="Process.2.Text" xml:space="preserve"><value>Vi skissar snabbt och gör en klickbar prototyp som du kan testa.</value></data>
+	<data name="Process.3.Title" xml:space="preserve"><value>Bygg &amp; lansering</value></data>
+	<data name="Process.3.Text" xml:space="preserve"><value>Vi utvecklar, testar och lanserar. Sedan hjälper vi dig komma igång.</value></data>
+
+	<data name="CTA.Title" xml:space="preserve"><value>Redo att starta?</value></data>
+	<data name="CTA.Sub" xml:space="preserve"><value>Skriv några rader om vad du behöver – vi återkommer snabbt.</value></data>
+	<data name="CTA.Btn.Contact" xml:space="preserve"><value>Kontakta oss</value></data>
+	<data name="CTA.Btn.Refs" xml:space="preserve"><value>Referenser →</value></data>
+</root>

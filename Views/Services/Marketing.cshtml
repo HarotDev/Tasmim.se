@@ -1,147 +1,142 @@
-﻿@{
-    ViewData["Title"] = "Marknadsföring – Tasmim";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer T
+
+@{
+    ViewData["Title"] = T["Marknadsföring – Tasmim"];
     Layout = "_Layout";
 }
 
 <section class="hero" style="--overlay:.50;">
     <div class="hero__bg">
         <video class="hero__video"
-               autoplay
-               muted
-               loop
-               playsinline
-               preload="auto"
-               poster="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=2000&auto=format&fit=crop">
+               autoplay muted loop playsinline preload="auto"
+               poster="">
             <source src="~/videos/SEO.mp4" type="video/mp4" />
-            Din webbläsare stöder inte video-taggen.
+            @T["Din webbläsare stöder inte video-taggen."]
         </video>
     </div>
     <div class="hero__overlay" aria-hidden="true"></div>
-
     <div class="container hero__inner">
-        <h1 class="hero-title">Digital marknadsföring som driver affär</h1>
-        <p class="hero-sub">SEO, SEM och innehåll som ökar relevant trafik och konverterar besökare till kunder.</p>
+        <h1 class="hero-title">@T["Digital marknadsföring som driver affär"]</h1>
+        <p class="hero-sub">@T["SEO, SEM och innehåll som ökar relevant trafik och konverterar besökare till kunder."]</p>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Boka ett samtal</a>
+            <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+            <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
         </div>
     </div>
 </section>
 
-<section class="section reveal">
-    <div class="container">
+<section class="section">
+    <div class="container reveal">
         <header class="section-head text-center">
-            <h2>Vad ingår?</h2>
-            <p class="muted">Vi kombinerar långsiktig SEO med snabb effekt från annonser – allt mätt och optimerat.</p>
+            <h2>@T["Vad ingår?"]</h2>
+            <p>@T["Vi kombinerar långsiktig SEO med snabb effekt från annonser – allt mätt och optimerat."]</p>
         </header>
-
         <div class="cards grid grid-3">
             <article class="card">
-                <h3>SEO</h3>
-                <p class="muted">Teknik, innehåll och länkar. Vi bygger sökbar struktur och förbättrar Core Web Vitals.</p>
+                <h3>@T["SEO"]</h3>
+                <p>@T["Teknik, innehåll och länkar. Vi bygger sökbar struktur och förbättrar Core Web Vitals."]</p>
             </article>
             <article class="card">
-                <h3>SEM / Paid</h3>
-                <p class="muted">Google Ads, Performance Max och retargeting. Smart budgivning och tydliga mål.</p>
+                <h3>@T["SEM / Paid"]</h3>
+                <p>@T["Google Ads, Performance Max och retargeting. Smart budgivning och tydliga mål."]</p>
             </article>
             <article class="card">
-                <h3>Content</h3>
-                <p class="muted">Planering, produktion och optimering av artiklar och landningssidor som konverterar.</p>
+                <h3>@T["Content"]</h3>
+                <p>@T["Planering, produktion och optimering av artiklar och landningssidor som konverterar."]</p>
             </article>
         </div>
     </div>
 </section>
 
-<section class="section feature-split reveal">
-    <div class="container grid-2 grid feature">
-        <div class="feature-copy">
-            <h2>Mätbart från dag ett</h2>
-            <p class="muted">Vi sätter upp spårning i GA4 och Tag Manager, definierar KPI:er och bygger en enkel rapportvy. Du ser vad som fungerar och varför.</p>
-            <div class="hero__actions">
-                <a class="btn btn-outline" asp-controller="Home" asp-action="About">Hur vi jobbar</a>
-                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se prisexempel</a>
+<section class="section section--soft">
+    <div class="container reveal">
+        <div class="grid grid-2 feature">
+            <div class="feature-copy">
+                <h2>@T["Mätbart från dag ett"]</h2>
+                <p>@T["Vi sätter upp spårning i GA4 och Tag Manager, definierar KPI:er och bygger en enkel rapportvy. Du ser vad som fungerar och varför."]</p>
+                <div class="hero__actions">
+                    <a class="btn btn-outline" asp-controller="Home" asp-action="About">@T["Hur vi jobbar"]</a>
+                    <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se prisexempel"]</a>
+                </div>
             </div>
-        </div>
-        <div class="feature-media">
-            <div class="square">
-                <img src="https://images.unsplash.com/photo-1551281044-8af0d3c8f9b6?q=80&w=1600&auto=format&fit=crop" alt="Dashboard med KPI:er">
+            <div class="feature-media">
+                <div class="square">
+                    <img src="https://images.unsplash.com/photo-1551281044-8af0d3c8f9b6?q=80&w=1600&auto=format&fit=crop" alt='@T["Dashboard med KPI:er"]'>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section section--soft reveal">
-    <div class="container">
+<section class="section">
+    <div class="container reveal">
         <header class="section-head text-center">
-            <h2>Vår process</h2>
-            <p class="muted">Tydliga steg, korta loopar och kontinuerlig förbättring.</p>
+            <h2>@T["Vår process"]</h2>
+            <p>@T["Tydliga steg, korta loopar och kontinuerlig förbättring."]</p>
         </header>
-
         <ol class="steps">
             <li class="step">
                 <div class="no">1</div>
                 <div>
-                    <h3>Analys & mål</h3>
-                    <p class="muted">Nuläge, konkurrenter och målgrupper. Vi sätter KPI:er och prioriterar insatser.</p>
+                    <h3>@T["Analys & mål"]</h3>
+                    <p>@T["Nuläge, konkurrenter och målgrupper. Vi sätter tydliga mål och väljer det viktigaste att göra först."]</p>
                 </div>
             </li>
             <li class="step">
                 <div class="no">2</div>
                 <div>
-                    <h3>Setup</h3>
-                    <p class="muted">GA4/GTM, konverteringsspårning, kampanjstruktur och landningssidor.</p>
+                    <h3>@T["Setup"]</h3>
+                    <p>@T["GA4/GTM, konverteringsspårning, kampanjstruktur och landningssidor."]</p>
                 </div>
             </li>
             <li class="step">
                 <div class="no">3</div>
                 <div>
-                    <h3>Aktivering</h3>
-                    <p class="muted">SEO-åtgärder, annonser live och innehållsproduktion enligt plan.</p>
+                    <h3>@T["Aktivering"]</h3>
+                    <p>@T["SEO-åtgärder, annonser live och innehållsproduktion enligt plan."]</p>
                 </div>
             </li>
             <li class="step">
                 <div class="no">4</div>
                 <div>
-                    <h3>Optimering</h3>
-                    <p class="muted">A/B-tester, sökordsarbete, budgetfördelning och löpande förbättringar.</p>
+                    <h3>@T["Optimering"]</h3>
+                    <p>@T["Vi jämför olika lösningar, väljer bra sökord, sätter rätt budget och finslipar löpande."]</p>
                 </div>
             </li>
         </ol>
     </div>
 </section>
 
-<section class="section reveal">
-    <div class="container">
+<section class="section section--soft">
+    <div class="container reveal">
         <header class="section-head text-center">
-            <h2>Tjänster i detalj</h2>
-            <p class="muted">Välj en insats eller kombinera – vi matchar efter mål och budget.</p>
+            <h2>@T["Tjänster i detalj"]</h2>
+            <p>@T["Välj en insats eller kombinera – vi matchar efter mål och budget."]</p>
         </header>
-
         <div class="cards grid grid-3">
             <article class="card">
-                <h3>Teknisk SEO</h3>
+                <h3>@T["Teknisk SEO"]</h3>
                 <ul class="ticks">
-                    <li>Core Web Vitals & prestanda</li>
-                    <li>Indexering & sitemap</li>
-                    <li>Strukturerad data</li>
+                    <li>@T["Core Web Vitals & prestanda"]</li>
+                    <li>@T["Indexering & sitemap"]</li>
+                    <li>@T["Strukturerad data"]</li>
                 </ul>
             </article>
-
             <article class="card">
-                <h3>On-page & Content</h3>
+                <h3>@T["On-page & Content"]</h3>
                 <ul class="ticks">
-                    <li>Sökordsresearch & brief</li>
-                    <li>Landningssidor & artiklar</li>
-                    <li>Internlänkar & UX-signal</li>
+                    <li>@T["Sökordsresearch & brief"]</li>
+                    <li>@T["Landningssidor & artiklar"]</li>
+                    <li>@T["Internlänkar & UX-signal"]</li>
                 </ul>
             </article>
-
             <article class="card">
-                <h3>Google Ads</h3>
+                <h3>@T["Google Ads"]</h3>
                 <ul class="ticks">
-                    <li>Search & Performance Max</li>
-                    <li>Konverteringsspårning</li>
-                    <li>Budget & ROAS-styrning</li>
+                    <li>@T["Search & Performance Max"]</li>
+                    <li>@T["Konverteringsspårning"]</li>
+                    <li>@T["Budget & ROAS-styrning"]</li>
                 </ul>
             </article>
         </div>
@@ -152,12 +147,12 @@
     <div class="container">
         <div class="grid grid-2">
             <div>
-                <h2>Redo att lyfta er trafik och försäljning?</h2>
-                <p>Skriv några rader om er situation så återkommer vi med förslag och fast pris.</p>
+                <h2>@T["Redo att lyfta er trafik och försäljning?"]</h2>
+                <p>@T["Skriv några rader om er situation så återkommer vi med förslag och fast pris."]</p>
             </div>
             <div class="hero__actions">
-                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">Se paket</a>
-                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">Kontakta oss</a>
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+                <a class="btn btn-outline" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
             </div>
         </div>
     </div>
