@@ -1,12 +1,12 @@
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+}
+
 function whenConsentReady(callback) {
     const consentCookieName = 'CookieConsent';
-
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
-    }
-
     const consentCookie = getCookie(consentCookieName);
 
     if (consentCookie) {
@@ -19,7 +19,6 @@ function whenConsentReady(callback) {
     }
 }
 
-
 (() => {
     'use strict';
     const cookieBanner = document.getElementById('cookie-banner');
@@ -27,12 +26,6 @@ function whenConsentReady(callback) {
     const openPrefsBtn = document.getElementById('cookie-open-prefs');
     const closePrefsBtn = document.getElementById('cookie-close-prefs');
     const consentCookieName = 'CookieConsent';
-
-    function getCookie(name) {
-        const value = `; ${document.cookie}`;
-        const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
-    }
 
     if (cookieBanner && !getCookie(consentCookieName)) {
         cookieBanner.hidden = false;
@@ -51,23 +44,27 @@ function whenConsentReady(callback) {
     }
 })();
 
-
 (() => {
     const nodes = document.querySelectorAll('.reveal');
     if (!nodes.length) return;
 
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (prefersReduced) { nodes.forEach(n => n.classList.add('in')); return; }
+    if (prefersReduced) {
+        nodes.forEach(n => n.classList.add('in'));
+        return;
+    }
 
     const io = new IntersectionObserver((entries) => {
         entries.forEach(e => {
-            if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+            if (e.isIntersecting) {
+                e.target.classList.add('in');
+                io.unobserve(e.target);
+            }
         });
     }, { threshold: .15, rootMargin: '0px 0px -10% 0px' });
 
     nodes.forEach(n => io.observe(n));
 })();
-
 
 (() => {
     document.querySelectorAll('.svc-grid').forEach(grid => {
@@ -333,9 +330,6 @@ document.addEventListener('submit', (e) => {
             document.body.style.overflow = '';
         }
     });
-
-
-
 })();
 
 (() => {
@@ -398,18 +392,10 @@ document.addEventListener('submit', (e) => {
     mqDesktop.addEventListener?.('change', onChange);
 })();
 
-
 (() => {
     const header = document.querySelector('.site-header');
-    const menu = document.getElementById('mainNav');
-    if (!header || !menu) return;
+    if (!header) return;
 
-    const setHeaderH = () => {
-        const hh = header.getBoundingClientRect().height || 64;
-        document.documentElement.style.setProperty('--header-h', hh + 'px');
-    };
-    setHeaderH();
-    window.addEventListener('resize', setHeaderH);
 
     let lastY = window.pageYOffset || document.documentElement.scrollTop || 0;
     const REVEAL_OFFSET = 80;
@@ -462,7 +448,6 @@ document.addEventListener('submit', (e) => {
 })();
 
 
-
 whenConsentReady(function (consent) {
     if (consent.analytics) {
 
@@ -494,3 +479,51 @@ whenConsentReady(function (consent) {
         }
     }
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const surface = document.querySelector('.tagcloud-surface');
+    const sourceSpans = document.querySelectorAll('.tag-source span');
+    const myTags = Array.from(sourceSpans).map(span => span.textContent);
+
+    if (surface && myTags.length > 0) {
+
+        let tagCloudInstance = null;
+
+        const getResponsiveRadius = () => {
+            if (window.innerWidth < 768) {
+
+                return 180;
+            } else {
+                return 280;
+            }
+        };
+
+        const createOrUpdateCloud = () => {
+            if (tagCloudInstance) {
+                try {
+                    tagCloudInstance.destroy();
+                } catch (e) {
+                    console.error("Kunde inte förstöra TagCloud-instans:", e);
+                }
+            }
+
+            const options = {
+                radius: getResponsiveRadius(),
+                maxSpeed: 'slow',
+                initSpeed: 'slow',
+                direction: 135,
+                keep: true
+            };
+
+            tagCloudInstance = TagCloud(surface, myTags, options);
+        };
+
+        createOrUpdateCloud();
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(createOrUpdateCloud, 200);
+        });
+    }
+});

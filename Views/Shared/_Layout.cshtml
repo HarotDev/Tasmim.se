@@ -21,11 +21,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
-    <style>
-        html[lang="ar"] body {
-            font-family: "Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-        }
-    </style>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     @RenderSection("Head", required: false)
 </head>
@@ -48,7 +43,7 @@
                 <a class="nav-link" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
                 <a class="nav-link" asp-controller="Pricing" asp-action="Index">@T["Priser"]</a>
                 <a class="nav-link" asp-controller="Home" asp-action="About">@T["Om oss"]</a>
-                <a class="btn btn-primary nav-cta" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+                <a class="btn btn-explode nav-cta" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
 
                 <div class="nav-bottom">
                     <div class="nav-lang">
@@ -66,9 +61,11 @@
         </div>
     </header>
 
-    <main id="main" class="site-main" tabindex="-1">
-        @RenderBody()
-    </main>
+    <div class="site-wrapper">
+        <main class="site-main">
+            @RenderBody()
+        </main>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -95,7 +92,7 @@
     </footer>
 
     @await Html.PartialAsync("_Cookie")
-
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

@@ -2,7 +2,6 @@
 /* tokens */
 :root {
     --brand: #8559c3;
-    --cta: var(--brand);
     --ink: #0f1220;
     --muted: #5e6676;
     --line: rgba(16,20,24,.12);
@@ -16,7 +15,7 @@
     --lead: clamp(16px,2vw,20px);
     --btn-h: 48px;
     --btn-r: 12px;
-    --container: 1160px;
+    --container: 1600px;
     --space-s: 14px;
     --space-m: 22px;
     --space-l: clamp(24px,3.5vw,36px);
@@ -26,7 +25,6 @@
     --accent-600: color-mix(in oklab,var(--brand) 88%,black 12%);
 }
 
-/* reset */
 *, *:before, *:after {
     box-sizing: border-box
 }
@@ -655,6 +653,7 @@ body.menu-open .nav-toggle {
     max-width: 54ch
 }
 
+/* --- Service Card Knapp (Fixad) --- */
 .svc-go {
     position: absolute;
     left: 20px;
@@ -664,20 +663,23 @@ body.menu-open .nav-toggle {
     border-radius: 999px;
     display: grid;
     place-items: center;
-    background: var(--cta);
-    color: #fff;
     text-decoration: none;
-    box-shadow: 0 10px 24px rgba(8,195,176,.30);
-    transition: transform .15s
+    transition: transform .15s, background-color .2s ease, color .2s ease;
+    background-color: transparent;
+    border: 1px solid var(--brand);
+    color: var(--brand);
+    box-shadow: 0 8px 20px rgba(133, 89, 195, 0.2);
 }
-
-    .svc-go:hover {
-        transform: translateY(-2px)
-    }
 
     .svc-go svg {
         width: 22px;
-        height: 22px
+        height: 22px;
+    }
+
+    .svc-go:hover {
+        background-color: var(--brand);
+        color: #fff;
+        transform: translateY(-2px);
     }
 
 .snap-btn {
@@ -826,11 +828,13 @@ body.menu-open .nav-toggle {
 
 /* cta band */
 .cta-band {
-    background: linear-gradient(135deg,var(--brand),var(--accent-600));
+    background: linear-gradient( -45deg,color-mix(in srgb, var(--brand) 85%, black 15%),var(--brand),color-mix(in srgb, var(--brand) 85%, white 15%),var(--brand) );
     color: #fff;
     padding: var(--space-xl) 0;
     margin-bottom: 0;
-    overflow: hidden
+    overflow: hidden;
+    background-size: 400% 400%;
+    animation: moveGradient 15s ease infinite;
 }
 
     .cta-band .grid {
@@ -899,6 +903,27 @@ body.menu-open .nav-toggle {
         }
 }
 
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 /* footer */
 .site-footer {
     background: #171a1c;
@@ -2179,7 +2204,7 @@ img, video {
 
 .pricing-shell .section-head {
     max-width: 920px;
-    margin: 0 auto var(--space-l);
+    margin: 0 auto var(--space-s);
     text-align: center
 }
 
@@ -2873,11 +2898,6 @@ img, video {
     }
 }
 
-/* final tweaks */
-.svc-go {
-    background: var(--accent);
-    box-shadow: 0 10px 24px color-mix(in oklab,var(--accent) 35%, transparent 65%)
-}
 
 .cta-band {
     margin-bottom: 0
@@ -3805,171 +3825,221 @@ html[dir="rtl"] .form-actions {
         font-size: clamp(16px, 2.2vw, 18px);
     }
 
-/* --- Mörk sektion & mörka kort --- */
-.section--dark {
-    background: #171a1c;
-    color: #e8edf1;
+
+html[dir="rtl"] .feature-copy {
+    text-align: right !important;
 }
 
-    .section--dark h2 {
-        color: #fff;
-    }
+html[dir="rtl"] .text-center {
 
-    .section--dark .muted {
-        color: #b8c2cc;
-    }
-
-.case-pro--dark {
-    background: #202427;
-    border-color: #3a4045;
+    text-align: center;
 }
 
-    .case-pro--dark .case-title {
-        color: #fff;
+html[dir="rtl"] .p {
+    text-align: right;
+}
+html[dir="rtl"] .policy h2,
+html[dir="rtl"] .policy h3,
+html[dir="rtl"] .policy p {
+    text-align: right;
+}
+
+@media (max-width: 960px) {
+    html[dir="rtl"] .nav-toggle {
+        margin-left: 0;
+        margin-right: auto;
     }
 
-    .case-pro--dark .case-link {
-        color: #fff;
+    html[dir="rtl"] .brand {
+        margin-right: 8px;
+    }
+}
+
+
+/* NYA ANPASSADE KNAPPAR */
+
+
+.btn-wipe {
+    background: #ffffff;
+    color: var(--brand);
+    border: 1px solid var(--brand);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+    .btn-wipe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(135deg, var(--brand), var(--accent-600));
+        transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        z-index: -1;
     }
 
-    .case-pro--dark .btn-outline {
-        background: transparent;
-        border-color: #fff;
-        color: #fff;
+    .btn-wipe:hover {
+        color: #fff; 
     }
 
-        .case-pro--dark .btn-outline:hover {
-            background: #fff;
-            color: var(--brand);
+        .btn-wipe:hover::before {
+            width: 100%;
         }
 
-/* ========================================================================
-   NYA STILAR FÖR BENTO GRID PORTFOLIO
-   ======================================================================== */
 
-.portfolio-bento {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 250px); /* Justera höjden efter behov */
-    gap: clamp(16px, 2.4vw, 22px);
-}
-
-.bento-item {
+.btn-wipetwo {
+    background-color: transparent;
+    color: var(--brand);
+    border: 1px solid var(--brand);
     position: relative;
-    border-radius: var(--radius);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
-    display: block;
+    z-index: 1;
 }
 
-.bento-item--large {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-}
+    .btn-wipetwo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(135deg, var(--brand), var(--accent-600));
+        transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        z-index: -1;
+    }
 
-.bento-item--small:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
+    .btn-wipetwo:hover {
+        background-color: var(--brand);
+        color: #fff;
+    }
 
-.bento-item--small:nth-of-type(3) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
+        .btn-wipetwo:hover::before {
+            width: 100%;
+        }
 
-.bento-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
 
-.bento-item:hover img {
-    transform: scale(1.05);
-}
 
-.bento-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(10, 10, 15, 0.8) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    display: flex;
-    align-items: flex-end;
-    padding: clamp(16px, 2.2vw, 24px);
-}
-
-.bento-item:hover .bento-overlay {
-    opacity: 1;
-}
-
-.bento-content {
+.btn-explode {
+    background: var(--brand);
     color: #fff;
-    transform: translateY(15px);
-    transition: transform 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease-out;
 }
 
-.bento-item:hover .bento-content {
-    transform: translateY(0);
-}
+    .btn-explode::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 200%;
+        padding-top: 200%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        z-index: -1;
+    }
 
-.bento-content h3 {
-    color: #fff;
-    margin: 0 0 12px 0;
-}
-
-.bento-content .btn-outline {
-    background: transparent;
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #fff;
-    height: 40px;
-    padding: 0 14px;
-}
-
-    .bento-content .btn-outline:hover {
-        background: #fff;
+    .btn-explode:hover {
+        background-color: transparent;
         color: var(--brand);
+        border: 1px var(--brand) solid;
+    }
+
+        .btn-explode:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+
+
+.btn-ghost {
+    background: var(--brand);
+    color: #fff;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .btn-ghost:hover {
+        background-color: transparent;
+        color: #fff;
         border-color: #fff;
     }
 
-/* Responsivitet för Bento Grid */
-@media (max-width: 960px) {
-    .portfolio-bento {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 250px 250px;
-    }
 
-    .bento-item--large {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-    }
-
-    .bento-item--small:nth-of-type(2) {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
-
-    .bento-item--small:nth-of-type(3) {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
-    }
+body {
+    background-color: #f0f2f5;
 }
 
-@media (max-width: 640px) {
-    .portfolio-bento {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+.site-wrapper {
+    max-width: var(--container, 1450px);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg, #fff);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.section--word-planet {
+    background-color: #0c0a1a;
+    background-image: radial-gradient(circle at 50% 50%, rgba(41, 47, 95, 0.4) 0%, rgba(12, 10, 26, 0) 60%);
+    color: #ffffff;
+    padding: var(--space-xl, 4rem) 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.planet-title, .planet-sub {
+    position: relative;
+    z-index: 10;
+    transition: font-size 0.3s ease;
+}
+
+.tagcloud-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1.5rem 0;
+    transition: height 0.3s ease;
+}
+
+.tagcloud {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: font-size 0.3s ease;
+}
+
+.tagcloud--item {
+    padding: 2px 5px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+    .tagcloud--item:hover {
+        color: #FBBC05;
+        text-shadow: 0 0 15px rgba(251, 188, 5, 0.8);
     }
 
-    .bento-item {
-        aspect-ratio: 16 / 10;
+@media (max-width: 768px) {
+    .tagcloud-container {
+        height: 350px;
     }
 
-    .bento-item--large,
-    .bento-item--small:nth-of-type(2),
-    .bento-item--small:nth-of-type(3) {
-        grid-column: auto;
-        grid-row: auto;
+    .tagcloud {
+        font-size: 16px;
+    }
+
+    .planet-title {
+        font-size: 1.5rem;
+    }
+
+    .planet-sub {
+        font-size: 0.9rem;
     }
 }

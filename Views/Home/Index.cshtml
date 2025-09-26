@@ -21,8 +21,8 @@
             @T["Vi kombinerar kreativitet, teknik och affärsdriv för att leverera allt från smart webbutveckling till effektfull marknadsföring."]
         </p>
         <div class="hero__actions">
-            <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
-            <a class="btn btn-outline" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
+            <a class="btn btn-wipe" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+            <a class="btn btn-ghost" asp-controller="Home" asp-action="References">@T["Referenser"]</a>
         </div>
     </div>
 </section>
@@ -33,7 +33,7 @@
             <div class="feature-copy">
                 <h2>@T["Vi gör det digitala lätt, snabbt och lite roligare"]</h2>
                 <p>@T["Med kreativitet, teknik och affärer i perfekt mix levererar vi allt från vass webbutveckling till marknadsföring som gör skillnad."]</p>
-                <a class="btn btn-outline" asp-controller="Home" asp-action="About">@T["Läs mer om hur vi jobbar"]</a>
+                <a class="btn btn-wipetwo" asp-controller="Home" asp-action="About">@T["Läs mer om hur vi jobbar"]</a>
             </div>
             <div class="feature-media">
                 <div class="square">
@@ -44,34 +44,32 @@
     </div>
 </section>
 
-<section class="section section--gradient">
-    <div class="container reveal text-center">
-        <h2 id="ind-title" class="industries-title">
-            @T["Hemsidor för"]
-            <span class="word-roller" aria-live="polite">
-                <span class="words">
-                    <span>@T["Advokater"]</span>
-                    <span>@T["Hantverkare"]</span>
-                    <span>@T["Frisörer"]</span>
-                    <span>@T["Bilhandlare"]</span>
-                    <span>@T["Psykologer"]</span>
-                    <span>@T["Konsultbolag"]</span>
-                    <span>@T["Mäklare"]</span>
-                    <span>@T["Föreningar"]</span>
-                    <span>@T["Tandläkare"]</span>
-                    <span>@T["Läkare"]</span>
-                    <span>@T["Konstnärer"]</span>
-                    <span>@T["Skolor"]</span>
-                    <span>@T["Butiker"]</span>
-                </span>
-            </span>
-        </h2>
-        <p class="industries-sub">
-            @T["Snabba, tydliga och skräddarsydda webbplatser – designade för att sälja."]
-        </p>
+<section class="section section--word-planet">
+    <div class="container text-center">
+        <h2 class="planet-title">@T["Hemsidor för"]</h2>
+        <br />
+        <br />
+        <div class="tagcloud-container">
+            <span class="tagcloud-surface"></span>
+        </div>
+
+        <div class="tag-source" style="display: none;">
+            <span>@T["Advokater"]</span>
+            <span>@T["Hantverkare"]</span>
+            <span>@T["Frisörer"]</span>
+            <span>@T["Bilhandlare"]</span>
+            <span>@T["Psykologer"]</span>
+            <span>@T["Konsultbolag"]</span>
+            <span>@T["Mäklare"]</span>
+            <span>@T["Föreningar"]</span>
+            <span>@T["Tandläkare"]</span>
+            <span>@T["Läkare"]</span>
+            <span>@T["Konstnärer"]</span>
+            <span>@T["Skolor"]</span>
+            <span>@T["Butiker"]</span>
+        </div>
     </div>
 </section>
-
 
 <section class="section">
     <div class="container reveal">
@@ -94,7 +92,8 @@
 <section class="section section--soft">
     <div class="container reveal">
         <header class="section-head text-center">
-            <h2 id="svc">@T["Vi hjälper dig med"]</h2>
+            <h2>@T["Vi hjälper dig med"]</h2>
+            <br />
         </header>
         <div class="svc-carousel" style="position:relative">
             <button class="snap-btn snap-prev" aria-label="@T["Föregående"]"></button>
@@ -133,7 +132,7 @@
     <div class="container container--narrow reveal">
         <header class="section-head text-center">
             <h2>@T["Vanliga frågor"]</h2>
-            <p>@T["Kort och tydligt om process, tid, pris och support."]</p>
+            <p>@T["Kort och tydligt om process, tid och support."]</p>
         </header>
         <div class="faq">
             <article class="faq-item">
@@ -156,34 +155,63 @@
                 </button>
                 <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
                     <div class="faq-a__inner">
-                        @T["Vanliga webbplatser tar ofta 2–6 veckor beroende på omfattning, innehåll och integrationer."]
+                        @T["Vanliga webbplatser tar ofta 1–3 veckor beroende på omfattning, innehåll och integrationer."]
                     </div>
                 </div>
             </article>
+
             <article class="faq-item">
-                <h3 class="sr-only">@T["Fråga 3"]</h3>
-                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
-                    @T["Vad kostar en hemsida eller webbutik?"]
+                <h3 class="sr-only">@T["Fråga 4"]</h3>
+                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+                    @T["Vad händer efter att webbplatsen är lanserad? Erbjuder ni support?"]
                     <span class="faq-ico" aria-hidden="true"></span>
                 </button>
-                <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+                <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
                     <div class="faq-a__inner">
-                        @T["Vi erbjuder fasta paket för vanliga behov och ett skräddarsytt upplägg för större projekt. Se prissidan."]
+                        @T["Absolut. Efter lansering ingår 30 dagars teknisk support för att säkerställa att allt fungerar som det ska. Därefter erbjuder vi anpassade serviceavtal för löpande underhåll, säkerhetsuppdateringar och vidareutveckling."]
                     </div>
                 </div>
             </article>
+
+            <article class="faq-item">
+                <h3 class="sr-only">@T["Fråga 5"]</h3>
+                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+                    @T["Är sökmotoroptimering (SEO) inkluderat?"]
+                    <span class="faq-ico" aria-hidden="true"></span>
+                </button>
+                <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+                    <div class="faq-a__inner">
+                        @T["Alla våra webbplatser byggs med teknisk SEO i grunden. Det innebär en sökmotorvänlig struktur, snabba laddningstider och mobilanpassning. För mer avancerad SEO, som innehållsstrategi och länkbygge, erbjuder vi separata paket."]
+                    </div>
+                </div>
+            </article>
+
+            <article class="faq-item">
+                <h3 class="sr-only">@T["Fråga 6"]</h3>
+                <button class="faq-q" aria-expanded="false" aria-controls="faq-a-6" id="faq-q-6">
+                    @T["Vad behöver jag som kund förbereda eller bidra med?"]
+                    <span class="faq-ico" aria-hidden="true"></span>
+                </button>
+                <div class="faq-a" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
+                    <div class="faq-a__inner">
+                        @T["Det viktigaste du behöver bidra med är innehåll – det vill säga texter, bilder och eventuell logotyp. Vi guidar dig genom processen och kan även hjälpa till med att ta fram innehåll om du önskar det."]
+                    </div>
+                </div>
+            </article>
+
         </div>
     </div>
 </section>
 
 <section class="cta-band">
     <div class="container">
-        <div class="grid-2 grid" style="align-items:center">
+        <div class="grid grid-2">
             <div>
                 <h2>@T["Vill du veta vad vi kan göra för dig?"]</h2>
             </div>
-            <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-start">
-                <a class="btn btn-primary" asp-controller="Home" asp-action="Contact">@T["Kontakta oss"]</a>
+            <div class="hero__actions">
+                <a class="btn btn-primary" asp-controller="Pricing" asp-action="Index">@T["Se paket"]</a>
+                <a class="btn btn-outline" href="mailto:info@tasmim.se">@T["Maila oss"]</a>
             </div>
         </div>
     </div>

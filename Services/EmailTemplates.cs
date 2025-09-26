@@ -130,7 +130,7 @@ namespace RaqmiWeb.Services
                     Tid: {timestampUtc.ToLocalTime():yyyy-MM-dd HH:mm} | IP: {E(ip)}
                 </div>";
 
-            return GetBaseTemplate($"Ny Beställning: {orderCode}", body, b, CultureInfo.InvariantCulture); // Använder neutral kultur för admin-mejl
+            return GetBaseTemplate($"Ny Beställning: {orderCode}", body, b, CultureInfo.InvariantCulture);
         }
 
         public string AdminContactHtml(BrandOptions b, DateTime timestampUtc, string name, string email, string phone, string? company, string? website, string interest, string message, string? ip, string? userAgent)

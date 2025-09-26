@@ -34,7 +34,7 @@ namespace RaqmiWeb.Services
             if (value == 0) return "0";
             Span<char> buf = stackalloc char[16];
             int i = buf.Length;
-            uint v = (uint)value; // säker
+            uint v = (uint)value;
             while (v > 0)
             {
                 buf[--i] = alphabet[(int)(v % 36)];
