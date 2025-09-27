@@ -488,15 +488,20 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const container = document.querySelector('.tagcanvas-container');
             if (container) {
-                canvas.width = container.offsetWidth;
-                canvas.height = container.offsetHeight;
+                const rect = container.getBoundingClientRect();
+                canvas.width = rect.width;
+                canvas.height = rect.height;
             }
 
             TagCanvas.Start('myCanvas', 'tags', {
-                wheelZoom: false,
+
+                radiusX: window.innerWidth < 768 ? 0.8 : 0.9,
+                radiusY: window.innerWidth < 768 ? 0.8 : 0.9,
+                radiusZ: window.innerWidth < 768 ? 0.8 : 0.9,
 
                 dragControl: true,
                 freezeActive: false,
+                wheelZoom: false,
 
                 maxSpeed: 0.03,
                 decel: 0.95,
@@ -508,10 +513,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 depth: 0.75,
                 weight: true,
                 weightMode: 'size',
-                stretchX: 1.2,
                 shadow: '#fff',
                 shadowBlur: 5,
                 reverse: true
+
             });
 
             let restartTimer;
@@ -541,14 +546,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            TagCanvas.Resize('myCanvas');
-            startTagCanvas();
-        }, 200);
+        resizeTimer = setTimeout(startTagCanvas, 200);
     });
 });
-
-
 
 (() => {
     const toTopBtn = document.getElementById('toTopBtn');
@@ -573,4 +573,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     toTopBtn.addEventListener('click', scrollToTop);
 
+})();
+
+(() => {
+    const tagLinks = document.querySelectorAll('#tags a');
+
+    tagLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+        });
+    });
 })();
