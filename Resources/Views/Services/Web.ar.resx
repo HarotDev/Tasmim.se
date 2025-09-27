@@ -1,139 +1,216 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="Webbutveckling &amp; e-handel – Tasmim" xml:space="preserve">
-	<value>تطوير الويب والتجارة الإلكترونية – تصميم</value>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Webbutveckling &amp; e-handel – Tasmim" xml:space="preserve">
+    <value>تطوير الويب والتجارة الإلكترونية – تصميم</value>
   </data>
-	<data name="Webbutveckling och&lt;br /&gt;e-handel" xml:space="preserve">
-	<value>تطوير الويب&lt;br /&gt;والتجارة الإلكترونية</value>
+  <data name="Webbutveckling och&lt;br /&gt;e-handel" xml:space="preserve">
+    <value>تطوير الويب&lt;br /&gt;والتجارة الإلكترونية</value>
   </data>
-	<data name="När det är dags att skapa en ny webbplats eller förbättra den ni redan har, ser vi till att allt – från struktur och design till utveckling och förvaltning – fungerar som det ska. Målet? Att er webbplats inte bara ska vara snygg och funktionell, utan också bidra till att ni når era affärsmål på bästa sätt." xml:space="preserve">
-	<value>عندما يحين وقت إنشاء موقع إلكتروني جديد أو تحسين موقعكم الحالي، نضمن أن كل شيء - من الهيكل والتصميم إلى التطوير والإدارة - يعمل كما يجب. الهدف؟ أن لا يكون موقعكم الإلكتروني أنيقًا وعمليًا فحسب، بل يساهم أيضًا في تحقيق أهدافكم التجارية بأفضل طريقة.</value>
+  <data name="När det är dags att skapa en ny webbplats eller förbättra den ni redan har, ser vi till att allt – från struktur och design till utveckling och förvaltning – fungerar som det ska. Målet? Att er webbplats inte bara ska vara snygg och funktionell, utan också bidra till att ni når era affärsmål på bästa sätt." xml:space="preserve">
+    <value>عندما يحين وقت إنشاء موقع إلكتروني جديد أو تحسين موقعكم الحالي، نضمن أن كل شيء - من الهيكل والتصميم إلى التطوير والإدارة - يعمل كما يجب. الهدف؟ أن لا يكون موقعكم الإلكتروني أنيقًا وعمليًا فحسب، بل يساهم أيضًا في تحقيق أهدافكم التجارية بأفضل طريقة.</value>
   </data>
-	<data name="Se paket" xml:space="preserve">
-	<value>شاهد الباقات</value>
+  <data name="Se paket" xml:space="preserve">
+    <value>استكشف الباقات</value>
   </data>
-	<data name="Kontakta oss" xml:space="preserve">
-	<value>اتصل بنا</value>
+  <data name="Kontakta oss" xml:space="preserve">
+    <value>اتصل بنا</value>
   </data>
-	<data name="Så bygger vi din nya webb" xml:space="preserve">
-	<value>هكذا نبني موقعك الجديد</value>
+  <data name="Så bygger vi din nya webb" xml:space="preserve">
+    <value>هكذا نبني موقعك الجديد</value>
   </data>
-	<data name="Vi kombinerar tydlig plan, snabb leverans och mätbar uppföljning. Projektledare, designer och utvecklare jobbar tätt ihop för att få rätt struktur, rätt UI och rätt prestanda – med leverans i varje steg." xml:space="preserve">
-	<value>نجمع بين خطة واضحة، تسليم سريع، ومتابعة قابلة للقياس. يعمل مدير المشروع والمصمم والمطور معًا بشكل وثيق للحصول على الهيكل الصحيح، وواجهة المستخدم المناسبة، والأداء الأمثل - مع تسليم في كل مرحلة.</value>
+  <data name="Vi kombinerar tydlig plan, snabb leverans och mätbar uppföljning. Projektledare, designer och utvecklare jobbar tätt ihop för att få rätt struktur, rätt UI och rätt prestanda – med leverans i varje steg." xml:space="preserve">
+    <value>نجمع بين خطة واضحة، تسليم سريع، ومتابعة قابلة للقياس. يعمل مدير المشروع والمصمم والمطور معًا بشكل وثيق للحصول على الهيكل الصحيح، وواجهة المستخدم المناسبة، والأداء الأمثل - مع تسليم في كل مرحلة.</value>
   </data>
-	<data name="Innehåll &amp; struktur först – rätt sidor och rubriker" xml:space="preserve">
-	<value>المحتوى والهيكل أولاً - الصفحات والعناوين الصحيحة</value>
+  <data name="Innehåll &amp; struktur först – rätt sidor och rubriker" xml:space="preserve">
+    <value>المحتوى والهيكل أولاً - الصفحات والعناوين الصحيحة</value>
   </data>
-	<data name="UI-kit &amp; komponenter som går att återanvända" xml:space="preserve">
-	<value>مجموعة واجهة المستخدم والمكونات القابلة لإعادة الاستخدام</value>
+  <data name="UI-kit &amp; komponenter som går att återanvända" xml:space="preserve">
+    <value>مجموعة واجهة المستخدم والمكونات القابلة لإعادة الاستخدام</value>
   </data>
-	<data name="Fokus på Core Web Vitals och tillgänglighet" xml:space="preserve">
-	<value>التركيز على مؤشرات أداء الويب الأساسية وإمكانية الوصول</value>
+  <data name="Fokus på Core Web Vitals och tillgänglighet" xml:space="preserve">
+    <value>التركيز على مؤشرات أداء الويب الأساسية وإمكانية الوصول</value>
   </data>
-	<data name="Hur vi jobbar" xml:space="preserve">
-	<value>كيف نعمل</value>
+  <data name="Hur vi jobbar" xml:space="preserve">
+    <value>كيف نعمل</value>
   </data>
-	<data name="Se prisexempel" xml:space="preserve">
-	<value>شاهد أمثلة الأسعار</value>
+  <data name="Se prisexempel" xml:space="preserve">
+    <value>شاهد أمثلة الأسعار</value>
   </data>
-	<data name="Arbete med design och kod" xml:space="preserve">
-	<value>العمل على التصميم والبرمجة</value>
+  <data name="Arbete med design och kod" xml:space="preserve">
+    <value>العمل على التصميم والبرمجة</value>
   </data>
-	<data name="Vårt mål: göra det svåra enkelt" xml:space="preserve">
-	<value>هدفنا: جعل الصعب سهلاً</value>
+  <data name="Vårt mål: göra det svåra enkelt" xml:space="preserve">
+    <value>هدفنا: جعل الصعب سهلاً</value>
   </data>
-	<data name="Vi bygger webb som är snabb, lätt att äga och enkel att vidareutveckla – utan onödig komplexitet." xml:space="preserve">
-	<value>نبني مواقع ويب سريعة وسهلة التملك والتطوير المستقبلي - دون تعقيدات لا داعي لها.</value>
+  <data name="Vi bygger webb som är snabb, lätt att äga och enkel att vidareutveckla – utan onödig komplexitet." xml:space="preserve">
+    <value>نبني مواقع ويب سريعة وسهلة التملك والتطوير المستقبلي - دون تعقيدات لا داعي لها.</value>
   </data>
-	<data name="Tekniker &amp; plattformar vi trivs med" xml:space="preserve">
-	<value>التقنيات والمنصات التي نفضلها</value>
+  <data name="Tekniker &amp; plattformar vi trivs med" xml:space="preserve">
+    <value>التقنيات والمنصات التي نفضلها</value>
   </data>
-	<data name="Vi väljer stabila verktyg som passar mål och budget. När det behövs kopplar vi på betalningar, frakt och spårning – utan att tumma på prestanda." xml:space="preserve">
-	<value>نختار أدوات مستقرة تناسب الأهداف والميزانية. عند الحاجة، نربط أنظمة الدفع والشحن والتتبع - دون المساومة على الأداء.</value>
+  <data name="Vi väljer stabila verktyg som passar mål och budget. När det behövs kopplar vi på betalningar, frakt och spårning – utan att tumma på prestanda." xml:space="preserve">
+    <value>نختار أدوات مستقرة تناسب الأهداف والميزانية. عند الحاجة، نربط أنظمة الدفع والشحن والتتبع - دون المساومة على الأداء.</value>
   </data>
-	<data name="Tjänster i detalj" xml:space="preserve">
-	<value>تفاصيل الخدمات</value>
+  <data name="Tjänster i detalj" xml:space="preserve">
+    <value>تفاصيل الخدمات</value>
   </data>
-	<data name="Välj en insats eller kombinera – vi matchar efter mål och budget." xml:space="preserve">
-	<value>اختر خدمة أو ادمج بينها - نحن نكيفها حسب الهدف والميزانية.</value>
+  <data name="Välj en insats eller kombinera – vi matchar efter mål och budget." xml:space="preserve">
+    <value>اختر خدمة أو ادمج بينها - نحن نكيفها حسب الهدف والميزانية.</value>
   </data>
-	<data name="Webbplatser" xml:space="preserve">
-	<value>المواقع الإلكترونية</value>
+  <data name="Webbplatser" xml:space="preserve">
+    <value>المواقع الإلكترونية</value>
   </data>
-	<data name="Modulära sidmallar" xml:space="preserve">
-	<value>قوالب صفحات معيارية</value>
+  <data name="Modulära sidmallar" xml:space="preserve">
+    <value>قوالب صفحات معيارية</value>
   </data>
-	<data name="Hög prestanda &amp; tillgänglighet" xml:space="preserve">
-	<value>أداء عالٍ وإتاحة</value>
+  <data name="Hög prestanda &amp; tillgänglighet" xml:space="preserve">
+    <value>أداء عالٍ وإتاحة</value>
   </data>
-	<data name="Grundläggande SEO" xml:space="preserve">
-	<value>تحسين أساسي لمحركات البحث</value>
+  <data name="Grundläggande SEO" xml:space="preserve">
+    <value>تحسين أساسي لمحركات البحث</value>
   </data>
-	<data name="E-handel" xml:space="preserve">
-	<value>التجارة الإلكترونية</value>
+  <data name="E-handel" xml:space="preserve">
+    <value>التجارة الإلكترونية</value>
   </data>
-	<data name="Kassa, betalning och frakt" xml:space="preserve">
-	<value>الدفع والخروج والشحن</value>
+  <data name="Kassa, betalning och frakt" xml:space="preserve">
+    <value>الدفع والخروج والشحن</value>
   </data>
-	<data name="Produktflöden och lager" xml:space="preserve">
-	<value>تدفقات المنتجات والمخزون</value>
+  <data name="Produktflöden och lager" xml:space="preserve">
+    <value>تدفقات المنتجات والمخزون</value>
   </data>
-	<data name="Integrationer &amp; spårning" xml:space="preserve">
-	<value>التكاملات والتتبع</value>
+  <data name="Integrationer &amp; spårning" xml:space="preserve">
+    <value>التكاملات والتتبع</value>
   </data>
-	<data name="CMS/ERP/CRM-kopplingar" xml:space="preserve">
-	<value>ربط أنظمة CMS/ERP/CRM</value>
+  <data name="CMS/ERP/CRM-kopplingar" xml:space="preserve">
+    <value>ربط أنظمة CMS/ERP/CRM</value>
   </data>
-	<data name="GA4 &amp; Tag Manager" xml:space="preserve">
-	<value>GA4 و Tag Manager</value>
+  <data name="GA4 &amp; Tag Manager" xml:space="preserve">
+    <value>GA4 و Tag Manager</value>
   </data>
-	<data name="Dashboard &amp; rapporter" xml:space="preserve">
-	<value>لوحات التحكم والتقارير</value>
+  <data name="Dashboard &amp; rapporter" xml:space="preserve">
+    <value>لوحات التحكم والتقارير</value>
   </data>
-	<data name="Vill ni starta en ny sida eller butik?" xml:space="preserve">
-	<value>هل ترغبون في إطلاق موقع أو متجر جديد؟</value>
+  <data name="Vill ni starta en ny sida eller butik?" xml:space="preserve">
+    <value>هل ترغبون في إطلاق موقع أو متجر جديد؟</value>
   </data>
-	<data name="Skriv några rader så återkommer vi med upplägg och fast pris." xml:space="preserve">
-	<value>اكتب بضعة أسطر وسنعاود الاتصال بك مع خطة عمل وسعر ثابت.</value>
+  <data name="Skriv några rader så återkommer vi med upplägg och fast pris." xml:space="preserve">
+    <value>اكتب بضعة أسطر وسنعاود الاتصال بك مع خطة عمل وسعر ثابت.</value>
   </data>
 </root>

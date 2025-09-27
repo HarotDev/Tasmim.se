@@ -1,94 +1,171 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-        <xsd:element name="root" msdata:IsDataSet="true">
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
             <xsd:complexType>
-                <xsd:choice maxOccurs="unbounded">
-                    <xsd:element name="data">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" use="required" type="xsd:string" />
-                            <xsd:attribute name="type" type="xsd:string" />
-                            <xsd:attribute name="mimetype" type="xsd:string" />
-                            <xsd:attribute ref="xml:space" />
-                        </xsd:complexType>
-                    </xsd:element>
-                    <xsd:element name="resheader">
-                        <xsd:complexType>
-                            <xsd:sequence>
-                                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-                            </xsd:sequence>
-                            <xsd:attribute name="name" type="xsd:string" use="required" />
-                        </xsd:complexType>
-                    </xsd:element>
-                </xsd:choice>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>2.0</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <data name="Case – Tasmim" xml:space="preserve">
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Case – Tasmim" xml:space="preserve">
     <value>أعمالنا – تصميم</value>
   </data>
-    <data name="Utvalda hemsidor" xml:space="preserve">
+  <data name="Utvalda hemsidor" xml:space="preserve">
     <value>مواقع إلكترونية مختارة</value>
   </data>
-    <data name="Hemsidor och webbutiker vi skapat – fokus på fart, tydlighet och enkel skötsel." xml:space="preserve">
+  <data name="Hemsidor och webbutiker vi skapat – fokus på fart, tydlighet och enkel skötsel." xml:space="preserve">
     <value>مواقع ومتاجر إلكترونية قمنا بإنشائها - مع التركيز على السرعة والوضوح وسهولة الإدارة.</value>
   </data>
-    <data name="Se paket" xml:space="preserve">
-    <value>شاهد الباقات</value>
+  <data name="Se paket" xml:space="preserve">
+    <value>استكشف الباقات</value>
   </data>
-    <data name="Kontakta oss" xml:space="preserve">
+  <data name="Kontakta oss" xml:space="preserve">
     <value>اتصل بنا</value>
   </data>
-    <data name="Utvalda hemsidor &amp; webbutiker" xml:space="preserve">
+  <data name="Utvalda hemsidor &amp; webbutiker" xml:space="preserve">
     <value>مواقع ومتاجر إلكترونية مختارة</value>
   </data>
-    <data name="Några kundcase där vi gjort allt: struktur, design, bilder och texter." xml:space="preserve">
+  <data name="Några kundcase där vi gjort allt: struktur, design, bilder och texter." xml:space="preserve">
     <value>بعض حالات العملاء حيث قمنا بكل شيء: الهيكل، التصميم، الصور والنصوص.</value>
   </data>
-    <data name="Golden Royale – webbutik för arabiska desserter" xml:space="preserve">
+  <data name="Golden Royale – webbutik för arabiska desserter" xml:space="preserve">
     <value>جولدن رويال – متجر إلكتروني للحلويات العربية</value>
   </data>
-    <data name="Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll." xml:space="preserve">
+  <data name="Webbutik för arabiska desserter. Vi tog fram bilder, sektioner, färger samt texter och allt innehåll." xml:space="preserve">
     <value>متجر إلكتروني للحلويات العربية. قمنا بتصميم الصور والأقسام والألوان والنصوص وكل المحتوى.</value>
   </data>
-    <data name="Plattform" xml:space="preserve">
+  <data name="Plattform" xml:space="preserve">
     <value>المنصة</value>
   </data>
-    <data name="Visa webbplats" xml:space="preserve">
+  <data name="Visa webbplats" xml:space="preserve">
     <value>عرض الموقع</value>
   </data>
-    <data name="Karmasha – webbutik för frystorkade frukter, glass och godis" xml:space="preserve">
+  <data name="Karmasha – webbutik för frystorkade frukter, glass och godis" xml:space="preserve">
     <value>كرمشة – متجر إلكتروني للفواكه المجففة بالتجميد والآيس كريم والحلويات</value>
   </data>
-    <data name="Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll." xml:space="preserve">
+  <data name="Webbutik för frystorkade frukter, glass och godis. Vi skapade logotyp, design, bilder, texter och allt innehåll." xml:space="preserve">
     <value>متجر إلكتروني للفواكه المجففة بالتجميد والآيس كريم والحلويات. قمنا بإنشاء الشعار والتصميم والصور والنصوص وكل المحتوى.</value>
   </data>
-    <data name="Spånga Hair Studio – hemsida med smidig bokningsväg" xml:space="preserve">
+  <data name="Spånga Hair Studio – hemsida med smidig bokningsväg" xml:space="preserve">
     <value>سبونجا هير ستوديو – موقع إلكتروني مع نظام حجز سهل</value>
   </data>
-    <data name="Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär." xml:space="preserve">
+  <data name="Hemsida för frisörsalong. Vi byggde allt – design, bilder, texter och innehåll. Enkel bokningsväg via formulär." xml:space="preserve">
     <value>موقع إلكتروني لصالون تجميل. قمنا ببناء كل شيء – التصميم والصور والنصوص والمحتوى. وطريقة حجز سهلة عبر النموذج.</value>
   </data>
-    <data name="Redo att starta något liknande?" xml:space="preserve">
+  <data name="Redo att starta något liknande?" xml:space="preserve">
     <value>هل أنت مستعد لبدء مشروع مماثل؟</value>
   </data>
-    <data name="Berätta kort om era mål – vi återkommer med upplägg och fast pris." xml:space="preserve">
+  <data name="Berätta kort om era mål – vi återkommer med upplägg och fast pris." xml:space="preserve">
     <value>أخبرنا باختصار عن أهدافك - وسنعاود الاتصال بك مع خطة عمل وسعر ثابت.</value>
   </data>
 </root>

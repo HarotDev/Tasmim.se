@@ -15,7 +15,7 @@
     --lead: clamp(16px,2vw,20px);
     --btn-h: 48px;
     --btn-r: 12px;
-    --container: 1600px;
+    --container: 2000px;
     --space-s: 14px;
     --space-m: 22px;
     --space-l: clamp(24px,3.5vw,36px);
@@ -2668,6 +2668,14 @@ img, video {
     text-align: left;
 }
 
+@media(max-width:740px) {
+    .contact-form,
+    .contact-form label,
+    .contact-form .field {
+        text-align: left
+    }
+}
+
 .order-summary {
     position: sticky;
     top: 84px;
@@ -2858,7 +2866,6 @@ img, video {
         }
 }
 
-/* brand tweaks */
 .brand img {
     height: 50px;
     display: block
@@ -3137,7 +3144,6 @@ main > :is(.section, .pricing-shell, .contact-section):first-child {
     padding-top: clamp(24px, 4vw, 48px) !important
 }
 
-/* desktop-only tweaks (lang + hide socials) */
 @media (min-width:961px) {
     .nav-social {
         display: none !important
@@ -3171,7 +3177,6 @@ main > :is(.section, .pricing-shell, .contact-section):first-child {
     }
 }
 
-/* mobile-only (lang + socials position) */
 @media (max-width:960px) {
     .nav-bottom {
         display: flex;
@@ -3207,16 +3212,13 @@ main > :is(.section, .pricing-shell, .contact-section):first-child {
         }
 }
 
-
-/* footer – desktop layoutfix (junior note: gör grid tydligare) */
 @media (min-width: 900px) {
     .footer-wrap {
-        grid-template-columns: 1.2fr 1fr 1fr; /* 3 kolumner */
+        grid-template-columns: 1.2fr 1fr 1fr;
         align-items: start;
     }
 }
 
-/* footer – listor så de blir rena */
 .footer-nav ul {
     list-style: none;
     padding: 0;
@@ -3321,66 +3323,30 @@ main > :is(.section, .pricing-shell, .contact-section):first-child {
     }
 }
 
-/* ===== Logo shimmer / shine loop ===== */
 .brand {
-    position: relative; /* så pseudo-elementet lägger sig över bilden */
+    position: relative;
     display: inline-block;
-    isolation: isolate; /* bättre blandningsläge över blandade bakgrunder */
+    isolation: isolate;
 }
 
-    /* Själva glansen som sveper diagonalt */
-    .brand::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        pointer-events: none;
-        /* smal diagonal band-gradient som ger “glans” */
-        background: linear-gradient( 75deg, rgba(255,255,255,0) 10%, rgba(255,255,255,0.0) 28%, rgba(255,255,255,0.55) 48%, rgba(255,255,255,0.0) 68%, rgba(255,255,255,0) 90% );
-        transform: translateX(-130%) skewX(-8deg); /* start utanför vänster kant */
-        mix-blend-mode: screen; /* funkar fint på mörk header vid mobilmeny */
-        opacity: 0.95; /* lagom stark glans */
-        border-radius: 6px; /* slipa kanter lite så det inte “läcker” */
-        will-change: transform;
-        animation: logoShine 4.8s linear infinite;
-    }
 
-/* Lite mer “wow” när man hovrar på desktop */
 @media (hover: hover) and (pointer: fine) {
     .brand:hover::after {
         animation-duration: 2.2s;
     }
 }
 
-/* När mobilmenyn är öppen invertas loggan – höj opacitet så glansen syns tydligt */
 body.menu-open .brand::after {
     opacity: 1;
 }
 
-/* “Reduced motion”: kör inte svepet om användaren vill minska animationer */
 @media (prefers-reduced-motion: reduce) {
     .brand::after {
         animation: none;
-        opacity: .0; /* eller sätt .15 om du vill ha en svag statisk highlight */
+        opacity: .0; 
     }
 }
 
-/* Nyckelbildrutor för svepet */
-@keyframes logoShine {
-    0% {
-        transform: translateX(-130%) skewX(-8deg);
-    }
-
-    56% {
-        transform: translateX(115%) skewX(-8deg);
-    }
-    /* själva passeringen */
-    100% {
-        transform: translateX(115%) skewX(-8deg);
-    }
-    /* vila tills loopen startar */
-}
-
-/* Header: kan skjutas upp och ner med klass */
 .site-header {
     position: fixed;
     top: 0;
@@ -3391,19 +3357,15 @@ body.menu-open .brand::after {
     transition: transform .28s ease, background .25s ease, box-shadow .25s ease;
 }
 
-    /* När vi gömmer headern på nedåt-scroll */
     .site-header.is-hidden {
         transform: translateY(-100%);
     }
 
-/* Ge plats under en fixed header */
 main.site-main {
-    /* site.js sätter --header-h dynamiskt, så detta håller allt på plats */
     padding-top: var(--header-h, 64px);
 }
 
 
-/* Portfolio / Case-galleri – passar varumärkets formspråk */
 .portfolio-head {
     display: grid;
     gap: 6px;
@@ -3445,7 +3407,6 @@ main.site-main {
         box-shadow: 0 16px 34px rgba(16,20,24,.10);
     }
 
-/* Bildyta med subtil overlay + glow i hörnen */
 .case-media {
     position: relative;
     display: block;
@@ -3467,7 +3428,6 @@ main.site-main {
     filter: saturate(1.03);
 }
 
-/* gradient overlay */
 .case-media::after {
     content: "";
     position: absolute;
@@ -3482,7 +3442,6 @@ main.site-main {
     opacity: .36;
 }
 
-/* Plattform-chip */
 .case-chip {
     position: absolute;
     left: 12px;
@@ -3507,7 +3466,6 @@ main.site-main {
         display: inline-block;
     }
 
-/* Copy */
 .case-body {
     padding: clamp(12px,1.6vw,16px) clamp(14px,1.8vw,18px) clamp(14px,2vw,18px);
     display: grid;
@@ -3523,7 +3481,6 @@ main.site-main {
     margin: 4px 0 0;
 }
 
-/* Meta-rad: länk + CTA-knapp */
 .case-meta {
     margin-top: 6px;
     display: flex;
@@ -3533,7 +3490,6 @@ main.site-main {
     flex-wrap: wrap;
 }
 
-/* Länk-hover som menyn: gradient-understreak utan vanlig underline */
 .case-link {
     position: relative;
     text-decoration: none;
@@ -3557,13 +3513,11 @@ main.site-main {
         transform: scaleX(1);
     }
 
-/* Knapp harmonisering i kort */
 .case-actions .btn {
     height: 40px;
     padding: 0 14px;
 }
 
-/* Småskärm-boost */
 @media (max-width:740px) {
     .case-meta {
         flex-direction: column;
@@ -3576,7 +3530,6 @@ main.site-main {
     }
 }
 
-/* RTL-bas för arabiska*/
 html[dir="rtl"] body {
     direction: rtl;
 }
@@ -3793,9 +3746,6 @@ html[dir="rtl"] .form-actions {
     }
 }
 
-
-
-/* --- Gradientsektion för "Hemsidor för..." --- */
 .section--gradient {
     background: linear-gradient(145deg, var(--brand), color-mix(in oklab, var(--brand) 85%, black 15%));
     color: #fff;
@@ -3854,10 +3804,6 @@ html[dir="rtl"] .policy p {
         margin-right: 8px;
     }
 }
-
-
-/* NYA ANPASSADE KNAPPAR */
-
 
 .btn-wipe {
     background: #ffffff;
@@ -3974,7 +3920,7 @@ body {
 }
 
 .site-wrapper {
-    max-width: var(--container, 1450px);
+    max-width: var(--container, 2000px);
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bg, #fff);
@@ -3982,6 +3928,8 @@ body {
     position: relative;
     z-index: 1;
 }
+
+/* --- Uppdaterad kod --- */
 
 .section--word-planet {
     background-color: #0c0a1a;
@@ -3994,8 +3942,8 @@ body {
 
 .planet-title, .planet-sub {
     position: relative;
+    /* Titlarna ligger högst upp i lager 10 */
     z-index: 10;
-    transition: font-size 0.3s ease;
 }
 
 .tagcloud-container {
@@ -4005,6 +3953,9 @@ body {
     align-items: center;
     margin: -1.5rem 0;
     transition: height 0.3s ease;
+    /* ---- NYA REGLER FÖR ATT FIXA TOUCH ---- */
+    position: relative; /* Ger containern en egen kontext */
+    z-index: 5; /* Lyfter upp den så den kan ta emot touch-events */
 }
 
 .tagcloud {
@@ -4022,8 +3973,7 @@ body {
 }
 
     .tagcloud--item:hover {
-        color: #FBBC05;
-        text-shadow: 0 0 15px rgba(251, 188, 5, 0.8);
+        color: #c558ea;
     }
 
 @media (max-width: 768px) {
@@ -4032,7 +3982,7 @@ body {
     }
 
     .tagcloud {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .planet-title {
