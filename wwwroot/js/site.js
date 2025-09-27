@@ -481,72 +481,64 @@ whenConsentReady(function (consent) {
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.section--word-planet');
     const surface = document.querySelector('.tagcloud-surface');
     const sourceSpans = document.querySelectorAll('.tag-source span');
-
-    if (!section || !surface || sourceSpans.length === 0) {
-        return;
-    }
-
     const myTags = Array.from(sourceSpans).map(span => span.textContent);
-    let tagCloudInstance = null;
-    let isInitialized = false;
 
-    const getResponsiveRadius = () => {
-        if (window.innerWidth < 768) {
-            return 180;
-        } else {
-            return 280;
-        }
-    };
+    if (surface && myTags.length > 0) {
 
-    const initializeCloud = () => {
-        if (isInitialized) return;
-        isInitialized = true;
+        let tagCloudInstance = null;
+        let currentWidth = window.innerWidth;
+        let currentHeight = window.innerHeight;
 
-        const options = {
-            radius: getResponsiveRadius(),
-            maxSpeed: 'slow',
-            initSpeed: 'slow',
-            direction: 135,
-            keep: true
+        const getResponsiveRadius = () => {
+            if (window.innerWidth < 768) {
+                return 180;
+            } else {
+                return 280;
+            }
         };
-        tagCloudInstance = TagCloud(surface, myTags, options);
-    };
 
-    const updateCloudOnResize = () => {
-        if (!isInitialized) return;
-
-        if (tagCloudInstance) {
-            try {
-                tagCloudInstance.destroy();
-            } catch (e) {
-                console.error("Kunde inte förstöra TagCloud-instans:", e);
+        const createOrUpdateCloud = () => {
+            if (tagCloudInstance) {
+                try {
+                    tagCloudInstance.destroy();
+                } catch (e) {
+                    console.error("Kunde inte förstöra TagCloud-instans:", e);
+                }
             }
-        }
-        initializeCloud();
-        isInitialized = false;
-        initializeCloud();
-    };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+            const options = {
+                radius: getResponsiveRadius(),
+                maxSpeed: 'slow',
+                initSpeed: 'slow',
+                direction: 135,
+                keep: true
+            };
 
-            if (entry.isIntersecting) {
-                initializeCloud();
-                observer.unobserve(section);
-            }
+            tagCloudInstance = TagCloud(surface, myTags, options);
+        };
+
+        createOrUpdateCloud();
+
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                const newWidth = window.innerWidth;
+                const newHeight = window.innerHeight;
+
+                if (newWidth !== currentWidth || newHeight !== currentHeight) {
+                    console.log('Fönstret har ändrat storlek, bygger om ordmolnet.');
+
+                    currentWidth = newWidth;
+                    currentHeight = newHeight;
+
+                    createOrUpdateCloud();
+                }
+            }, 250);
         });
-    }, { threshold: 0.1 });
-
-    observer.observe(section);
-
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(updateCloudOnResize, 200);
-    });
+    }
 });
 
 
