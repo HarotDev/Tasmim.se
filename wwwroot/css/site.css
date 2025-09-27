@@ -3993,3 +3993,40 @@ body {
         font-size: 0.9rem;
     }
 }
+
+#toTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: linear-gradient(135deg, var(--brand), var(--accent-600));
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+    #toTopBtn.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    #toTopBtn:hover {
+        box-shadow: 0 14px 30px rgba(16, 20, 24, 0.15);
+        transform: translateY(-2px) !important;
+    }
+
+    #toTopBtn svg {
+        width: 24px;
+        height: 24px;
+    }

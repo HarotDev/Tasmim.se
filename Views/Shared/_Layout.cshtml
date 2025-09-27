@@ -90,10 +90,16 @@
             </div>
         </div>
     </footer>
-
+    <button id="toTopBtn" title="Gå till toppen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
+        </svg>
+    </button>
     @await Html.PartialAsync("_Cookie")
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+
 </body>
 </html>

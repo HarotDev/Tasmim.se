@@ -481,49 +481,96 @@ whenConsentReady(function (consent) {
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.section--word-planet');
     const surface = document.querySelector('.tagcloud-surface');
     const sourceSpans = document.querySelectorAll('.tag-source span');
-    const myTags = Array.from(sourceSpans).map(span => span.textContent);
 
-    if (surface && myTags.length > 0) {
-
-        let tagCloudInstance = null;
-
-        const getResponsiveRadius = () => {
-            if (window.innerWidth < 768) {
-
-                return 180;
-            } else {
-                return 280;
-            }
-        };
-
-        const createOrUpdateCloud = () => {
-            if (tagCloudInstance) {
-                try {
-                    tagCloudInstance.destroy();
-                } catch (e) {
-                    console.error("Kunde inte förstöra TagCloud-instans:", e);
-                }
-            }
-
-            const options = {
-                radius: getResponsiveRadius(),
-                maxSpeed: 'slow',
-                initSpeed: 'slow',
-                direction: 135,
-                keep: true
-            };
-
-            tagCloudInstance = TagCloud(surface, myTags, options);
-        };
-
-        createOrUpdateCloud();
-
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(createOrUpdateCloud, 200);
-        });
+    if (!section || !surface || sourceSpans.length === 0) {
+        return;
     }
+
+    const myTags = Array.from(sourceSpans).map(span => span.textContent);
+    let tagCloudInstance = null;
+    let isInitialized = false;
+
+    const getResponsiveRadius = () => {
+        if (window.innerWidth < 768) {
+            return 180;
+        } else {
+            return 280;
+        }
+    };
+
+    const initializeCloud = () => {
+        if (isInitialized) return;
+        isInitialized = true;
+
+        const options = {
+            radius: getResponsiveRadius(),
+            maxSpeed: 'slow',
+            initSpeed: 'slow',
+            direction: 135,
+            keep: true
+        };
+        tagCloudInstance = TagCloud(surface, myTags, options);
+    };
+
+    const updateCloudOnResize = () => {
+        if (!isInitialized) return;
+
+        if (tagCloudInstance) {
+            try {
+                tagCloudInstance.destroy();
+            } catch (e) {
+                console.error("Kunde inte förstöra TagCloud-instans:", e);
+            }
+        }
+        initializeCloud();
+        isInitialized = false;
+        initializeCloud();
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                initializeCloud();
+                observer.unobserve(section);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    observer.observe(section);
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(updateCloudOnResize, 200);
+    });
 });
+
+
+(() => {
+    const toTopBtn = document.getElementById('toTopBtn');
+    if (!toTopBtn) return;
+
+    const toggleButtonVisibility = () => {
+        if (window.scrollY > 300) {
+            toTopBtn.classList.add('is-visible');
+        } else {
+            toTopBtn.classList.remove('is-visible');
+        }
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
+    window.addEventListener('scroll', toggleButtonVisibility, { passive: true });
+
+    toTopBtn.addEventListener('click', scrollToTop);
+
+})();
