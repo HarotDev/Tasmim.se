@@ -481,65 +481,73 @@ whenConsentReady(function (consent) {
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
-    const surface = document.querySelector('.tagcloud-surface');
-    const sourceSpans = document.querySelectorAll('.tag-source span');
-    const myTags = Array.from(sourceSpans).map(span => span.textContent);
+    const canvas = document.getElementById('myCanvas');
+    if (!canvas) return;
 
-    if (surface && myTags.length > 0) {
-
-        let tagCloudInstance = null;
-        let currentWidth = window.innerWidth;
-        let currentHeight = window.innerHeight;
-
-        const getResponsiveRadius = () => {
-            if (window.innerWidth < 768) {
-                return 180;
-            } else {
-                return 280;
-            }
-        };
-
-        const createOrUpdateCloud = () => {
-            if (tagCloudInstance) {
-                try {
-                    tagCloudInstance.destroy();
-                } catch (e) {
-                    console.error("Kunde inte förstöra TagCloud-instans:", e);
-                }
+    const startTagCanvas = () => {
+        try {
+            const container = document.querySelector('.tagcanvas-container');
+            if (container) {
+                canvas.width = container.offsetWidth;
+                canvas.height = container.offsetHeight;
             }
 
-            const options = {
-                radius: getResponsiveRadius(),
-                maxSpeed: 'slow',
-                initSpeed: 'slow',
-                direction: 135,
-                keep: true
+            TagCanvas.Start('myCanvas', 'tags', {
+                wheelZoom: false,
+
+                dragControl: true,
+                freezeActive: false,
+
+                maxSpeed: 0.03,
+                decel: 0.95,
+                initial: [0.05, 0],
+
+                textColour: '#ffffff',
+                outlineColour: 'transparent',
+                textHeight: 20,
+                depth: 0.75,
+                weight: true,
+                weightMode: 'size',
+                stretchX: 1.2,
+                shadow: '#fff',
+                shadowBlur: 5,
+                reverse: true
+            });
+
+            let restartTimer;
+            const restartInitialAnimation = () => {
+                TagCanvas.SetSpeed('myCanvas', [0.05, 0]);
             };
 
-            tagCloudInstance = TagCloud(surface, myTags, options);
-        };
+            $('#myCanvas').on('mousedown touchstart', function () {
+                clearTimeout(restartTimer);
+            });
 
-        createOrUpdateCloud();
+            $('#myCanvas').on('mouseup touchend', function () {
+                restartTimer = setTimeout(() => {
+                    restartInitialAnimation();
+                }, 3000);
+            });
 
-        let resizeTimer;
-        window.addEventListener('resize', () => {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                const newWidth = window.innerWidth;
-                const newHeight = window.innerHeight;
+        } catch (e) {
+            console.error("Kunde inte starta TagCanvas:", e);
+            const container = document.querySelector('.tagcanvas-container');
+            if (container) container.style.display = 'none';
+        }
+    };
 
-                if (newWidth !== currentWidth || newHeight !== currentHeight) {
-                    console.log('Fönstret har ändrat storlek, bygger om ordmolnet.');
+    startTagCanvas();
 
-                    currentWidth = newWidth;
-                    currentHeight = newHeight;
-
-                    createOrUpdateCloud();
-                }
-            }, 250);
-        });
-    }
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            TagCanvas.Resize('myCanvas');
+            startTagCanvas();
+        }, 200);
+    });
 });
+
 
 
 (() => {

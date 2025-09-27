@@ -3706,18 +3706,7 @@ html[dir="rtl"] .form-actions {
         height: 40px;
         max-width: 140px;
         object-fit: contain;
-        filter: grayscale(1);
-        opacity: 0.6;
         transition: .2s;
-    }
-
-    .scroller__inner:hover {
-        animation-play-state: paused;
-    }
-
-    .scroller__inner img:hover {
-        filter: grayscale(0);
-        opacity: 1;
     }
 
 
@@ -3929,7 +3918,6 @@ body {
     z-index: 1;
 }
 
-/* --- Uppdaterad kod --- */
 
 .section--word-planet {
     background-color: #0c0a1a;
@@ -3942,55 +3930,19 @@ body {
 
 .planet-title, .planet-sub {
     position: relative;
-    /* Titlarna ligger högst upp i lager 10 */
     z-index: 10;
 }
 
-.tagcloud-container {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: -1.5rem 0;
-    transition: height 0.3s ease;
-    /* ---- NYA REGLER FÖR ATT FIXA TOUCH ---- */
-    position: relative; /* Ger containern en egen kontext */
-    z-index: 5; /* Lyfter upp den så den kan ta emot touch-events */
+.tagcanvas-container {
+    width: 100%;
+    max-width: 900px;
+    margin: -1.5rem auto;
+    height: 450px;
 }
-
-.tagcloud {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #ffffff;
-    transition: font-size 0.3s ease;
-}
-
-.tagcloud--item {
-    padding: 2px 5px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    transition: all 0.3s ease;
-}
-
-    .tagcloud--item:hover {
-        color: #c558ea;
-    }
 
 @media (max-width: 768px) {
-    .tagcloud-container {
+    .tagcanvas-container {
         height: 350px;
-    }
-
-    .tagcloud {
-        font-size: 14px;
-    }
-
-    .planet-title {
-        font-size: 1.5rem;
-    }
-
-    .planet-sub {
-        font-size: 0.9rem;
     }
 }
 
