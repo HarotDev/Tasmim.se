@@ -70,15 +70,21 @@
     <footer class="site-footer">
         <div class="container">
             <div class="footer-wrap">
+                <a class="footer-logo" asp-controller="Home" asp-action="Index" aria-label="Tasmim – startsida">
+                    <img src="~/img/logofooter.png" alt="Tasmim" asp-append-version="true" />
+                </a>
+
                 <div class="footer-col">
                     <h4>Tasmim</h4>
                     <p>@T["Vi kombinerar kreativitet, teknik och affärsnytta för webb och e-handel som levererar."]</p>
                 </div>
+
                 <div class="footer-col">
                     <h4>@T["Kontakta oss"]</h4>
                     <p><a href="mailto:info@tasmim.se">info@tasmim.se</a></p>
                 </div>
             </div>
+
 
             <div class="footer-bottom">
                 <span>© @DateTime.Now.Year Tasmim</span>
